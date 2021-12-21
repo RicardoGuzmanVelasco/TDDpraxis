@@ -1,0 +1,36 @@
+@startuml
+title Basic with decorator
+center header FizzBuzz | Blind
+'''''''''''''
+allowmixing
+'''''''''''''
+
+namespace FizzBuzz.Runtime{
+    
+    interface IFizzBuzz
+    
+    class FizzBuzzNumber
+    class FizzBuzzExclamationDecorator
+    
+    IFizzBuzz <|.. FizzBuzzNumber
+    IFizzBuzz <|.. FizzBuzzExclamationDecorator
+    
+    FizzBuzzExclamationDecorator -u-> IFizzBuzz : decorated
+}
+
+namespace FizzBuzz.Tests{
+    
+    class FizzBuzzTests <<(T, aquamarine) Test fixture>>
+    class FizzBuzzExclamationDecoratorTests <<(T, aquamarine) Test fixture>>
+
+    FizzBuzzTests -u-> FizzBuzz.Runtime.FizzBuzzNumber
+    
+    FizzBuzzExclamationDecoratorTests -u-> FizzBuzz.Runtime.FizzBuzzNumber
+    FizzBuzzExclamationDecoratorTests -u-> FizzBuzz.Runtime.FizzBuzzExclamationDecorator
+}
+
+
+'''''''''''''
+'''''''''''''
+right footer (CC-BY) RGV, 2021
+@enduml
