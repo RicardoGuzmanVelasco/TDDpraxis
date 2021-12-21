@@ -1,5 +1,7 @@
 ### Basic API
 - [X] API: Return FizzBuzz of a number
+- [ ] Implementations to internal
+  - [ ] Tests are friend package of Runtime
 
 ### Control cases
 - [x] FizzBuzz of non-positive precondition error
@@ -17,7 +19,10 @@
 ### Refactoring
 - [x] Non static
   - [x] Abstraction
-- [ ] Switch to polymorphism (Santi Metz's GildedRose example)
+
+- [x] Multiple/DivisibleBy computed by extension
+- [ ] Switch to delegation 
+  - [ ] Switch to polymorphism (Santi Metz's GildedRose example)
 
 ### Alternative implementations
 - [ ] Text numbers

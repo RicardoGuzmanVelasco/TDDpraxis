@@ -1,5 +1,5 @@
 @startuml
-title Basic with decorator
+title Decorator and extensions
 center header FizzBuzz | Blind
 '''''''''''''
 allowmixing
@@ -7,7 +7,13 @@ allowmixing
 
 namespace FizzBuzz.Runtime{
     
-    interface IFizzBuzz
+    #class FizzBuzzExtensions <<static>> {
+        +{static}IsDivisibleBy(:int <<this>>, :int) : bool
+    }
+    
+    +interface IFizzBuzz{
+        +Of(:int) : string <<pure>>
+    }
     
     class FizzBuzzNumber
     class FizzBuzzExclamationDecorator
@@ -15,6 +21,7 @@ namespace FizzBuzz.Runtime{
     IFizzBuzz <|.. FizzBuzzNumber
     IFizzBuzz <|.. FizzBuzzExclamationDecorator
     
+    FizzBuzzNumber .u.> FizzBuzzExtensions
     FizzBuzzExclamationDecorator -u-> IFizzBuzz : decorated
 }
 

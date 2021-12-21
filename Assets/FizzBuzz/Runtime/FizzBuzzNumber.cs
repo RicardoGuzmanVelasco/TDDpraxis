@@ -11,9 +11,9 @@ namespace FizzBuzz.Runtime
 
             var result = number switch
             {
-                var n when n % 3 == 0 && n % 5 != 0 => "Fizz",
-                var n when n % 5 == 0 && n % 3 != 0  => "Buzz",
-                var n when n % 3 == 0 && n % 5 == 0 => "Fizz Buzz",
+                var n when n.IsDivisibleBy(3) && !n.IsDivisibleBy(5) => "Fizz",
+                var n when n.IsDivisibleBy(5) && !n.IsDivisibleBy(3) => "Buzz",
+                var n when n.IsDivisibleBy(3) &&  n.IsDivisibleBy(5) => "Fizz Buzz",
                 _ => number.ToString()
             };
 
