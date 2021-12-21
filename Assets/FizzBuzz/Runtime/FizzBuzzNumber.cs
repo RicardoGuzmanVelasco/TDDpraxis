@@ -13,7 +13,7 @@ namespace FizzBuzz.Runtime
             {
                 var n when n.IsDivisibleBy(3) && !n.IsDivisibleBy(5) => "Fizz",
                 var n when n.IsDivisibleBy(5) && !n.IsDivisibleBy(3) => "Buzz",
-                var n when n.IsDivisibleBy(3) &&  n.IsDivisibleBy(5) => "Fizz Buzz",
+                var n when n.IsDivisibleBy(15) => "Fizz Buzz",
                 _ => number.ToString()
             };
 

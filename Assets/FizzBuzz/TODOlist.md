@@ -3,6 +3,13 @@
 - [ ] Implementations to internal
   - [ ] Tests are friend package of Runtime
 
+### Test API
+- [ ] Special numbers array
+- [ ] Common numbers array
+- [ ] Words
+
+- Use Test API in all fixtures 
+
 ### Control cases
 - [x] FizzBuzz of non-positive precondition error
 - [x] FizzBuzz of positive NO precondition error
@@ -27,7 +34,11 @@
 ### Alternative implementations
 - [ ] Text numbers
 - [ ] Roman numbers
-- [x] Decoration suffix "!"
+- [ ] Extended
+  - [x] Decoration suffix "!"
+  - [x] Multiple transmutator
+    - [x] If number, returns transmutation
+    - [x] If no number, returns empty 
     
 ### Documentation
 - [x] Structure diagram 
