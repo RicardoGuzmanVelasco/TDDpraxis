@@ -17,8 +17,12 @@
 ### Refactoring
 - [x] Non static
   - [x] Abstraction
-    - [ ] Alternative implementation (text numbers)
-    - [x] Decoration suffix "!"
+- [ ] Switch to polymorphism (Santi Metz's GildedRose example)
+
+### Alternative implementations
+- [ ] Text numbers
+- [ ] Roman numbers
+- [x] Decoration suffix "!"
     
 ### Documentation
 - [x] Structure diagram 
