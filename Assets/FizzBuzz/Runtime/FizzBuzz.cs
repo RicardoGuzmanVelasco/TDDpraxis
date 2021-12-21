@@ -3,9 +3,8 @@ using JetBrains.Annotations;
 
 namespace FizzBuzz.Runtime
 {
-    public class FizzBuzzNumber
+    public class FizzBuzzNumber : IFizzBuzz
     {
-        [Pure]
         public string Of(int number)
         {
             if(number < 1)

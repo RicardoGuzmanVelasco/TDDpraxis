@@ -13,6 +13,6 @@
 
 
 - [x] Non static
-  - [ ] Abstraction
+  - [x] Abstraction
     - [ ] Alternative implementation (text numbers)
     - [ ] Decoration suffix "!"
