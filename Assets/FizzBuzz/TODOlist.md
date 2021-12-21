@@ -21,4 +21,4 @@
     - [x] Decoration suffix "!"
     
 ### Documentation
-- [ ] Structure diagram 
+- [x] Structure diagram 
