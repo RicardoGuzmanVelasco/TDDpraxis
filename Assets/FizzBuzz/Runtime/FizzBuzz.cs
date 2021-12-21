@@ -5,9 +5,6 @@ namespace FizzBuzz.Runtime
 {
     public class FizzBuzzNumber
     {
-        const string Fizz = "Fizz";
-        const string Buzz = "Buzz";
-
         [Pure]
         public string Of(int number)
         {
@@ -16,8 +13,9 @@ namespace FizzBuzz.Runtime
 
             var result = number switch
             {
-                var n when n % 3 == 0 => Fizz,
-                var n when n % 5 == 0 => Buzz,
+                var n when n % 3 == 0 && n % 5 != 0 => "Fizz",
+                var n when n % 5 == 0 && n % 3 != 0  => "Buzz",
+                var n when n % 3 == 0 && n % 5 == 0 => "Fizz Buzz",
                 _ => number.ToString()
             };
 

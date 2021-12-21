@@ -7,9 +7,9 @@
  
 - [x] FizzBuzz of non-3or5multiple is the number itself
 - [x] FizzBuzz of non-3or5multiple is the number itself
-- [x] FizzBuzz of any multiple of 3 is Fizz
-- [x] FizzBuzz of any multiple of 5 is Buzz
-- [ ] FizzBuzz of 15 is Fizz Buzz
+- [x] FizzBuzz of any multiple of 3 not multiple of 5 is Fizz
+- [x] FizzBuzz of any multiple of 5 not multiple of 3 is Buzz
+- [x] FizzBuzz of any multiple of 3 and multiple of 5 is Fizz Buzz
 
 
 - [x] Non static
