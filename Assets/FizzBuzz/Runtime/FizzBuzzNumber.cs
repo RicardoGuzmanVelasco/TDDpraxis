@@ -11,13 +11,21 @@ namespace FizzBuzz.Runtime
 
             var result = number switch
             {
-                var n when n.IsDivisibleBy(3) && !n.IsDivisibleBy(5) => "Fizz",
-                var n when n.IsDivisibleBy(5) && !n.IsDivisibleBy(3) => "Buzz",
-                var n when n.IsDivisibleBy(15) => "Fizz Buzz",
+                var n when n.IsDivisibleBy(3) && !n.IsDivisibleBy(5) => Fizz(),
+                var n when n.IsDivisibleBy(5) && !n.IsDivisibleBy(3) => Buzz(),
+                var n when n.IsDivisibleBy(15) => FizzBuzz(),
                 _ => number.ToString()
             };
 
             return result;
+        
+            string Fizz() => new FizzBuzzMultipleTransmutator(3, "Fizz").Of(number);
+            string Buzz() => new FizzBuzzMultipleTransmutator(5, "Buzz").Of(number);
+            string FizzBuzz() => new FizzBuzzMultipleTransmutator(15, "Fizz Buzz").Of(number);
         }
+
+        
+        
+
     }
 }

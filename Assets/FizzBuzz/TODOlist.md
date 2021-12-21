@@ -28,7 +28,7 @@
   - [x] Abstraction
 
 - [x] Multiple/DivisibleBy computed by extension
-- [ ] Switch to delegation 
+- [x] Switch to delegation 
   - [ ] Switch to polymorphism (Santi Metz's GildedRose example)
 
 ### Alternative implementations
