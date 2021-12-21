@@ -17,7 +17,7 @@ namespace FizzBuzz.Runtime
             var result = number switch
             {
                 var n when n % 3 == 0 => Fizz,
-                5 => Buzz,
+                var n when n % 5 == 0 => Buzz,
                 _ => number.ToString()
             };
 

@@ -12,6 +12,7 @@ namespace FizzBuzz.Tests
         const string Buzz = "Buzz";
         
         const int MaxValueDivisibleBy3 = 3 * ((int.MaxValue - 1) / 3);
+        const int MaxValueDivisibleBy5 = 5 * ((int.MaxValue - 1) / 5);
         #endregion
         
         #region Control cases
@@ -52,12 +53,12 @@ namespace FizzBuzz.Tests
             result.Should().Be(Fizz);
         }
         
-        [Test]
-        public void FizzBuzzOf_5_IsBuzz()
+        [TestCase(5), TestCase(10), TestCase(MaxValueDivisibleBy5)]
+        public void FizzBuzzOf_5Multiple_IsBuzz(int divisibleBy5)
         {
             var sut = new FizzBuzzNumber();
 
-            var result = sut.Of(5);
+            var result = sut.Of(divisibleBy5);
 
             result.Should().Be(Buzz);
         }
