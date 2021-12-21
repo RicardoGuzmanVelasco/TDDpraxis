@@ -14,12 +14,14 @@ namespace FizzBuzz.Runtime
             if(number < 1)
                 throw new ArgumentOutOfRangeException();
 
-            return number switch
+            var result = number switch
             {
-                3 => Fizz,
+                var n when n % 3 == 0 => Fizz,
                 5 => Buzz,
                 _ => number.ToString()
             };
+
+            return result;
         }
     }
 }
