@@ -8,8 +8,10 @@
 - [x] FizzBuzz of non-3or5multiple is the number itself
 - [x] FizzBuzz of non-3or5multiple is the number itself
 - [x] FizzBuzz of 3 is Fizz
+- [x] FizzBuzz of 5 is Buzz
 
 
 - [x] Non static
   - [ ] Abstraction
     - [ ] Alternative implementation (text numbers)
+    - [ ] Decoration suffix "!"

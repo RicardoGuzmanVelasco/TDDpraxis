@@ -9,6 +9,7 @@ namespace FizzBuzz.Tests
     {
         #region Fixture
         const string Fizz = "Fizz";
+        const string Buzz = "Buzz";
         #endregion
         
         #region Control cases
@@ -47,6 +48,16 @@ namespace FizzBuzz.Tests
             var result = sut.Of(3);
 
             result.Should().Be(Fizz);
+        }
+        
+        [Test]
+        public void FizzBuzzOf_5_IsBuzz()
+        {
+            var sut = new FizzBuzzNumber();
+
+            var result = sut.Of(5);
+
+            result.Should().Be(Buzz);
         }
     }
 }
