@@ -15,4 +15,4 @@
 - [x] Non static
   - [x] Abstraction
     - [ ] Alternative implementation (text numbers)
-    - [ ] Decoration suffix "!"
+    - [x] Decoration suffix "!"
