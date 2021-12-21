@@ -11,7 +11,7 @@ namespace FizzBuzz.Tests
         [TestCase(0)]
         public void FizzBuzzOf_NonPositiveNumber_ThrowsException(int nonPositiveNumber)
         {
-            Action actNonPositive = () => FizzBuzzNumber.Of(nonPositiveNumber);
+            Action actNonPositive = () => new FizzBuzzNumber().Of(nonPositiveNumber);
 
             actNonPositive.Should().Throw<ArgumentOutOfRangeException>();
         }
@@ -20,7 +20,7 @@ namespace FizzBuzz.Tests
         [TestCase(int.MaxValue)]
         public void FizzBuzzOf_PositiveNumber_DoesNotThrowException(int positiveNumber)
         {
-            Action actPositive = () => FizzBuzzNumber.Of(positiveNumber);
+            Action actPositive = () => new FizzBuzzNumber().Of(positiveNumber);
             
             actPositive.Should().NotThrow();
         }
