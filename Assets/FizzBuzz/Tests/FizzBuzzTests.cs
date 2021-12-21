@@ -7,6 +7,11 @@ namespace FizzBuzz.Tests
 {
     public class FizzBuzzTests
     {
+        #region Fixture
+        const string Fizz = "Fizz";
+        #endregion
+        
+        #region Control cases
         [TestCase(int.MinValue)] [TestCase(0)]
         public void FizzBuzzOf_NonPositiveNumber_ThrowsException(int nonPositiveNumber)
         {
@@ -22,7 +27,8 @@ namespace FizzBuzz.Tests
             
             actPositive.Should().NotThrow();
         }
-
+        #endregion
+        
         [TestCase(1)] [TestCase(2)] [TestCase(4)] [TestCase(7)]
         public void FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(int positiveNumber)
         {
@@ -31,6 +37,16 @@ namespace FizzBuzz.Tests
             var result = sut.Of(positiveNumber);
 
             result.Should().Be(positiveNumber.ToString());
+        }
+
+        [Test]
+        public void FizzBuzzOf_3_IsFizz()
+        {
+            var sut = new FizzBuzzNumber();
+
+            var result = sut.Of(3);
+
+            result.Should().Be(Fizz);
         }
     }
 }

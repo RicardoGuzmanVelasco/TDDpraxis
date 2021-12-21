@@ -5,13 +5,15 @@ namespace FizzBuzz.Runtime
 {
     public class FizzBuzzNumber
     {
+        const string Fizz = "Fizz";
+
         [Pure]
         public string Of(int number)
         {
             if(number < 1)
                 throw new ArgumentOutOfRangeException();
             
-            return number.ToString();
+            return number == 3 ? Fizz : number.ToString();
         }
     }
 }
