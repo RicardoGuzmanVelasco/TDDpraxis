@@ -29,7 +29,8 @@
 
 - [x] Multiple/DivisibleBy computed by extension
 - [x] Switch to delegation 
-  - [ ] Switch to polymorphism
+  - [x] Switch to association
+  - [ ] Switch to composition
 
 ### Alternative implementations
 - [ ] Text numbers
