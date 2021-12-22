@@ -4,6 +4,6 @@ namespace FizzBuzz.Runtime
 {
     public interface IFizzBuzz
     {
-        [Pure] string Of(int number);
+        [Pure, NotNull] string Of(int number);
     }
 }

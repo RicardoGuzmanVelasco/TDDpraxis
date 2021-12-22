@@ -1,10 +1,12 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using FizzBuzz.Runtime;
 using FluentAssertions;
 using NUnit.Framework;
 
 namespace FizzBuzz.Tests
 {
+    [SuppressMessage("ReSharper", "ReturnValueOfPureMethodIsNotUsed")]
     public class FizzBuzzTests
     {
         #region Fixture
