@@ -1,11 +1,11 @@
 namespace FizzBuzz.Runtime
 {
-    public class FizzBuzzMultipleTransmutator : IFizzBuzz
+    public class FizzBuzzWordTransmutator : IFizzBuzz
     {
         readonly int multipleOf;
         readonly string transmuteTo;
 
-        public FizzBuzzMultipleTransmutator(int multipleOf, string transmuteTo)
+        public FizzBuzzWordTransmutator(int multipleOf, string transmuteTo)
         {
             this.multipleOf = multipleOf;
             this.transmuteTo = transmuteTo;

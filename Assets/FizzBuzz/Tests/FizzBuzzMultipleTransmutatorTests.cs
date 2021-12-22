@@ -9,7 +9,7 @@ namespace FizzBuzz.Tests
         [TestCase(3, "Fizz"), TestCase(5, "Buzz"), TestCase(3*5, "Fizz Buzz")]
         public void WhenNumberIsMultiple_ReturnsWord(int number, string word)
         {
-            var sut = new FizzBuzzMultipleTransmutator(number, word);
+            var sut = new FizzBuzzWordTransmutator(number, word);
 
             var result = sut.Of(number);
 
@@ -19,7 +19,7 @@ namespace FizzBuzz.Tests
         [Test]
         public void WhenNumberIsNotMultiple_ReturnsEmpty()
         {
-            var sut = new FizzBuzzMultipleTransmutator(2, "Something");
+            var sut = new FizzBuzzWordTransmutator(2, "Something");
 
             var result = sut.Of(3);
 

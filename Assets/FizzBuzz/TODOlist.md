@@ -30,7 +30,7 @@
 - [x] Multiple/DivisibleBy computed by extension
 - [x] Switch to delegation 
   - [x] Switch to association
-  - [ ] Switch to composition
+  - [x] Switch to composition
 
 ### Alternative implementations
 - [ ] Text numbers
