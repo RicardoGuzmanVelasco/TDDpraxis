@@ -1,5 +1,5 @@
 @startuml
-title Decorator and extensions
+title Transmutator as delegation
 center header FizzBuzz | Blind
 '''''''''''''
 allowmixing
@@ -15,11 +15,18 @@ namespace FizzBuzz.Runtime{
         +Of(:int) : string <<pure>>
     }
     
+    #class FizzBuzzMultipleTransmutator{
+        -multipleOf: int <<readonly>>
+        -toTransmute: string <<readonly>>
+    }
+    
     class FizzBuzzNumber
     class FizzBuzzExclamationDecorator
     
     IFizzBuzz <|.. FizzBuzzNumber
     IFizzBuzz <|.. FizzBuzzExclamationDecorator
+    
+    FizzBuzzNumber .u.> "3" FizzBuzzMultipleTransmutator : delegates
     
     FizzBuzzNumber .u.> FizzBuzzExtensions
     FizzBuzzExclamationDecorator -u-> IFizzBuzz : decorated

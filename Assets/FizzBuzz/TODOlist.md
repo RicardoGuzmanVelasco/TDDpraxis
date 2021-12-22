@@ -29,7 +29,7 @@
 
 - [x] Multiple/DivisibleBy computed by extension
 - [x] Switch to delegation 
-  - [ ] Switch to polymorphism (Santi Metz's GildedRose example)
+  - [ ] Switch to polymorphism
 
 ### Alternative implementations
 - [ ] Text numbers
