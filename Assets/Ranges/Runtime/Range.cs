@@ -25,5 +25,17 @@ namespace Ranges.Runtime
         {
             return new Range(min, max);
         }
+
+        #region Equality
+        public static bool operator ==(Range r1, Range r2)
+        {
+            return r1.Equals(r2);
+        }
+
+        public static bool operator !=(Range r1, Range r2)
+        {
+            return !(r1 == r2);
+        }
+        #endregion
     }
 }

@@ -51,6 +51,32 @@ namespace Ranges.Tests
             Range.Zero.IsEmpty.Should().BeTrue();
         }
 
+        #region Operators
+        [Test]
+        public void Ranges_EqualityIsTrue_IfSameBounds()
+        {
+            (Range.Between(8, 9) == new Range(8, 9)).Should().BeTrue();
+        }
+        
+        [Test]
+        public void Ranges_EqualityIsFalse_IfNotSameBounds()
+        {
+            (Range.Between(4, 7) == new Range(1, 2)).Should().BeFalse();
+        }
+        
+        [Test]
+        public void Ranges_InequalityIsTrue_IfNotSameBounds()
+        {
+            (Range.Between(2, 3) != new Range(8, 9)).Should().BeTrue();
+        }
+        
+        [Test]
+        public void Ranges_InequalityIsFalse_IfSameBounds()
+        {
+            (Range.Between(5, 8) != new Range(5, 8)).Should().BeFalse();
+        }
+        #endregion
+
         #region Control
         [Test]
         public void Range_WithInvertedBounds_ThrowsException()

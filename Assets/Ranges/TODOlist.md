@@ -4,8 +4,9 @@
   - [ ] Just lower bounds
   - [ ] Just upper bounds
 - [x] Distance
-- Operators
-  - Equality, inequality
+- [ ] Operators
+  - [x] Equality, inequality
+  - [ ] Order
 
 ### Test API
 
