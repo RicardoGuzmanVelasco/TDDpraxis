@@ -1,6 +1,8 @@
+using System;
+
 namespace Ranges.Runtime
 {
-    public struct Range
+    public readonly struct Range
     {
         public int Min { get; }
         public int Max { get; }
@@ -8,6 +10,9 @@ namespace Ranges.Runtime
 
         internal Range(int min, int max)
         {
+            if(min > max)
+                throw new ArgumentOutOfRangeException();
+            
             Min = min;
             Max = max;
         }

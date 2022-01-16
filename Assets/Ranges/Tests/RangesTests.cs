@@ -1,3 +1,4 @@
+using System;
 using FluentAssertions;
 using NUnit.Framework;
 using Ranges.Runtime;
@@ -33,5 +34,15 @@ namespace Ranges.Tests
 
             result.Should().Be(distance);
         }
+
+        #region Control
+        [Test]
+        public void Range_WithInvertedBounds_ThrowsException()
+        {
+            Action act = () => Range.Between(1, -1);
+
+            act.Should().Throw<ArgumentOutOfRangeException>();
+        }
+        #endregion
     }
 }
