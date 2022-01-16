@@ -31,12 +31,12 @@ namespace FizzBuzz.Runtime
 
             string SpaceIfFizzBuzz()
             {
-                var spaceInBetween = string.Empty;
+                var result = string.Empty;
                 
                 if(fizzWord != string.Empty && buzzWord != string.Empty)
-                    spaceInBetween = " ";
+                    result = " ";
                 
-                return spaceInBetween;
+                return result;
             }
         }
         #endregion
