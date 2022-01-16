@@ -35,6 +35,22 @@ namespace Ranges.Tests
             result.Should().Be(distance);
         }
 
+        [Test]
+        public void Range_IsEmpty_IfDistanceIsZero()
+        {
+            var sutEmpty = Range.Between(4, 4);
+            var sutNotEmpty = Range.Between(3, 4);
+
+            sutEmpty.IsEmpty.Should().BeTrue();
+            sutNotEmpty.IsEmpty.Should().BeFalse();
+        }
+
+        [Test]
+        public void ZeroRange_IsEmpty()
+        {
+            Range.Zero.IsEmpty.Should().BeTrue();
+        }
+
         #region Control
         [Test]
         public void Range_WithInvertedBounds_ThrowsException()

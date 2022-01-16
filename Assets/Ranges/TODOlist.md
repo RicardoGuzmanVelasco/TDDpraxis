@@ -4,6 +4,8 @@
   - [ ] Just lower bounds
   - [ ] Just upper bounds
 - [x] Distance
+- Operators
+  - Equality, inequality
 
 ### Test API
 
@@ -15,8 +17,8 @@
 
 
 ### Special cases
-- [ ] Empty range
-- [ ] Just lower xor upper bound
+- [x] Empty range
+- [x] Zero range, which is empty
 
 ### Refactoring
 
