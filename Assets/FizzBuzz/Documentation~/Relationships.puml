@@ -1,0 +1,50 @@
+@startuml
+title Transmutator as composition
+center header FizzBuzz | Blind
+'''''''''''''
+allowmixing
+'''''''''''''
+
+namespace FizzBuzz.Runtime{
+    
+    #class FizzBuzzExtensions <<static>> {
+        +{static}IsDivisibleBy(:int <<this>>, :int) : bool
+    }
+    
+    +interface IFizzBuzz{
+        +Of(:int) : string <<pure>>
+    }
+    
+    #class FizzBuzzWordTransmutator{
+        -multipleOf: int <<readonly>>
+        -toTransmute: string <<readonly>>
+    }
+    
+    class FizzBuzzNumber
+    class FizzBuzzExclamationDecorator
+    
+    IFizzBuzz <|.. FizzBuzzNumber
+    IFizzBuzz <|.. FizzBuzzExclamationDecorator
+    
+    FizzBuzzNumber *-u- "2" FizzBuzzWordTransmutator : delegates
+    
+    FizzBuzzNumber .u.> FizzBuzzExtensions
+    FizzBuzzExclamationDecorator -u-> IFizzBuzz : decorated
+}
+
+namespace FizzBuzz.Tests{
+    
+    class FizzBuzzTests <<(T, aquamarine) Test fixture>>
+    class FizzBuzzExclamationDecoratorTests <<(T, aquamarine) Test fixture>>
+
+    FizzBuzzTests -u-> FizzBuzz.Runtime.FizzBuzzNumber
+    
+    FizzBuzzExclamationDecoratorTests -u-> FizzBuzz.Runtime.FizzBuzzNumber
+    FizzBuzzExclamationDecoratorTests -u-> FizzBuzz.Runtime.FizzBuzzExclamationDecorator
+}
+
+
+'''''''''''''
+'''''''''''''
+right footer (CC-BY) RGV, 2021
+@enduml
