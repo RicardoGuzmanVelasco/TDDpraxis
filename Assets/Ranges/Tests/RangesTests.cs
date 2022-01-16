@@ -53,27 +53,37 @@ namespace Ranges.Tests
 
         #region Operators
         [Test]
-        public void Ranges_EqualityIsTrue_IfSameBounds()
+        public void RangesEquality_IsTrue_IfSameBounds()
         {
             (Range.Between(8, 9) == new Range(8, 9)).Should().BeTrue();
-        }
-        
-        [Test]
-        public void Ranges_EqualityIsFalse_IfNotSameBounds()
-        {
             (Range.Between(4, 7) == new Range(1, 2)).Should().BeFalse();
         }
         
         [Test]
-        public void Ranges_InequalityIsTrue_IfNotSameBounds()
+        public void RangesInequality_IsTrue_IfNotSameBounds()
         {
             (Range.Between(2, 3) != new Range(8, 9)).Should().BeTrue();
+            (Range.Between(5, 8) != new Range(5, 8)).Should().BeFalse();
         }
         
         [Test]
-        public void Ranges_InequalityIsFalse_IfSameBounds()
+        public void Range_IsLesserThanOther_IfMaxIsLesserOrSameThanOtherMin()
         {
-            (Range.Between(5, 8) != new Range(5, 8)).Should().BeFalse();
+            (Range.Between(1, 2) < Range.Between(2, 3)).Should().BeTrue();
+            (Range.Between(1, 5) < Range.Between(6, 7)).Should().BeTrue();
+            
+            (Range.Between(1, 3) < Range.Between(1, 2)).Should().BeFalse();
+            (Range.Between(5, 5) < Range.Between(4, 5)).Should().BeFalse();
+        }
+        
+        [Test]
+        public void Range_IsGreaterThanOther_IfMinIsGreaterOrSameThanOtherMax()
+        {
+            (Range.Between(47, 88) > Range.Between(20, 47)).Should().BeTrue();
+            (Range.Between(17, 18) > Range.Between(11, 16)).Should().BeTrue();
+            
+            (Range.Between(91, 92) > Range.Between(41, 92)).Should().BeFalse();
+            (Range.Between(74, 75) > Range.Between(79, 87)).Should().BeFalse();
         }
         #endregion
 

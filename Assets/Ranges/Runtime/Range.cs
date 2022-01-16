@@ -37,5 +37,17 @@ namespace Ranges.Runtime
             return !(r1 == r2);
         }
         #endregion
+        
+        #region Order
+        public static bool operator <(Range r1, Range r2)
+        {
+            return r1.Max <= r2.Min;
+        }
+
+        public static bool operator >(Range r1, Range r2)
+        {
+            return r1.Min >= r2.Max;
+        }
+        #endregion
     }
 }
