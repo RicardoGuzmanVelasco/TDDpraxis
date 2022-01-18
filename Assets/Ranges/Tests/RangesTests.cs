@@ -7,6 +7,7 @@ namespace Ranges.Tests
 {
     public class RangesTests
     {
+        #region Creation
         [Test]
         public void Range_IsCreated_ThroughFactoryMethod()
         {
@@ -23,16 +24,18 @@ namespace Ranges.Tests
             sut.Min.Should().Be(1);
             sut.Max.Should().Be(3);
         }
+        #endregion
 
+        #region Length
         [TestCase(2, 7, 5)]
         [TestCase(0, 0, 0)]
-        public void Range_Length_ModuleBetweenBounds(int min, int max, int Length)
+        public void Range_Length_ModuleBetweenBounds(int min, int max, int length)
         {
             var sut = Range.Between(min, max);
 
             var result = sut.Length;
 
-            result.Should().Be(Length);
+            result.Should().Be(length);
         }
 
         [Test]
@@ -50,6 +53,40 @@ namespace Ranges.Tests
         {
             Range.Zero.IsEmpty.Should().BeTrue();
         }
+        #endregion
+        
+        #region Operations
+        [Test]
+        public void Range_IncludesNumber_IfWithinBounds()
+        {
+            Range.Between(3, 4).Includes(4).Should().BeTrue();
+            Range.Between(3, 4).Includes(3).Should().BeTrue();
+            Range.Between(3, 5).Includes(5).Should().BeTrue();
+            
+            Range.Between(3, 4).Includes(2f).Should().BeFalse();
+            Range.Between(3, 4).Includes(6.0).Should().BeFalse();
+        }
+
+        [Test]
+        public void Range_IncludesRange_IfBothEdgesWithinBounds()
+        {
+            Range.Between(70, 90).Includes(Range.Between(71, 89)).Should().BeTrue();
+            Range.Between(70, 90).Includes(Range.Between(70, 71)).Should().BeTrue();
+            Range.Between(70, 90).Includes(Range.Between(89, 90)).Should().BeTrue();
+            
+            Range.Between(70, 90).Includes(Range.Between(60, 69)).Should().BeFalse();
+            Range.Between(70, 90).Includes(Range.Between(91, 99)).Should().BeFalse();
+            Range.Between(70, 90).Includes(Range.Between(60, 71)).Should().BeFalse();
+            Range.Between(70, 90).Includes(Range.Between(89, 91)).Should().BeFalse();
+            Range.Between(70, 90).Includes(Range.Between(69, 99)).Should().BeFalse();
+        }
+
+        [Test]
+        public void Range_IncludesItself()
+        {
+            Range.Between(1, 3).Includes(Range.Between(1, 3)).Should().BeTrue();
+        }
+        #endregion
 
         #region Operators
         [Test]

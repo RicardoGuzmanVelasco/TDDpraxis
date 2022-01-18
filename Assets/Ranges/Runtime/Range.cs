@@ -25,6 +25,16 @@ namespace Ranges.Runtime
         {
             return new Range(min, max);
         }
+        
+        public bool Includes(Range other)
+        {
+            return Includes(other.Min) && Includes(other.Max);
+        }
+        
+        public bool Includes(double number)
+        {
+            return number >= Min && number <= Max;
+        }
 
         #region Equality
         public static bool operator ==(Range r1, Range r2)
