@@ -56,7 +56,12 @@ namespace Ranges.Tests
         public void RangesEquality_IsTrue_IfSameBounds()
         {
             (Range.Between(8, 9) == new Range(8, 9)).Should().BeTrue();
+            Range.Between(8, 9).Equals(new Range(8, 9)).Should().BeTrue();
+            Range.Between(8, 9).GetHashCode().Should().Be(new Range(8, 9).GetHashCode());
+
             (Range.Between(4, 7) == new Range(1, 2)).Should().BeFalse();
+            Range.Between(4, 7).Equals(new Range(1, 2)).Should().BeFalse();
+            Range.Between(4, 7).GetHashCode().Should().NotBe(new Range(1, 2).GetHashCode());
         }
         
         [Test]

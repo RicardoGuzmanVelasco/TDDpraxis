@@ -5,12 +5,12 @@
     - [ ]  Rename `.From(int, int)`???
   - [ ]  Just upper bounds: `.UpTo(int)`, `.To(int)`
 
-- [x]  Distance
-  - [x]  Rename to Length!
+- [X]  Distance
+  - [X]  Rename to Length!
   
-- [ ]  Operators
+- [X]  Operators
   - [X]  Equality, inequality
-    - [ ]  Equals(object)
+    - [X]  Equals(object)
   - [X]  Order
 
 - [ ]  Range-relative operations
@@ -27,13 +27,13 @@
 
 - [ ]  Generic Range<T>?
 
-  - T is any type with order relation (<, >, <=, >=)
+- T is any type with order relation (<, >, <=, >=)
   - Not so obvious implementation, neither so generic chance.
 - [ ]  Open/Closed edges? Like numeric intervals.
 
-  - Is the same Range type, or other Interval type?
-  - Edge emerges as a type??? Smart design!
-    - [ ]  ToStrings are really graceful to implement this way
+- Is the same Range type, or other Interval type?
+- Edge emerges as a type??? Smart design!
+  - [ ]  ToStrings are really graceful to implement this way
 - [ ]  Continuous as opposed to discrete?
 - [ ]  Whether or not implicit conversion from/to tuples?
 

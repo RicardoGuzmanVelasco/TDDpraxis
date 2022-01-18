@@ -36,6 +36,18 @@ namespace Ranges.Runtime
         {
             return !(r1 == r2);
         }
+        
+        public bool Equals(Range other)
+        {
+            return Min == other.Min && Max == other.Max;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Range other && Equals(other);
+        }
+
+        public override int GetHashCode() => unchecked (Min * 397) ^ Max;
         #endregion
         
         #region Order
