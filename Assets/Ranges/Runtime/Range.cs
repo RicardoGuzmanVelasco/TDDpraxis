@@ -9,8 +9,8 @@ namespace Ranges.Runtime
         public int Min { get; }
         public int Max { get; }
         
-        public int Distance => Max - Min;
-        public bool IsEmpty => Distance == 0;
+        public int Length => Max - Min;
+        public bool IsEmpty => Length == 0;
 
         internal Range(int min, int max)
         {

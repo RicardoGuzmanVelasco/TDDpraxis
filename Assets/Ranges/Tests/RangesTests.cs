@@ -26,17 +26,17 @@ namespace Ranges.Tests
 
         [TestCase(2, 7, 5)]
         [TestCase(0, 0, 0)]
-        public void Range_Distance_ModuleBetweenBounds(int min, int max, int distance)
+        public void Range_Length_ModuleBetweenBounds(int min, int max, int Length)
         {
             var sut = Range.Between(min, max);
 
-            var result = sut.Distance;
+            var result = sut.Length;
 
-            result.Should().Be(distance);
+            result.Should().Be(Length);
         }
 
         [Test]
-        public void Range_IsEmpty_IfDistanceIsZero()
+        public void Range_IsEmpty_IfLengthIsZero()
         {
             var sutEmpty = Range.Between(4, 4);
             var sutNotEmpty = Range.Between(3, 4);

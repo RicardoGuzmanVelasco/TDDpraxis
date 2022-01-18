@@ -5,8 +5,8 @@
     - [ ]  Rename `.From(int, int)`???
   - [ ]  Just upper bounds: `.UpTo(int)`, `.To(int)`
 
-- [ ]  Distance
-  - [ ]  Rename to Length!
+- [x]  Distance
+  - [x]  Rename to Length!
   
 - [ ]  Operators
   - [X]  Equality, inequality
