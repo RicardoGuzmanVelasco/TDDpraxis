@@ -22,6 +22,8 @@ namespace RomanNumerals.Runtime
         }
         #endregion
 
+        public override string ToString() => symbols;
+
         #region SupportMethods
         static bool IsRomanSymbol(char symbol)
         {

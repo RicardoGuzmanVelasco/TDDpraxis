@@ -38,5 +38,13 @@ namespace RomanNumerals.Tests
 
             sut.Should().NotBe(new RomanNumeral());
         }
+
+        [Test]
+        public void RomanNumeral_ToString_ByRomanSymbols()
+        {
+            var sut = new RomanNumeral("XLVIII");
+
+            sut.ToString().Should().Be("XLVIII");
+        }
     }
 }
