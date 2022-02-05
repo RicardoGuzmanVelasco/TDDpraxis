@@ -7,6 +7,16 @@ namespace RomanNumerals.Tests
 {
     public class RomanNumeralTests
     {
+        [Test, Ignore("Refactoring before")]
+        public void METHOD()
+        {
+            var sut = new RomanNumeral("II");
+
+            int result = sut;
+            
+            result.Should().Be(2);
+        }
+        
         [TestCase("I", 1)]
         [TestCase("V", 5)]
         [TestCase("X", 10)]
@@ -14,13 +24,13 @@ namespace RomanNumerals.Tests
         [TestCase("C", 100)]
         [TestCase("D", 500)]
         [TestCase("M", 1000)]
-        public void RomanSymbols_RespectivelyEquivalent_ToNumbers(string r, int n)
+        public void RomanSymbols_RespectivelyEquivalent_ToNumbers(string symbols, int number)
         {
-            var sut = new RomanNumeral(r);
+            var sut = new RomanNumeral(symbols);
 
             int result = sut;
 
-            result.Should().Be(n);
+            result.Should().Be(number);
         }
 
         #region Creation

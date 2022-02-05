@@ -41,18 +41,36 @@ namespace RomanNumerals.Runtime
 
         public static implicit operator int(RomanNumeral r)
         {
-            return r.symbols switch
-            {
-                "I" => 1,
-                "V" => 5,
-                "X" => 10,
-                "L" => 50,
-                "C" => 100,
-                "D" => 500,
-                "M" => 1000,
-                _ => throw new InvalidOperationException()
-            };
+            if(r.symbols.Length != 1)
+                throw new NotImplementedException();
+            
+            return new RomanSymbol(r.symbols.First());
         }
         #endregion
+
+        record RomanSymbol
+        {
+            char symbol;
+
+            public RomanSymbol(char symbol)
+            {
+                this.symbol = symbol;
+            }
+
+            public static implicit operator int(RomanSymbol rs)
+            {
+                return rs.symbol switch
+                {
+                    'I' => 1,
+                    'V' => 5,
+                    'X' => 10,
+                    'L' => 50,
+                    'C' => 100,
+                    'D' => 500,
+                    'M' => 1000,
+                    _ => throw new InvalidOperationException()
+                };
+            }
+        }
     }
 }
