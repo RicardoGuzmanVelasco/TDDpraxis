@@ -3,7 +3,7 @@
   - [x] Default I constructor
   - [x] Fails if not a valid symbol
 - [x] ToString()
-- [ ] Implicit from string
+- [x] Implicit from string
 - [x] Default is I
 - [?] Relation with C# numbers
   - [ ] implicit ToInt

@@ -46,5 +46,13 @@ namespace RomanNumerals.Tests
 
             sut.ToString().Should().Be("XLVIII");
         }
+
+        [Test]
+        public void RomanNumeral_Implicit_FromString()
+        {
+            RomanNumeral sut = "CMII";
+
+            sut.Should().Be(new RomanNumeral("CMII"));
+        }
     }
 }

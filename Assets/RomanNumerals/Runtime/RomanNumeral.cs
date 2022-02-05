@@ -24,6 +24,11 @@ namespace RomanNumerals.Runtime
 
         public override string ToString() => symbols;
 
+        public static implicit operator RomanNumeral(string symbols)
+        {
+            return new RomanNumeral(symbols);
+        }
+        
         #region SupportMethods
         static bool IsRomanSymbol(char symbol)
         {
