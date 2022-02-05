@@ -13,10 +13,10 @@
 - [ ] 
 
 ### Control cases
-- [ ] 
+- [x] Constructor with no roman symbols
 
 ### Common cases 
-- [ ] Factory Properties for I, V, X, L, C, M
+- [?] Factory Properties for I, V, X, L, C, M
 
 ### Special cases
 - [ ] 

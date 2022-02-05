@@ -7,10 +7,6 @@ namespace RomanNumerals.Runtime
     {
         readonly string symbols;
 
-        #region FactoryMethods
-        public static RomanNumeral I { get; } = new RomanNumeral("I");
-        #endregion
-
         #region Constructors
         public RomanNumeral() : this("I") { }
         public RomanNumeral(string symbols)

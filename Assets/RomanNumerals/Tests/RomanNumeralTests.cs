@@ -12,15 +12,7 @@ namespace RomanNumerals.Tests
         {
             var sut = new RomanNumeral();
 
-            sut.Should().Be(RomanNumeral.I);
-        }
-
-        [Test]
-        public void DefaultRomanNumeral_IsAlsoCreated_ByConstructor()
-        {
-            var sut = new RomanNumeral("I");
-
-            sut.Should().Be(RomanNumeral.I);
+            sut.Should().Be(new RomanNumeral("I"));
         }
 
         [Test]
@@ -53,6 +45,12 @@ namespace RomanNumerals.Tests
             RomanNumeral sut = "CMII";
 
             sut.Should().Be(new RomanNumeral("CMII"));
+        }
+
+        [Test]
+        public void METHOD()
+        {
+            
         }
     }
 }
