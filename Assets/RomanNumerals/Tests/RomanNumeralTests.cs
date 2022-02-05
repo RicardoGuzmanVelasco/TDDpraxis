@@ -30,5 +30,13 @@ namespace RomanNumerals.Tests
 
             act.Should().Throw<ArgumentOutOfRangeException>();
         }
+
+        [Test]
+        public void Constructor_EffectivelyTakes_RomanNumeral()
+        {
+            var sut = new RomanNumeral("V");
+
+            sut.Should().NotBe(new RomanNumeral());
+        }
     }
 }
