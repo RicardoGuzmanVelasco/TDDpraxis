@@ -7,6 +7,23 @@ namespace RomanNumerals.Tests
 {
     public class RomanNumeralTests
     {
+        [TestCase("I", 1)]
+        [TestCase("V", 5)]
+        [TestCase("X", 10)]
+        [TestCase("L", 50)]
+        [TestCase("C", 100)]
+        [TestCase("D", 500)]
+        [TestCase("M", 1000)]
+        public void RomanSymbols_RespectivelyEquivalent_ToNumbers(string r, int n)
+        {
+            var sut = new RomanNumeral(r);
+
+            int result = sut;
+
+            result.Should().Be(n);
+        }
+
+        #region Creation
         [Test]
         public void RomanNumeral_IsI_ByDefault()
         {
@@ -24,13 +41,15 @@ namespace RomanNumerals.Tests
         }
 
         [Test]
-        public void Constructor_EffectivelyTakes_RomanNumeral()
+        public void Constructor_EffectivelyTakes_RomanSymbols()
         {
             var sut = new RomanNumeral("V");
 
             sut.Should().NotBe(new RomanNumeral());
         }
+        #endregion
 
+        #region Formatting
         [Test]
         public void RomanNumeral_ToString_ByRomanSymbols()
         {
@@ -46,11 +65,6 @@ namespace RomanNumerals.Tests
 
             sut.Should().Be(new RomanNumeral("CMII"));
         }
-
-        [Test]
-        public void METHOD()
-        {
-            
-        }
+        #endregion
     }
 }
