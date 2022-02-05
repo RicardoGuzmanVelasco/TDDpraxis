@@ -13,5 +13,19 @@ namespace RomanNumerals.Tests
 
             sut.Should().Be(RomanNumeral.I);
         }
+
+        [Test]
+        public void DefaultRomanNumeral_IsAlsoCreated_ByConstructor()
+        {
+            var sut = new RomanNumeral("I");
+
+            sut.Should().Be(RomanNumeral.I);
+        }
+
+        [Test]
+        public void METHOD()
+        {
+            
+        }
     }
 }

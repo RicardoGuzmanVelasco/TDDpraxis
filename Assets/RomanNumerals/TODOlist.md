@@ -1,7 +1,11 @@
 ### Basic API
+- [ ] Constructor by string
+  - [ ] Default I constructor
 - [ ] Implicit from string
-- [-] Default is I
-- [?] implicit ToInt
+- [x] Default is I
+- [?] Relation with C# numbers
+  - [ ] implicit ToInt
+  - [ ] implicit FromInt
 
 ### Test API
 - [ ] 
