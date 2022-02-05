@@ -14,7 +14,7 @@
   - [X]  Order
 
 - [ ]  Range-relative operations
-  - [ ]  Includes (also with a number)
+  - [X]  Includes (also with a number)
   - [ ]  Overlaps
   - [ ]  Touches
     - Difference with Overlaps?

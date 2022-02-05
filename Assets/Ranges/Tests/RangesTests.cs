@@ -84,7 +84,9 @@ namespace Ranges.Tests
         [Test]
         public void Range_IncludesItself()
         {
-            Range.Between(1, 3).Includes(Range.Between(1, 3)).Should().BeTrue();
+            Range.Between(1, 3)
+                 .Includes(Range.Between(1, 3))
+                 .Should().BeTrue();
         }
         #endregion
 
