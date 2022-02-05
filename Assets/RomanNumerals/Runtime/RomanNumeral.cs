@@ -1,15 +1,21 @@
 using System;
+using System.Linq;
 
 namespace RomanNumerals.Runtime
 {
     public struct RomanNumeral
     {
+        public static RomanNumeral I { get; } = new RomanNumeral();
+        
         public RomanNumeral(string s)
         {
-            if(s.Contains("a"))
+            if(!s.All(IsRomanSymbol))
                 throw new ArgumentOutOfRangeException();
         }
 
-        public static RomanNumeral I { get; } = new RomanNumeral();
+        static bool IsRomanSymbol(char symbol)
+        {
+            return symbol is 'I' or 'V' or 'X' or 'L' or 'C' or 'D' or 'M';
+        }
     }
 }

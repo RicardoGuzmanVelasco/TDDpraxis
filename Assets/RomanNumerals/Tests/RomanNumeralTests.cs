@@ -24,9 +24,9 @@ namespace RomanNumerals.Tests
         }
 
         [Test]
-        public void Constructor_Fails_IfNotARomanSymbol()
+        public void Constructor_Fails_IfNotJustRomanSymbols()
         {
-            Action act = () => new RomanNumeral("a");
+            Action act = () => new RomanNumeral("ILj");
 
             act.Should().Throw<ArgumentOutOfRangeException>();
         }
