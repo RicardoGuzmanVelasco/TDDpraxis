@@ -1,5 +1,7 @@
 ### Basic API
-- [ ]
+- [ ] Implicit from string
+- [-] Default is I
+- [?] implicit ToInt
 
 ### Test API
 - [ ] 
@@ -8,7 +10,7 @@
 - [ ] 
 
 ### Common cases 
-- [ ] 
+- [ ] Factory Properties for I, V, X, L, C, M
 
 ### Special cases
 - [ ] 
