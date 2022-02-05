@@ -1,6 +1,7 @@
 ### Basic API
 - [ ] Constructor by string
-  - [ ] Default I constructor
+  - [x] Default I constructor
+  - [x] Fails if not a valid symbol
 - [ ] Implicit from string
 - [x] Default is I
 - [?] Relation with C# numbers

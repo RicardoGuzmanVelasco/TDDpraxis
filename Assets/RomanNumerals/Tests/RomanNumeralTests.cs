@@ -1,3 +1,4 @@
+using System;
 using FluentAssertions;
 using NUnit.Framework;
 using RomanNumerals.Runtime;
@@ -23,9 +24,11 @@ namespace RomanNumerals.Tests
         }
 
         [Test]
-        public void METHOD()
+        public void Constructor_Fails_IfNotARomanSymbol()
         {
-            
+            Action act = () => new RomanNumeral("a");
+
+            act.Should().Throw<ArgumentOutOfRangeException>();
         }
     }
 }
