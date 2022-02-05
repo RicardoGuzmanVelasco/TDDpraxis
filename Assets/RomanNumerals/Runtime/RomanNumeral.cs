@@ -7,11 +7,7 @@ namespace RomanNumerals.Runtime
     {
         readonly string symbols;
 
-        #region SupportMethods
-        static bool IsRomanSymbol(char symbol)
-        {
-            return symbol is 'I' or 'V' or 'X' or 'L' or 'C' or 'D' or 'M';
-        }
+        #region Nested types
         #endregion
 
         #region Constructors
@@ -21,7 +17,7 @@ namespace RomanNumerals.Runtime
 
         public RomanNumeral(string symbols)
         {
-            if(!symbols.All(IsRomanSymbol))
+            if(!symbols.All(RomanSymbol.IsValid))
                 throw new ArgumentOutOfRangeException();
 
             this.symbols = symbols;
@@ -43,34 +39,9 @@ namespace RomanNumerals.Runtime
         {
             if(r.symbols.Length != 1)
                 throw new NotImplementedException();
-            
+
             return new RomanSymbol(r.symbols.First());
         }
         #endregion
-
-        record RomanSymbol
-        {
-            char symbol;
-
-            public RomanSymbol(char symbol)
-            {
-                this.symbol = symbol;
-            }
-
-            public static implicit operator int(RomanSymbol rs)
-            {
-                return rs.symbol switch
-                {
-                    'I' => 1,
-                    'V' => 5,
-                    'X' => 10,
-                    'L' => 50,
-                    'C' => 100,
-                    'D' => 500,
-                    'M' => 1000,
-                    _ => throw new InvalidOperationException()
-                };
-            }
-        }
     }
 }
