@@ -25,7 +25,7 @@ namespace RomanNumerals.Runtime
         public RomanSymbol(char symbol)
         {
             if(!IsValid(symbol))
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException($"{symbol} is not valid");
 
             this.symbol = symbol;
         }
@@ -80,7 +80,7 @@ namespace RomanNumerals.Runtime
             return Symbols.ContainsKey(symbol);
         }
 
-        internal static RomanSymbol ClosestSymbolTo(int number)
+        internal static RomanSymbol FloorSymbolOf(int number)
         {
             return Symbols.Last(symbol => symbol.Value <= number).Key;
         }

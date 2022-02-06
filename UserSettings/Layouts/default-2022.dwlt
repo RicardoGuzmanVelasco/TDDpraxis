@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1206
     height: 596
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Preferences
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 48
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 86
+  controlID: 94
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 136
+  controlID: 92
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 16
+  controlID: 93
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -414,7 +414,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 120}
+  m_PosRight: {x: 0, y: 0}
   m_Scope: 0
   m_SplitterFlex: 0.2
   m_SearchText: 
@@ -497,7 +497,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 164
+    ID: 202
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -563,9 +563,9 @@ MonoBehaviour:
       uniqueId: '[TDDpraxis][suite]'
       name: TDDpraxis
       fullName: TDDpraxis
-      resultStatus: 1
-      duration: 0.0544826
-      messages: 
+      resultStatus: 2
+      duration: 0.6486694
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
       name: TDDpraxis.FizzBuzz.Tests.dll
       fullName: D:/Documentos/Documentos/Unity/TDDpraxis/Library/ScriptAssemblies/TDDpraxis.FizzBuzz.Tests.dll
       resultStatus: 1
-      duration: 0.0525116
+      duration: 0.0845592
       messages: 
       output: 
       stacktrace: 
@@ -596,7 +596,7 @@ MonoBehaviour:
       name: FizzBuzz
       fullName: FizzBuzz
       resultStatus: 1
-      duration: 0.052052
+      duration: 0.0831497
       messages: 
       output: 
       stacktrace: 
@@ -612,7 +612,7 @@ MonoBehaviour:
       name: Tests
       fullName: FizzBuzz.Tests
       resultStatus: 1
-      duration: 0.0514669
+      duration: 0.0827871
       messages: 
       output: 
       stacktrace: 
@@ -628,7 +628,7 @@ MonoBehaviour:
       name: FizzBuzzExclamationDecoratorTests
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests
       resultStatus: 1
-      duration: 0.0103989
+      duration: 0.0347019
       messages: 
       output: 
       stacktrace: 
@@ -644,7 +644,7 @@ MonoBehaviour:
       name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark
       resultStatus: 1
-      duration: 0.0017846
+      duration: 0.0216155
       messages: 
       output: 
       stacktrace: 
@@ -660,7 +660,7 @@ MonoBehaviour:
       name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(1)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(1)
       resultStatus: 1
-      duration: 0.000158
+      duration: 0.0092711
       messages: 
       output: 
       stacktrace: 
@@ -677,7 +677,7 @@ MonoBehaviour:
       name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(2)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(2)
       resultStatus: 1
-      duration: 0.0000866
+      duration: 0.0001354
       messages: 
       output: 
       stacktrace: 
@@ -694,7 +694,7 @@ MonoBehaviour:
       name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(4)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(4)
       resultStatus: 1
-      duration: 0.0000812
+      duration: 0.0000827
       messages: 
       output: 
       stacktrace: 
@@ -711,7 +711,7 @@ MonoBehaviour:
       name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(7)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(7)
       resultStatus: 1
-      duration: 0.0000754
+      duration: 0.0000787
       messages: 
       output: 
       stacktrace: 
@@ -728,7 +728,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark
       resultStatus: 1
-      duration: 0.007671
+      duration: 0.0093698
       messages: 
       output: 
       stacktrace: 
@@ -744,7 +744,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(3)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(3)
       resultStatus: 1
-      duration: 0.0001693
+      duration: 0.0005336
       messages: 
       output: 
       stacktrace: 
@@ -761,7 +761,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(5)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(5)
       resultStatus: 1
-      duration: 0.0000846
+      duration: 0.000102
       messages: 
       output: 
       stacktrace: 
@@ -778,7 +778,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(6)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(6)
       resultStatus: 1
-      duration: 0.0000775
+      duration: 0.000092
       messages: 
       output: 
       stacktrace: 
@@ -795,7 +795,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(10)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(10)
       resultStatus: 1
-      duration: 0.0000772
+      duration: 0.0000839
       messages: 
       output: 
       stacktrace: 
@@ -812,7 +812,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(15)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(15)
       resultStatus: 1
-      duration: 0.0000772
+      duration: 0.0000813
       messages: 
       output: 
       stacktrace: 
@@ -829,7 +829,7 @@ MonoBehaviour:
       name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(30)
       fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(30)
       resultStatus: 1
-      duration: 0.000084
+      duration: 0.0000815
       messages: 
       output: 
       stacktrace: 
@@ -846,7 +846,7 @@ MonoBehaviour:
       name: FizzBuzzMultipleTransmutatorTests
       fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests
       resultStatus: 1
-      duration: 0.0070201
+      duration: 0.0087742
       messages: 
       output: 
       stacktrace: 
@@ -862,7 +862,7 @@ MonoBehaviour:
       name: WhenNumberIsMultiple_ReturnsWord
       fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord
       resultStatus: 1
-      duration: 0.0015876
+      duration: 0.0029125
       messages: 
       output: 
       stacktrace: 
@@ -878,7 +878,7 @@ MonoBehaviour:
       name: WhenNumberIsMultiple_ReturnsWord(3,"Fizz")
       fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(3,"Fizz")
       resultStatus: 1
-      duration: 0.0001938
+      duration: 0.0016384
       messages: 
       output: 
       stacktrace: 
@@ -895,7 +895,7 @@ MonoBehaviour:
       name: WhenNumberIsMultiple_ReturnsWord(5,"Buzz")
       fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(5,"Buzz")
       resultStatus: 1
-      duration: 0.0000921
+      duration: 0.0001082
       messages: 
       output: 
       stacktrace: 
@@ -914,7 +914,7 @@ MonoBehaviour:
       fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(15,"Fizz
         Buzz")
       resultStatus: 1
-      duration: 0.0001158
+      duration: 0.0001778
       messages: 
       output: 
       stacktrace: 
@@ -931,7 +931,7 @@ MonoBehaviour:
       name: WhenNumberIsNotMultiple_ReturnsEmpty
       fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsNotMultiple_ReturnsEmpty
       resultStatus: 1
-      duration: 0.0000728
+      duration: 0.00027
       messages: 
       output: 
       stacktrace: 
@@ -948,7 +948,7 @@ MonoBehaviour:
       name: FizzBuzzTests
       fullName: FizzBuzz.Tests.FizzBuzzTests
       resultStatus: 1
-      duration: 0.031896
+      duration: 0.0363285
       messages: 
       output: 
       stacktrace: 
@@ -964,7 +964,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz
       resultStatus: 1
-      duration: 0.0011669
+      duration: 0.0015574
       messages: 
       output: 
       stacktrace: 
@@ -980,7 +980,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(15)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(15)
       resultStatus: 1
-      duration: 0.0001254
+      duration: 0.0004861
       messages: 
       output: 
       stacktrace: 
@@ -997,7 +997,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(30)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(30)
       resultStatus: 1
-      duration: 0.000086
+      duration: 0.0001006
       messages: 
       output: 
       stacktrace: 
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(2147483640)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(2147483640)
       resultStatus: 1
-      duration: 0.0000824
+      duration: 0.0000914
       messages: 
       output: 
       stacktrace: 
@@ -1031,7 +1031,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz
       resultStatus: 1
-      duration: 0.0049266
+      duration: 0.0048435
       messages: 
       output: 
       stacktrace: 
@@ -1047,7 +1047,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(3)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(3)
       resultStatus: 1
-      duration: 0.0001573
+      duration: 0.0003872
       messages: 
       output: 
       stacktrace: 
@@ -1064,7 +1064,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(6)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(6)
       resultStatus: 1
-      duration: 0.0000878
+      duration: 0.0000982
       messages: 
       output: 
       stacktrace: 
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(2147483646)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(2147483646)
       resultStatus: 1
-      duration: 0.0000796
+      duration: 0.0000883
       messages: 
       output: 
       stacktrace: 
@@ -1098,7 +1098,7 @@ MonoBehaviour:
       name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz
       resultStatus: 1
-      duration: 0.004832
+      duration: 0.0051985
       messages: 
       output: 
       stacktrace: 
@@ -1114,7 +1114,7 @@ MonoBehaviour:
       name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(5)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(5)
       resultStatus: 1
-      duration: 0.0001031
+      duration: 0.0002239
       messages: 
       output: 
       stacktrace: 
@@ -1131,7 +1131,7 @@ MonoBehaviour:
       name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(10)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(10)
       resultStatus: 1
-      duration: 0.0000845
+      duration: 0.0001257
       messages: 
       output: 
       stacktrace: 
@@ -1148,7 +1148,7 @@ MonoBehaviour:
       name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(2147483645)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(2147483645)
       resultStatus: 1
-      duration: 0.0000775
+      duration: 0.0001133
       messages: 
       output: 
       stacktrace: 
@@ -1165,7 +1165,7 @@ MonoBehaviour:
       name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber
       resultStatus: 1
-      duration: 0.0051582
+      duration: 0.0050497
       messages: 
       output: 
       stacktrace: 
@@ -1181,7 +1181,7 @@ MonoBehaviour:
       name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(1)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(1)
       resultStatus: 1
-      duration: 0.0001127
+      duration: 0.0002257
       messages: 
       output: 
       stacktrace: 
@@ -1198,7 +1198,7 @@ MonoBehaviour:
       name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(2)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(2)
       resultStatus: 1
-      duration: 0.0000841
+      duration: 0.000121
       messages: 
       output: 
       stacktrace: 
@@ -1215,7 +1215,7 @@ MonoBehaviour:
       name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(4)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(4)
       resultStatus: 1
-      duration: 0.0000786
+      duration: 0.0000887
       messages: 
       output: 
       stacktrace: 
@@ -1232,7 +1232,7 @@ MonoBehaviour:
       name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(7)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(7)
       resultStatus: 1
-      duration: 0.0000768
+      duration: 0.0000845
       messages: 
       output: 
       stacktrace: 
@@ -1249,7 +1249,7 @@ MonoBehaviour:
       name: FizzBuzzOf_NonPositiveNumber_ThrowsException
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException
       resultStatus: 1
-      duration: 0.0045561
+      duration: 0.0077148
       messages: 
       output: 
       stacktrace: 
@@ -1265,7 +1265,7 @@ MonoBehaviour:
       name: FizzBuzzOf_NonPositiveNumber_ThrowsException(int.MinValue)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException(int.MinValue)
       resultStatus: 1
-      duration: 0.0001382
+      duration: 0.0031364
       messages: 
       output: 
       stacktrace: 
@@ -1282,7 +1282,7 @@ MonoBehaviour:
       name: FizzBuzzOf_NonPositiveNumber_ThrowsException(0)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException(0)
       resultStatus: 1
-      duration: 0.0001022
+      duration: 0.0001303
       messages: 
       output: 
       stacktrace: 
@@ -1299,7 +1299,7 @@ MonoBehaviour:
       name: FizzBuzzOf_PositiveNumber_DoesNotThrowException
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException
       resultStatus: 1
-      duration: 0.0047768
+      duration: 0.0054201
       messages: 
       output: 
       stacktrace: 
@@ -1315,7 +1315,7 @@ MonoBehaviour:
       name: FizzBuzzOf_PositiveNumber_DoesNotThrowException(1)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException(1)
       resultStatus: 1
-      duration: 0.0001088
+      duration: 0.0005034
       messages: 
       output: 
       stacktrace: 
@@ -1332,7 +1332,7 @@ MonoBehaviour:
       name: FizzBuzzOf_PositiveNumber_DoesNotThrowException(int.MaxValue)
       fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000793
+      duration: 0.000097
       messages: 
       output: 
       stacktrace: 
@@ -1348,9 +1348,9 @@ MonoBehaviour:
       uniqueId: '[TDDpraxis.RomanNumerals.Tests.dll][suite]'
       name: TDDpraxis.RomanNumerals.Tests.dll
       fullName: D:/Documentos/Documentos/Unity/TDDpraxis/Library/ScriptAssemblies/TDDpraxis.RomanNumerals.Tests.dll
-      resultStatus: 1
-      duration: 0.0274468
-      messages: 
+      resultStatus: 2
+      duration: 0.6275843
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1364,9 +1364,9 @@ MonoBehaviour:
       uniqueId: TDDpraxis.RomanNumerals.Tests.dll/[RomanNumerals][suite]
       name: RomanNumerals
       fullName: RomanNumerals
-      resultStatus: 1
-      duration: 0.0268347
-      messages: 
+      resultStatus: 2
+      duration: 0.5353326
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1380,9 +1380,9 @@ MonoBehaviour:
       uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests][suite]
       name: Tests
       fullName: RomanNumerals.Tests
-      resultStatus: 1
-      duration: 0.0265164
-      messages: 
+      resultStatus: 2
+      duration: 0.4360231
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1397,7 +1397,7 @@ MonoBehaviour:
       name: RomanNumeralInternalTests
       fullName: RomanNumerals.Tests.RomanNumeralInternalTests
       resultStatus: 1
-      duration: 0.078563
+      duration: 0.1712421
       messages: 
       output: 
       stacktrace: 
@@ -1413,7 +1413,7 @@ MonoBehaviour:
       name: Clustering_JustSubstractiveRomanNumber_ReturnsTheSameAsCluster
       fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_JustSubstractiveRomanNumber_ReturnsTheSameAsCluster
       resultStatus: 1
-      duration: 0.0421231
+      duration: 0.0415879
       messages: 
       output: 
       stacktrace: 
@@ -1430,7 +1430,7 @@ MonoBehaviour:
       name: Clustering_SameSymbolRomanNumber_SplitsAllChars
       fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SameSymbolRomanNumber_SplitsAllChars
       resultStatus: 1
-      duration: 0.0010112
+      duration: 0.0012535
       messages: 
       output: 
       stacktrace: 
@@ -1447,7 +1447,7 @@ MonoBehaviour:
       name: Clustering_SomeSubstractiveRomanNumber_SplitAllSubstractiveClusters
       fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SomeSubstractiveRomanNumber_SplitAllSubstractiveClusters
       resultStatus: 1
-      duration: 0.0090795
+      duration: 0.0100326
       messages: 
       output: 
       stacktrace: 
@@ -1464,7 +1464,7 @@ MonoBehaviour:
       name: Clustering_SubstractiveComplexRomanNumber_SplitSubstractiveAndNonSubstractiveClusters
       fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SubstractiveComplexRomanNumber_SplitSubstractiveAndNonSubstractiveClusters
       resultStatus: 1
-      duration: 0.0082729
+      duration: 0.0083325
       messages: 
       output: 
       stacktrace: 
@@ -1480,9 +1480,9 @@ MonoBehaviour:
       uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
       name: RomanNumeralTests
       fullName: RomanNumerals.Tests.RomanNumeralTests
-      resultStatus: 1
-      duration: 0.0219204
-      messages: 
+      resultStatus: 2
+      duration: 0.1634085
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1497,7 +1497,7 @@ MonoBehaviour:
       name: AdditiveNotation_IsNotSupported
       fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported
       resultStatus: 1
-      duration: 0.0058962
+      duration: 0.1071021
       messages: 
       output: 
       stacktrace: 
@@ -1513,7 +1513,7 @@ MonoBehaviour:
       name: AdditiveNotation_IsNotSupported("IIII")
       fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("IIII")
       resultStatus: 1
-      duration: 0.0039136
+      duration: 0.005546
       messages: 
       output: 
       stacktrace: 
@@ -1530,7 +1530,7 @@ MonoBehaviour:
       name: AdditiveNotation_IsNotSupported("XXXX")
       fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("XXXX")
       resultStatus: 1
-      duration: 0.0003029
+      duration: 0.0003864
       messages: 
       output: 
       stacktrace: 
@@ -1547,7 +1547,7 @@ MonoBehaviour:
       name: AdditiveNotation_IsNotSupported("CCCC")
       fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("CCCC")
       resultStatus: 1
-      duration: 0.0001468
+      duration: 0.0001421
       messages: 
       output: 
       stacktrace: 
@@ -1564,7 +1564,7 @@ MonoBehaviour:
       name: Constructor_EffectivelyTakes_RomanSymbols
       fullName: RomanNumerals.Tests.RomanNumeralTests.Constructor_EffectivelyTakes_RomanSymbols
       resultStatus: 1
-      duration: 0.0004847
+      duration: 0.0005913
       messages: 
       output: 
       stacktrace: 
@@ -1581,7 +1581,7 @@ MonoBehaviour:
       name: Constructor_Fails_IfNotJustRomanSymbols
       fullName: RomanNumerals.Tests.RomanNumeralTests.Constructor_Fails_IfNotJustRomanSymbols
       resultStatus: 1
-      duration: 0.0017709
+      duration: 0.0021517
       messages: 
       output: 
       stacktrace: 
@@ -1598,7 +1598,7 @@ MonoBehaviour:
       name: JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction
       fullName: RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction
       resultStatus: 1
-      duration: 0.0089834
+      duration: 0.0091297
       messages: 
       output: 
       stacktrace: 
@@ -1614,7 +1614,7 @@ MonoBehaviour:
       name: JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IV",4)
       fullName: RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IV",4)
       resultStatus: 1
-      duration: 0.0033495
+      duration: 0.0033151
       messages: 
       output: 
       stacktrace: 
@@ -1631,7 +1631,7 @@ MonoBehaviour:
       name: JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IX",9)
       fullName: RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IX",9)
       resultStatus: 1
-      duration: 0.0001712
+      duration: 0.000162
       messages: 
       output: 
       stacktrace: 
@@ -1648,7 +1648,7 @@ MonoBehaviour:
       name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum
       fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum
       resultStatus: 1
-      duration: 0.0064763
+      duration: 0.0056687
       messages: 
       output: 
       stacktrace: 
@@ -1664,7 +1664,7 @@ MonoBehaviour:
       name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("II",2)
       fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("II",2)
       resultStatus: 1
-      duration: 0.0006736
+      duration: 0.0009183
       messages: 
       output: 
       stacktrace: 
@@ -1681,7 +1681,7 @@ MonoBehaviour:
       name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("III",3)
       fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("III",3)
       resultStatus: 1
-      duration: 0.0001774
+      duration: 0.0001441
       messages: 
       output: 
       stacktrace: 
@@ -1698,7 +1698,7 @@ MonoBehaviour:
       name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("VI",6)
       fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("VI",6)
       resultStatus: 1
-      duration: 0.0001178
+      duration: 0.0001083
       messages: 
       output: 
       stacktrace: 
@@ -1715,7 +1715,7 @@ MonoBehaviour:
       name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("CLV",155)
       fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("CLV",155)
       resultStatus: 1
-      duration: 0.0001133
+      duration: 0.0001392
       messages: 
       output: 
       stacktrace: 
@@ -1727,12 +1727,28 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1071
       parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum][suite]
-    - id: 1082
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFrom_1]
-      name: RomanNumeral_CreatedFrom_1
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFrom_1
+    - id: 1086
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
+      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols
       resultStatus: 1
-      duration: 0.0096204
+      duration: 0.0076076
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1052
+      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
+    - id: 1082
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(3,"III")]
+      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(3,"III")
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(3,"III")
+      resultStatus: 1
+      duration: 0.0019324
       messages: 
       output: 
       stacktrace: 
@@ -1742,14 +1758,116 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
+      parentId: 1086
+      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
+    - id: 1083
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(5,"V")]
+      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(5,"V")
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(5,"V")
+      resultStatus: 1
+      duration: 0.000124
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
+    - id: 1084
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(11,"XI")]
+      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(11,"XI")
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(11,"XI")
+      resultStatus: 1
+      duration: 0.0000957
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
+    - id: 1085
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(1565,"MDLXV")]
+      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(1565,"MDLXV")
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(1565,"MDLXV")
+      resultStatus: 1
+      duration: 0.0000926
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
+    - id: 1088
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols][suite]
+      name: RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols
+      resultStatus: 2
+      duration: 0.008264
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
       parentId: 1052
       parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
+    - id: 1087
+      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(4,"IV")]
+      name: RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(4,"IV")
+      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(4,"IV")
+      resultStatus: 2
+      duration: 0.004067
+      messages: 'System.NotSupportedException : Additive notation is not supported
+        (IIII)'
+      output: 
+      stacktrace: "  at RomanNumerals.Runtime.RomanNumeral.AssertNoAdditiveNotation
+        (System.String symbols) [0x00014] in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Runtime\\RomanNumeral.cs:78
+        \r\n  at RomanNumerals.Runtime.RomanNumeral..ctor (System.String symbols)
+        [0x0000f] in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Runtime\\RomanNumeral.cs:64
+        \r\n  at RomanNumerals.Runtime.RomanNumeral.op_Implicit (System.String symbols)
+        [0x00001] in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Runtime\\RomanNumeral.cs:107
+        \r\n  at RomanNumerals.Runtime.RomanNumeral.NumberToRomanNumeral (System.Int32
+        number) [0x00034] in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Runtime\\RomanNumeral.cs:47
+        \r\n  at RomanNumerals.Runtime.RomanNumeral..ctor (System.Int32 number) [0x00008]
+        in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Runtime\\RomanNumeral.cs:54
+        \r\n  at RomanNumerals.Tests.RomanNumeralTests.FromNumberToRomanNumeral (System.Int32
+        number, System.String symbols) [0x00001] in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Tests\\RomanNumeralTests.cs:22
+        \r\n  at RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols
+        (System.Int32 number, System.String symbols) [0x00001] in D:\\Documentos\\Documentos\\Unity\\TDDpraxis\\Assets\\RomanNumerals\\Tests\\RomanNumeralTests.cs:134
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <cdc4992cc04a4e77a24a09cd121af77b>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1088
+      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols][suite]
     - id: 1053
       uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_Implicit_FromString]
       name: RomanNumeral_Implicit_FromString
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_Implicit_FromString
       resultStatus: 1
-      duration: 0.0002896
+      duration: 0.0002242
       messages: 
       output: 
       stacktrace: 
@@ -1766,7 +1884,7 @@ MonoBehaviour:
       name: RomanNumeral_IsI_ByDefault
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_IsI_ByDefault
       resultStatus: 1
-      duration: 0.0002491
+      duration: 0.0001859
       messages: 
       output: 
       stacktrace: 
@@ -1783,7 +1901,7 @@ MonoBehaviour:
       name: RomanNumeral_ToString_ByRomanSymbols
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_ToString_ByRomanSymbols
       resultStatus: 1
-      duration: 0.000195
+      duration: 0.0002612
       messages: 
       output: 
       stacktrace: 
@@ -1800,7 +1918,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers
       resultStatus: 1
-      duration: 0.0090223
+      duration: 0.0070041
       messages: 
       output: 
       stacktrace: 
@@ -1816,7 +1934,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("I",1)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("I",1)
       resultStatus: 1
-      duration: 0.0004095
+      duration: 0.0003034
       messages: 
       output: 
       stacktrace: 
@@ -1833,7 +1951,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("V",5)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("V",5)
       resultStatus: 1
-      duration: 0.0001454
+      duration: 0.0001191
       messages: 
       output: 
       stacktrace: 
@@ -1850,7 +1968,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("X",10)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("X",10)
       resultStatus: 1
-      duration: 0.0001131
+      duration: 0.0001028
       messages: 
       output: 
       stacktrace: 
@@ -1867,7 +1985,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("L",50)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("L",50)
       resultStatus: 1
-      duration: 0.0001356
+      duration: 0.0001101
       messages: 
       output: 
       stacktrace: 
@@ -1884,7 +2002,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("C",100)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("C",100)
       resultStatus: 1
-      duration: 0.0001069
+      duration: 0.000118
       messages: 
       output: 
       stacktrace: 
@@ -1901,7 +2019,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("D",500)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("D",500)
       resultStatus: 1
-      duration: 0.0000983
+      duration: 0.0000964
       messages: 
       output: 
       stacktrace: 
@@ -1918,7 +2036,7 @@ MonoBehaviour:
       name: RomanSymbols_RespectivelyEquivalent_ToNumbers("M",1000)
       fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("M",1000)
       resultStatus: 1
-      duration: 0.0001
+      duration: 0.0000946
       messages: 
       output: 
       stacktrace: 
@@ -1935,7 +2053,7 @@ MonoBehaviour:
       name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded
       fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded
       resultStatus: 1
-      duration: 0.0215091
+      duration: 0.0050457
       messages: 
       output: 
       stacktrace: 
@@ -1951,7 +2069,7 @@ MonoBehaviour:
       name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("CMIV",904)
       fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("CMIV",904)
       resultStatus: 1
-      duration: 0.0004876
+      duration: 0.0003203
       messages: 
       output: 
       stacktrace: 
@@ -1968,7 +2086,7 @@ MonoBehaviour:
       name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MDCCLXXIV",1774)
       fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MDCCLXXIV",1774)
       resultStatus: 1
-      duration: 0.0002621
+      duration: 0.0001711
       messages: 
       output: 
       stacktrace: 
@@ -1985,7 +2103,7 @@ MonoBehaviour:
       name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MCMXCIX",1999)
       fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MCMXCIX",1999)
       resultStatus: 1
-      duration: 0.0001865
+      duration: 0.000148
       messages: 
       output: 
       stacktrace: 
@@ -1997,13 +2115,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1081
       parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded][suite]
-    m_ResultText: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("CLV",155) (0.000s)
+    m_ResultText: RomanNumeral_CreatedFrom_Number(7,"VII") (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 223}
-      m_SelectedIDs: 0e6f0212
-      m_LastClickedID: 302149390
-      m_ExpandedIDs: 14769e9cdd8a6da8c45604da6b7ddcdf22209907f7892316f827293e73f2b73fa6593149b820a571779f467affffff7f
+      scrollPos: {x: 0, y: 239}
+      m_SelectedIDs: 13c62202
+      m_LastClickedID: 35833363
+      m_ExpandedIDs: 14769e9cdd8a6da8c45604da6b7ddcdff241e9e322209907f7892316f827293e73f2b73fa6593149b820a571779f467affffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2085,7 +2203,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 8c790000
     m_LastClickedID: 31116
-    m_ExpandedIDs: 00000000527900005e79000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000fe520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2113,7 +2231,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000052790000
+    m_ExpandedIDs: 00000000fe520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2243,7 +2361,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3ccbffff90cbffffb4ccffff7acdffffb0d1ffff
+      m_ExpandedIDs: 18dcffffecdcffffecddffffc0deffffc2dfffff16e0ffff5ce0ffff32e1ffff36e2ffff06e3ffff10e4ffffece4ffff1ee6fffff6e6fffff4e7ffffc8e8ffffcce9ffff9ceaffff9eebfffffeebffff46ecffff18edffff52eeffffb2eeffffe4efffff34f1ffffa8f2ffff04f3ffff5af4ffffaef5ffffaaf8ffffecf9ffff26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -10,47 +10,12 @@ namespace RomanNumerals.Runtime
 
         IEnumerable<RomanSymbol> RomanSymbols => symbols.Select(c => new RomanSymbol(c));
 
-        #region SupportMethods
-        internal IEnumerable<string> ClusterSymbols()
-        {
-            var originalSymbols = RomanSymbols.ToList();
-            originalSymbols.Reverse();
-
-            var clusterSymbols = new List<string>();
-            while(originalSymbols.Count > 1)
-                if(originalSymbols[0] <= originalSymbols[1])
-                {
-                    clusterSymbols.Add(originalSymbols[0]);
-                    originalSymbols.RemoveAt(0);
-                }
-                else
-                {
-                    clusterSymbols.Add(originalSymbols[1].ToString() + originalSymbols[0]);
-                    originalSymbols.RemoveAt(0);
-                    originalSymbols.RemoveAt(0);
-                }
-
-            if(originalSymbols.Any())
-                clusterSymbols.Add(originalSymbols.First());
-            return clusterSymbols;
-        }
-
-        static RomanNumeral NumberToRomanNumeral(int number)
-        {
-            var result = string.Empty;
-            while(number > 0)
-            {
-                result += RomanSymbol.ClosestSymbolTo(number);
-                number -= RomanSymbol.ClosestSymbolTo(number);
-            }
-
-            return result;
-        }
-        #endregion
-
         #region Constructors
         public RomanNumeral(int number)
         {
+            if(number < 1)
+                throw new ArgumentOutOfRangeException("Roman numeral cannot be neither negative nor zero");
+            
             symbols = NumberToRomanNumeral(number).symbols;
         }
 
@@ -132,6 +97,53 @@ namespace RomanNumerals.Runtime
                     .Sum(sub => new RomanSymbol(sub.symbols[1]) -
                                 new RomanSymbol(sub.symbols[0]));
             }
+        }
+        #endregion
+        
+        #region SupportMethods
+        internal IEnumerable<string> ClusterSymbols()
+        {
+            var originalSymbols = RomanSymbols.ToList();
+            originalSymbols.Reverse();
+
+            var clusterSymbols = new List<string>();
+            while(originalSymbols.Count > 1)
+                if(originalSymbols[0] <= originalSymbols[1])
+                {
+                    clusterSymbols.Add(originalSymbols[0]);
+                    originalSymbols.RemoveAt(0);
+                }
+                else
+                {
+                    clusterSymbols.Add(originalSymbols[1].ToString() + originalSymbols[0]);
+                    originalSymbols.RemoveAt(0);
+                    originalSymbols.RemoveAt(0);
+                }
+
+            if(originalSymbols.Any())
+                clusterSymbols.Add(originalSymbols.First());
+            return clusterSymbols;
+        }
+
+        static RomanNumeral NumberToRomanNumeral(int number)
+        {
+            if(number == 4)
+                return "IV";
+            
+            var result = string.Empty;
+            while(number > 0)
+            {
+                result = TakeNextAdditiveFactor();
+
+                string TakeNextAdditiveFactor()
+                {
+                    result += RomanSymbol.FloorSymbolOf(number);
+                    number -= RomanSymbol.FloorSymbolOf(number);
+                    return result;
+                }
+            }
+
+            return result;
         }
         #endregion
     }

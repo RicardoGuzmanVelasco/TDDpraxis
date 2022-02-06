@@ -59,6 +59,14 @@ namespace RomanNumerals.Tests
 
             act.Should().ThrowExactly<NotSupportedException>();
         }
+
+        [TestCase(0)]
+        [TestCase(-1)]
+        public void RomanNumeral_CreatedByNumber_MustBePositive(int nonPositive)
+        {
+            Action act = () => new RomanNumeral(nonPositive);
+            act.Should().ThrowExactly<ArgumentOutOfRangeException>();
+        }
         #endregion
 
         #region Formatting
