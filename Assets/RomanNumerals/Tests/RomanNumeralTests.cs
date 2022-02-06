@@ -7,24 +7,8 @@ namespace RomanNumerals.Tests
 {
     public class RomanNumeralTests
     {
-        [Test, Ignore("Refactoring before")]
-        public void METHOD()
-        {
-            var sut = new RomanNumeral("II");
-
-            int result = sut;
-            
-            result.Should().Be(2);
-        }
-        
-        [TestCase("I", 1)]
-        [TestCase("V", 5)]
-        [TestCase("X", 10)]
-        [TestCase("L", 50)]
-        [TestCase("C", 100)]
-        [TestCase("D", 500)]
-        [TestCase("M", 1000)]
-        public void RomanSymbols_RespectivelyEquivalent_ToNumbers(string symbols, int number)
+        #region SupportMethods
+        static void FromRomanNumeralToNumber(string symbols, int number)
         {
             var sut = new RomanNumeral(symbols);
 
@@ -32,6 +16,7 @@ namespace RomanNumerals.Tests
 
             result.Should().Be(number);
         }
+        #endregion
 
         #region Creation
         [Test]
@@ -57,6 +42,16 @@ namespace RomanNumerals.Tests
 
             sut.Should().NotBe(new RomanNumeral());
         }
+
+        [TestCase("IIII")]
+        [TestCase("XXXX")]
+        [TestCase("CCCC")]
+        public void AdditiveNotation_IsNotSupported(string additiveNotation)
+        {
+            Action act = () => new RomanNumeral(additiveNotation);
+
+            act.Should().ThrowExactly<NotSupportedException>();
+        }
         #endregion
 
         #region Formatting
@@ -74,6 +69,36 @@ namespace RomanNumerals.Tests
             RomanNumeral sut = "CMII";
 
             sut.Should().Be(new RomanNumeral("CMII"));
+        }
+        #endregion
+
+        #region Numeric Partition & EquivalenceClasses
+        [TestCase("I", 1)]
+        [TestCase("V", 5)]
+        [TestCase("X", 10)]
+        [TestCase("L", 50)]
+        [TestCase("C", 100)]
+        [TestCase("D", 500)]
+        [TestCase("M", 1000)]
+        public void RomanSymbols_RespectivelyEquivalent_ToNumbers(string symbols, int number)
+        {
+            FromRomanNumeralToNumber(symbols, number);
+        }
+
+        [TestCase("II", 2)]
+        [TestCase("III", 3)]
+        [TestCase("VI", 6)]
+        [TestCase("CLV", 155)]
+        public void NonSubstractive_IsEquivalentTo_ItsSymbolsSum(string symbols, int number)
+        {
+            FromRomanNumeralToNumber(symbols, number);
+        }
+
+        [TestCase("IV", 4)]
+        [TestCase("IX", 9)]
+        public void JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction(string symbols, int number)
+        {
+            FromRomanNumeralToNumber(symbols, number);
         }
         #endregion
     }
