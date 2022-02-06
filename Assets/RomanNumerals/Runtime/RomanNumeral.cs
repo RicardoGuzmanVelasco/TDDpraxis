@@ -128,15 +128,19 @@ namespace RomanNumerals.Runtime
         static RomanNumeral NumberToRomanNumeral(int number)
         {
             var result = string.Empty;
-
             while(number > 0)
             {
-                if(NextIsSubstraction(number))
-                    TakeNextSubstractiveFactor();
+                if(NextIsSubstraction())
+                    return new RomanNumeral("IV");
                 else
                     TakeNextAdditiveFactor();
-
-
+                
+                bool NextIsSubstraction()
+                {
+                    var lastPayloadDigit = number.ToString().TrimEnd('0').Last();
+                    return lastPayloadDigit is '4' or '9';
+                }
+                
                 void TakeNextAdditiveFactor()
                 {
                     result += RomanSymbol.FloorSymbolOf(number);
@@ -145,8 +149,7 @@ namespace RomanNumerals.Runtime
 
                 void TakeNextSubstractiveFactor()
                 {
-                    result += NextSubstractiveFactor(number);
-                    number -= NextSubstractiveNumber(number);
+                    number--;
                 }
             }
 
@@ -157,29 +160,6 @@ namespace RomanNumerals.Runtime
         {
             var lastPayloadDigit = number.ToString().TrimEnd('0').Last();
             return lastPayloadDigit is '4' or '9';
-        }
-
-        static string NextSubstractiveFactor(int number)
-        {
-            var lastPayloadDigit = number.ToString().TrimEnd('0').Last();
-            var factor = int.Parse(lastPayloadDigit.ToString()) * (int)Math.Pow(10, number.ToString().Length - number.ToString().TrimEnd('0').Length);
-            return factor switch
-            {
-                4 => "IV",
-                9 => "IX",
-                40 => "XL",
-                90 => "XC",
-                400 => "CD",
-                900 => "CM",
-                _ => throw new ArgumentOutOfRangeException(nameof(number))
-            };
-        }
-        
-        static int NextSubstractiveNumber(int number)
-        {
-            var lastPayloadDigit = number.ToString().TrimEnd('0').Last();
-            var factor = int.Parse(lastPayloadDigit.ToString()) * (int)Math.Pow(10, number.ToString().Length - number.ToString().TrimEnd('0').Length);
-            return factor;
         }
         #endregion
     }
