@@ -137,6 +137,7 @@ namespace RomanNumerals.Tests
         }
         
         [TestCase(4, "IV")]
+        [TestCase(9, "IX")]
         public void RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(int number, string symbols)
         {
             FromNumberToRomanNumeral(number, symbols);

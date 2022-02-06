@@ -7,7 +7,7 @@ namespace RomanNumerals.Runtime
     internal record RomanSymbol
     {
         #region Fixed
-        internal static readonly Dictionary<char, int> Symbols = new Dictionary<char, int>
+        static readonly Dictionary<char, int> Symbols = new Dictionary<char, int>
         {
             ['I'] = 1,
             ['V'] = 5,
