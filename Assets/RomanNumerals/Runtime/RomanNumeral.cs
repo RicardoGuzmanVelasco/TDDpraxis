@@ -35,7 +35,7 @@ namespace RomanNumerals.Runtime
             return clusterSymbols;
         }
 
-        static string NumberToRomanSymbols(int number)
+        static RomanNumeral NumberToRomanNumeral(int number)
         {
             var result = string.Empty;
             while(number > 0)
@@ -51,7 +51,7 @@ namespace RomanNumerals.Runtime
         #region Constructors
         public RomanNumeral(int number)
         {
-            symbols = NumberToRomanSymbols(number);
+            symbols = NumberToRomanNumeral(number).symbols;
         }
 
         public RomanNumeral() : this("I")
@@ -75,7 +75,7 @@ namespace RomanNumerals.Runtime
         static void AssertNoAdditiveNotation(string symbols)
         {
             if(HasFourOrMoreRepeatedChainingSymbols())
-                throw new NotSupportedException("Additive notation is not supported");
+                throw new NotSupportedException($"Additive notation is not supported ({symbols})");
 
             bool HasFourOrMoreRepeatedChainingSymbols()
             {

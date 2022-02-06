@@ -118,12 +118,18 @@ namespace RomanNumerals.Tests
         #endregion
         
         
-        #region From number
+        #region From number, Partition & EquivalenceClasses
         [TestCase(3, "III")]
         [TestCase(5, "V")]
         [TestCase(11, "XI")]
         [TestCase(1565, "MDLXV")]
-        public void RomanNumeral_CreatedFrom_Number(int number, string symbols)
+        public void RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(int number, string symbols)
+        {
+            FromNumberToRomanNumeral(number, symbols);
+        }
+        
+        [TestCase(4, "IV")]
+        public void RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(int number, string symbols)
         {
             FromNumberToRomanNumeral(number, symbols);
         }
