@@ -10,7 +10,6 @@ namespace RomanNumerals.Runtime
 
         IEnumerable<RomanSymbol> RomanSymbols => symbols.Select(c => new RomanSymbol(c));
 
-
         #region SupportMethods
         internal IEnumerable<string> ClusterSymbols()
         {
@@ -98,11 +97,23 @@ namespace RomanNumerals.Runtime
 
         int ToInt()
         {
-            var clusters = ClusterSymbols();
+            return AddingTotal() + SubstractingTotal();
 
-            var addingSymbols = clusters.Where(s => s.Length == 1).Select(s => s.First());
-
-            return addingSymbols.Sum(c => new RomanSymbol(c));
+            int AddingTotal()
+            {
+                return ClusterSymbols()
+                    .Where(s => s.Length == 1)
+                    .Select(s => s.First())
+                    .Sum(c => new RomanSymbol(c));
+            }
+            int SubstractingTotal()
+            {
+                return ClusterSymbols()
+                    .Where(s => s.Length > 1)
+                    .Select(s => new RomanNumeral(s))
+                    .Sum(sub => new RomanSymbol(sub.symbols[1]) -
+                                new RomanSymbol(sub.symbols[0]));
+            }
         }
         #endregion
     }

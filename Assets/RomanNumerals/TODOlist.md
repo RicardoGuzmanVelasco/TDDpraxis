@@ -8,7 +8,7 @@
 - [x] Implicit from string
 - [x] Default is I
 - [?] Relation with C# numbers
-  - [ ] implicit ToInt
+  - [x] implicit ToInt
   - [ ] implicit FromInt
 
 ### Implementations
@@ -29,9 +29,10 @@
 ### Common cases 
 - [?] Factory Properties for I, V, X, L, C, M
 - [x] Individual symbols to ints
-- [ ] Numeric relations
+- [x] Numeric relations
   - [x] Non substracting numerals to ints
-  - [ ] Just substracting numerals to ints
+  - [x] Just substracting numerals to ints
+  - [x] Mixing numerals to ints
 
 ### Special cases
 - [ ] [Irregular substractive notation](https://en.wikipedia.org/wiki/Roman_numerals#Irregular_subtractive_notation)
