@@ -1,6 +1,6 @@
 ### Basic API
 - [ ] Constructor by int
-  - [ ] Implicit from int
+  - [ ] Negative case?
 - [x] Constructor by string
   - [x] Default I constructor
   - [x] Fails if not a valid symbol
@@ -10,6 +10,13 @@
 - [?] Relation with C# numbers
   - [x] implicit ToInt
   - [ ] implicit FromInt
+    -[ ] Negative case?
+- [ ] Arithmetic operations
+  - [ ] Adding
+  - [ ] Substraction
+    - [ ] Negative case?
+  - [ ] Product
+  * All this operations are trivial after FromInt() and ToInt()
 
 ### Implementations
 - [ ] IComparable
@@ -27,7 +34,8 @@
 - [?] Same character cannot appear in different numeral places. Example: XVX, CLC... 
 
 ### Common cases 
-- [?] Factory Properties for I, V, X, L, C, M
+- [x] Factory Properties for I, V, X, L, C, M
+  * Discarded after RomanSymbol appeared
 - [x] Individual symbols to ints
 - [x] Numeric relations
   - [x] Non substracting numerals to ints
@@ -39,6 +47,7 @@
 
 ### Refactoring
 - [x] Roman symbol as type
+- [x] Clustering, what split adding (Example: XI) and substracting (Example: IX) pairs
 
 ### Alternative implementations
 - [ ]  

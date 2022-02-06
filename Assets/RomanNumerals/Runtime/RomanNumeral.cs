@@ -80,10 +80,7 @@ namespace RomanNumerals.Runtime
         #endregion
 
         #region Operator overloading
-        public override string ToString()
-        {
-            return symbols;
-        }
+        public override string ToString() => symbols;
 
         public static implicit operator RomanNumeral(string symbols)
         {
