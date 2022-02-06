@@ -6,16 +6,16 @@ namespace RomanNumerals.Runtime
 {
     public record RomanNumeral
     {
-        readonly string symbols;
+        public static RomanNumeral MaxSupported = new RomanNumeral(3999);
 
-        IEnumerable<RomanSymbol> RomanSymbols => symbols.Select(c => new RomanSymbol(c));
+        readonly string symbols;
 
         #region Constructors
         public RomanNumeral(int number)
         {
             if(number < 1)
-                throw new ArgumentOutOfRangeException("Roman numeral cannot be neither negative nor zero");
-            
+                throw new ArgumentOutOfRangeException(nameof(number));
+
             symbols = NumberToRomanNumeral(number).symbols;
         }
 
@@ -99,11 +99,11 @@ namespace RomanNumerals.Runtime
             }
         }
         #endregion
-        
+
         #region SupportMethods
         internal IEnumerable<string> ClusterSymbols()
         {
-            var originalSymbols = RomanSymbols.ToList();
+            var originalSymbols = symbols.Select(c => new RomanSymbol(c)).ToList();
             originalSymbols.Reverse();
 
             var clusterSymbols = new List<string>();
@@ -129,17 +129,30 @@ namespace RomanNumerals.Runtime
         {
             if(number == 4)
                 return "IV";
-            
+
             var result = string.Empty;
             while(number > 0)
             {
-                result = TakeNextAdditiveFactor();
-
-                string TakeNextAdditiveFactor()
+                if(NextIsSubstraction())
+                    return new RomanNumeral("IV");
+                else
+                    TakeNextAdditiveFactor();
+                
+                bool NextIsSubstraction()
+                {
+                    var lastPayloadDigit = number.ToString().TrimEnd('0').Last();
+                    return lastPayloadDigit is '4' or '9';
+                }
+                
+                void TakeNextAdditiveFactor()
                 {
                     result += RomanSymbol.FloorSymbolOf(number);
                     number -= RomanSymbol.FloorSymbolOf(number);
-                    return result;
+                }
+
+                void TakeNextSubstractiveFactor()
+                {
+                    
                 }
             }
 

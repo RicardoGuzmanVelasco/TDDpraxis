@@ -1,6 +1,7 @@
 ### Basic API
 - [ ] Constructor by int
-  - [ ] Negative case?
+  - [x] Forbid non-positive
+  - [ ] Set max supported
   - [x] Basic additive case
 - [x] Constructor by string
   - [x] Default I constructor
