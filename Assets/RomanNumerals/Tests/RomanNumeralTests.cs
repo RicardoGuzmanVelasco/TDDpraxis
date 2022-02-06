@@ -100,6 +100,14 @@ namespace RomanNumerals.Tests
         {
             FromRomanNumeralToNumber(symbols, number);
         }
+        
+        [TestCase("CMIV", 904)]
+        [TestCase("MDCCLXXIV", 1774)]
+        [TestCase("MCMXCIX", 1999)]
+        public void SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded(string symbols, int number)
+        {
+            FromRomanNumeralToNumber(symbols, number);
+        }
         #endregion
     }
 }
