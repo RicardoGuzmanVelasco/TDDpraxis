@@ -1,4 +1,3 @@
-using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
 using RomanNumerals.Runtime;
@@ -14,8 +13,7 @@ namespace RomanNumerals.Tests
 
             var result = sut.ClusterSymbols();
 
-            result.Should().HaveCount(3);
-            result.Should().OnlyContain(s => s == "I");
+            result.Should().BeEquivalentTo("I", "I", "I");
         }
 
         [Test]
@@ -25,8 +23,7 @@ namespace RomanNumerals.Tests
 
             var result = sut.ClusterSymbols();
 
-            result.Should().HaveCount(1);
-            result.Should().OnlyContain(s => s == "IV");
+            result.Should().BeEquivalentTo("IV");
         }
 
         [Test]
@@ -36,11 +33,17 @@ namespace RomanNumerals.Tests
 
             var result = sut.ClusterSymbols();
 
-            result.Where(s => s == "D").Should().HaveCount(1);
-            result.Where(s => s == "C").Should().HaveCount(2);
-            result.Where(s => s == "L").Should().HaveCount(1);
-            result.Where(s => s == "X").Should().HaveCount(3);
-            result.Should().Contain("IX");
+            result.Should().BeEquivalentTo("D", "C", "C", "L", "X", "X", "X", "IX");
+        }
+        
+        [Test]
+        public void Clustering_SomeSubstractiveRomanNumber_SplitAllSubstractiveClusters()
+        {
+            var sut = new RomanNumeral("XCIX");
+
+            var result = sut.ClusterSymbols();
+
+            result.Should().BeEquivalentTo("XC", "IX");
         }
     }
 }
