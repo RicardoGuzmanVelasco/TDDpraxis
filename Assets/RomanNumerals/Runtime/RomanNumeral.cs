@@ -34,9 +34,26 @@ namespace RomanNumerals.Runtime
                 clusterSymbols.Add(originalSymbols.First());
             return clusterSymbols;
         }
+
+        static string NumberToRomanSymbols(int number)
+        {
+            var result = string.Empty;
+            while(number > 0)
+            {
+                result += RomanSymbol.ClosestSymbolTo(number);
+                number -= RomanSymbol.ClosestSymbolTo(number);
+            }
+
+            return result;
+        }
         #endregion
 
         #region Constructors
+        public RomanNumeral(int number)
+        {
+            symbols = NumberToRomanSymbols(number);
+        }
+
         public RomanNumeral() : this("I")
         {
         }
@@ -80,7 +97,10 @@ namespace RomanNumerals.Runtime
         #endregion
 
         #region Operator overloading
-        public override string ToString() => symbols;
+        public override string ToString()
+        {
+            return symbols;
+        }
 
         public static implicit operator RomanNumeral(string symbols)
         {
@@ -103,6 +123,7 @@ namespace RomanNumerals.Runtime
                     .Select(s => s.First())
                     .Sum(c => new RomanSymbol(c));
             }
+
             int SubstractingTotal()
             {
                 return ClusterSymbols()

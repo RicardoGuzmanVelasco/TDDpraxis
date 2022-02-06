@@ -16,6 +16,13 @@ namespace RomanNumerals.Tests
 
             result.Should().Be(number);
         }
+        
+        static void FromNumberToRomanNumeral(int number, string symbols)
+        {
+            var sut = new RomanNumeral(number);
+            
+            sut.Should().Be(new RomanNumeral(symbols));
+        }
         #endregion
 
         #region Creation
@@ -72,7 +79,7 @@ namespace RomanNumerals.Tests
         }
         #endregion
 
-        #region Numeric Partition & EquivalenceClasses
+        #region To number, Partition & EquivalenceClasses
         [TestCase("I", 1)]
         [TestCase("V", 5)]
         [TestCase("X", 10)]
@@ -100,13 +107,25 @@ namespace RomanNumerals.Tests
         {
             FromRomanNumeralToNumber(symbols, number);
         }
-        
+
         [TestCase("CMIV", 904)]
         [TestCase("MDCCLXXIV", 1774)]
         [TestCase("MCMXCIX", 1999)]
         public void SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded(string symbols, int number)
         {
             FromRomanNumeralToNumber(symbols, number);
+        }
+        #endregion
+        
+        
+        #region From number
+        [TestCase(3, "III")]
+        [TestCase(5, "V")]
+        [TestCase(11, "XI")]
+        [TestCase(1565, "MDLXV")]
+        public void RomanNumeral_CreatedFrom_Number(int number, string symbols)
+        {
+            FromNumberToRomanNumeral(number, symbols);
         }
         #endregion
     }

@@ -7,7 +7,7 @@ namespace RomanNumerals.Runtime
     internal record RomanSymbol
     {
         #region Fixed
-        static readonly Dictionary<char, int> Symbols = new Dictionary<char, int>
+        internal static readonly Dictionary<char, int> Symbols = new Dictionary<char, int>
         {
             ['I'] = 1,
             ['V'] = 5,
@@ -21,6 +21,7 @@ namespace RomanNumerals.Runtime
 
         readonly char symbol;
 
+        #region Constructor
         public RomanSymbol(char symbol)
         {
             if(!IsValid(symbol))
@@ -28,12 +29,19 @@ namespace RomanNumerals.Runtime
 
             this.symbol = symbol;
         }
+        #endregion
 
         #region Operator overloading
         public static implicit operator int(RomanSymbol rs)
         {
             return Symbols[rs.symbol];
         }
+        
+        public static implicit operator RomanSymbol(char c)
+        {
+            return new RomanSymbol(c);
+        }
+
 
         public static implicit operator string(RomanSymbol rs)
         {
@@ -70,6 +78,11 @@ namespace RomanNumerals.Runtime
         internal static bool IsValid(char symbol)
         {
             return Symbols.ContainsKey(symbol);
+        }
+
+        internal static RomanSymbol ClosestSymbolTo(int number)
+        {
+            return Symbols.Last(symbol => symbol.Value <= number).Key;
         }
 
         static int SymbolIndex(RomanSymbol rs)
