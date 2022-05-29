@@ -1,7 +1,7 @@
 using System;
 using FluentAssertions;
 using NUnit.Framework;
-using Ranges.Runtime;
+using Range = Ranges.Runtime.Range;
 
 namespace Ranges.Tests
 {

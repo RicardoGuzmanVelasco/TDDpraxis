@@ -12,7 +12,7 @@ namespace Ranges.Runtime
         public int Length => Max - Min;
         public bool IsEmpty => Length == 0;
 
-        internal Range(int min, int max)
+        public Range(int min, int max)
         {
             if(min > max)
                 throw new ArgumentOutOfRangeException();
