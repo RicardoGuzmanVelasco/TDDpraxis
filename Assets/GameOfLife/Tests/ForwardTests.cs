@@ -5,7 +5,6 @@ namespace GameOfLife.Tests
 {
     public class ForwardTests
     {
-        const int RandomTimes = 149;
         static readonly (int x, int y) AnyRandomCoord = (15, -71);
         
         [Test]
@@ -25,10 +24,10 @@ namespace GameOfLife.Tests
         }
 
         [Test]
-        public void GameOfLife_Block_StillLifes()
+        public void GameOfLife_Block_IsStillLife()
         {
             var sut = GameOfLife.StartWith((0, 0), (0, 1), (1, 0), (1, 1));
-            sut.Forward(RandomTimes).Should().BeEquivalentTo(sut);
+            sut.Forward().ToString().Should().Be(sut.ToString());
         }
     }
 }
