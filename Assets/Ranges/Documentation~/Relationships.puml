@@ -1,0 +1,11 @@
+@startuml
+title Relationships
+center header Ranges
+'''''''''''''
+allowmixing
+'''''''''''''
+
+'''''''''''''
+'''''''''''''
+right footer (CC-BY) RGV, 2022
+@enduml
