@@ -2,17 +2,18 @@ using System.Threading.Tasks;
 
 namespace ConwaysGameOfLife.Runtime.Application
 {
-    public interface IGameOfLifePresenter
+    public interface IGameOfLifeView
     {
         void Present(Domain.GameOfLife model);
+        void DisableForwarding();
     }
     
     public class GameAdvance
     {
-        readonly IGameOfLifePresenter view;
+        readonly IGameOfLifeView view;
         Domain.GameOfLife game;
 
-        public GameAdvance(IGameOfLifePresenter view, Domain.GameOfLife game)
+        public GameAdvance(IGameOfLifeView view, Domain.GameOfLife game)
         {
             this.view = view;
             this.game = game;
@@ -21,6 +22,10 @@ namespace ConwaysGameOfLife.Runtime.Application
         public async Task StepForward()
         {
             game = game.Forward();
+            
+            if(game.IsStill())
+                view.DisableForwarding();
+            
             await ShowCurrent();
         }
 
