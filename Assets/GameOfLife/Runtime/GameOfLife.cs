@@ -21,6 +21,8 @@ namespace GameOfLife
         }
         #endregion
 
+        public bool IsStill() => Forward().Equals(this);
+        
         public bool IsAlive((int x, int y) cell) => AliveCells.Contains(cell);
 
         public GameOfLife Forward()
