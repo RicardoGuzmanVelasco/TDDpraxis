@@ -8,7 +8,7 @@ namespace GameOfLife.Tests
         [Test]
         public void EmptyGameOfLife_HasNotAliveCells()
         {
-            GameOfLife
+            Runtime.Domain.GameOfLife
                 .Empty
                 .AliveCells.Should().BeEmpty();
         }
@@ -16,15 +16,15 @@ namespace GameOfLife.Tests
         [Test]
         public void GameOfLife_StartsAsEmpty()
         {
-            GameOfLife
+            Runtime.Domain.GameOfLife
                 .StartWith()
-                .Should().Be(GameOfLife.Empty);
+                .Should().Be(Runtime.Domain.GameOfLife.Empty);
         }
 
         [Test]
         public void GameOfLife_RightAfterStarts_HasStartingAliveCells()
         {
-            GameOfLife
+            Runtime.Domain.GameOfLife
                 .StartWith((0, 0), (1, 1))
                 .AliveCells.Should().BeEquivalentTo((0, 0), (1, 1));
         }

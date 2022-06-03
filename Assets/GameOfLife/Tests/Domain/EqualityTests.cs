@@ -10,8 +10,8 @@ namespace GameOfLife.Tests
         {
             var doc = new (int x, int y)[] { (0, 0), (0, 1), (-2, 40), (34, 19330), (1, 1) };
             
-            GameOfLife.StartWith(doc).Should().Be(GameOfLife.StartWith(doc));
-            GameOfLife.StartWith(doc).Forward().Should().Be(GameOfLife.StartWith(doc).Forward());
+            Runtime.Domain.GameOfLife.StartWith(doc).Should().Be(Runtime.Domain.GameOfLife.StartWith(doc));
+            Runtime.Domain.GameOfLife.StartWith(doc).Forward().Should().Be(Runtime.Domain.GameOfLife.StartWith(doc).Forward());
         }
     }
 }

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GameOfLife
+namespace GameOfLife.Runtime.Domain
 {
     internal static class CellExtensions
     {
