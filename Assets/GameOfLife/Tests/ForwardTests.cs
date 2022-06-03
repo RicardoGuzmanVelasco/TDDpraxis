@@ -5,8 +5,6 @@ namespace GameOfLife.Tests
 {
     public class ForwardTests
     {
-        static readonly (int x, int y) AnyRandomCoord = (15, -71);
-        
         [Test]
         public void EmptyGameOfLife_SameThanItsFoward()
         {
@@ -16,18 +14,51 @@ namespace GameOfLife.Tests
         }
 
         [Test]
-        public void GameOfLife_WithOneCell_Forward_ThatCellsDies()
+        public void DiesBy_Underpopulation_WithoutNeighbours()
         {
-            GameOfLife.StartWith(AnyRandomCoord)
+            GameOfLife.StartWith((15, -71))
                 .Forward()
-                .AliveCells.Should().BeEmpty();
+                .Should().Be(GameOfLife.Empty);
+        }
+        
+        [Test]
+        public void DiesBy_Underpopulation_With1Neighbour()
+        {
+            GameOfLife.StartWith((0, 89), (1, 89))
+                .Forward()
+                .Should().Be(GameOfLife.Empty);
         }
 
         [Test]
-        public void GameOfLife_Block_IsStillLife()
+        public void Survives_With2Neighbours()
         {
-            var sut = GameOfLife.StartWith((0, 0), (0, 1), (1, 0), (1, 1));
-            sut.Forward().ToString().Should().Be(sut.ToString());
+            GameOfLife.StartWith((0, 0), (0, -1), (0, 1))
+                .Forward()
+                .IsAlive((0, 0)).Should().BeTrue();
+        }
+        
+        [Test]
+        public void Survives_With3Neighbours()
+        {
+            GameOfLife.StartWith((0, 0), (0, -1), (0, 1), (1, 0))
+                .Forward()
+                .IsAlive((0, 0)).Should().BeTrue();
+        }
+
+        [Test]
+        public void DiesBy_Overpopulation_Over3Neighbours()
+        {
+            GameOfLife.StartWith((0, 0), (0, -1), (0, 1), (1, 0), (1, -1))
+                .Forward()
+                .IsAlive((0, 0)).Should().BeFalse();
+        }
+
+        [Test]
+        public void Revives_ByReproduction_With3Neighbours()
+        {
+            GameOfLife.StartWith((0, -1), (0, 1), (1, 0))
+                .Forward()
+                .IsAlive((0, 0)).Should().BeTrue();
         }
     }
 }
