@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GameOfLife.Runtime.Domain
+namespace ConwaysGameOfLife.Runtime.Domain
 {
     public record GameOfLife
     {

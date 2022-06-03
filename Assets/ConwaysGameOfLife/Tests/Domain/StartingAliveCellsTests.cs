@@ -1,7 +1,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace GameOfLife.Tests
+namespace ConwaysGameOfLife.Tests.Domain
 {
     public class StartingAliveCellsTests
     {
