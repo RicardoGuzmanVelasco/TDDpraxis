@@ -8,6 +8,9 @@ namespace ConwaysGameOfLife.Runtime.Infrastructure.Presentation
     public class CellsView : MonoBehaviour, IGameOfLifeView
     {
         [SerializeField] GameObject cellPrefab;
+        [Header("Colors")]
+        [SerializeField] Color aliveColor = Color.black;
+        [SerializeField] Color deadColor = Color.white;
 
         readonly Dictionary<Vector2, SpriteRenderer> cellViews = new Dictionary<Vector2, SpriteRenderer>();
 
@@ -50,7 +53,7 @@ namespace ConwaysGameOfLife.Runtime.Infrastructure.Presentation
         void CleanAllCellViews()
         {
             foreach(var cellView in cellViews)
-                cellView.Value.color = Color.white;
+                cellView.Value.color = deadColor;
         }
 
         void RenderCellView((int x, int y) cell)
@@ -59,7 +62,7 @@ namespace ConwaysGameOfLife.Runtime.Infrastructure.Presentation
 
             if(!cellViews.ContainsKey(coord))
                 SpawnCellAt(cell.x, cell.y);
-            cellViews[coord].color = Color.black;
+            cellViews[coord].color = aliveColor;
         }
         #endregion
     }
