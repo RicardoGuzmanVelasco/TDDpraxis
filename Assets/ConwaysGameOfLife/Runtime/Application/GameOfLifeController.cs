@@ -8,12 +8,12 @@ namespace ConwaysGameOfLife.Runtime.Application
         void DisableForwarding();
     }
     
-    public class GameAdvance
+    public class GameOfLifeController
     {
         readonly IGameOfLifeView view;
         Domain.GameOfLife game;
 
-        public GameAdvance(IGameOfLifeView view, Domain.GameOfLife game)
+        public GameOfLifeController(IGameOfLifeView view, Domain.GameOfLife game)
         {
             this.view = view;
             this.game = game;
