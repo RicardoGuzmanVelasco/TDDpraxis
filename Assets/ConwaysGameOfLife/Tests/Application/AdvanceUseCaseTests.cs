@@ -12,7 +12,7 @@ namespace ConwaysGameOfLife.Tests.Application
         public async Task ShowEmptyGame()
         {
             var mockView = Substitute.For<IGameOfLifeView>();
-            var sut = new GameAdvance(mockView, GameOfLife.Empty);
+            var sut = new GameOfLifeController(mockView, GameOfLife.Empty);
             await sut.ShowCurrent();
             
             mockView.Received(1).Present(GameOfLife.Empty);
@@ -22,7 +22,7 @@ namespace ConwaysGameOfLife.Tests.Application
         public async Task ShowStartingGame()
         {
             var mockView = Substitute.For<IGameOfLifeView>();
-            var sut = new GameAdvance(mockView, GameOfLife.StartWith((0, 0)));
+            var sut = new GameOfLifeController(mockView, GameOfLife.StartWith((0, 0)));
             await sut.ShowCurrent();
             
             mockView.Received(1).Present(GameOfLife.StartWith((0, 0)));
@@ -32,7 +32,7 @@ namespace ConwaysGameOfLife.Tests.Application
         public async Task Forward_WhenStill_DisablesForwarding()
         {
             var mockView = Substitute.For<IGameOfLifeView>();
-            var sut = new GameAdvance(mockView, GameOfLife.Empty);
+            var sut = new GameOfLifeController(mockView, GameOfLife.Empty);
             await sut.StepForward();
             
             mockView.Received(1).DisableForwarding();

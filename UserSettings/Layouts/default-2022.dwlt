@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2542
     height: 1316
   m_ShowMode: 4
-  m_Title: Package Manager
+  m_Title: Console
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 16
+  controlID: 23
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -65,10 +65,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1003
-    width: 1133
+    width: 1037
     height: 263
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -93,12 +93,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1133
+    width: 1037
     height: 1266
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 26
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,7 +116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 630
-    width: 649
+    width: 745
     height: 636
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -142,14 +142,14 @@ MonoBehaviour:
   - {fileID: 5}
   m_Position:
     serializedVersion: 2
-    x: 1133
+    x: 1037
     y: 0
-    width: 649
+    width: 745
     height: 1266
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 66
+  controlID: 2480
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -160,23 +160,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectSettingsWindow
+  m_Name: SceneHierarchyWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 649
+    width: 745
     height: 630
-  m_MinSize: {x: 312, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 24
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,8 +221,8 @@ MonoBehaviour:
     y: 0
     width: 760
     height: 1266
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 18
+  controlID: 25
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -334,25 +334,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PackageManagerWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1133
+    width: 1037
     height: 1003
-  m_MinSize: {x: 801, y: 271}
+  m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 17}
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 16}
-  m_Selected: 3
-  m_LastSelected: 0
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -373,16 +373,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2422
+    x: 2326
     y: 97
-    width: 647
+    width: 743
     height: 609
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 949}
+  m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
   m_SearchText: 
@@ -428,9 +428,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1289
+    x: 17
     y: 97
-    width: 1132
+    width: 558
     height: 982
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -488,2385 +488,6 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 17}
-    m_NewResultList:
-    - id: 1050
-      uniqueId: '[TDDpraxis][suite]'
-      name: TDDpraxis
-      fullName: TDDpraxis
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 'at FluentAssertions.Execution.LateBoundTestFramework.Throw
-      (System.String message) [0x0003d] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Execution\LateBoundTestFramework.cs:21
-
-      at
-      FluentAssertions.Execution.TestFrameworkProvider.Throw (System.String message)
-      [0x00019] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Execution\TestFrameworkProvider.cs:40
-
-      at
-      FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure (System.String
-      message) [0x00001] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Execution\DefaultAssertionStrategy.cs:29
-
-      at
-      FluentAssertions.Execution.AssertionScope.FailWith (System.Func`1[TResult]
-      failReasonFunc) [0x0004d] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Execution\AssertionScope.cs:223
-
-      at
-      FluentAssertions.Execution.AssertionScope.FailWith (System.Func`1[TResult]
-      failReasonFunc) [0x00015] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Execution\AssertionScope.cs:196
-
-      at
-      FluentAssertions.Execution.AssertionScope.FailWith (System.String message,
-      System.Object[] args) [0x00015] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Execution\AssertionScope.cs:238
-
-      at
-      FluentAssertions.Numeric.NumericAssertions`1[T].BePositive (System.String because,
-      System.Object[] becauseArgs) [0x00001] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.boundfoxstudios.fluentassertions@88a9c4e26d\Editor\FluentAssertions\Numeric\NumericAssertions.cs:129
-
-      at
-      Kalendra.Pokemon.Test.Runtime.Infraestructure.WildEncounterZoneAcceptanceTests+<AnyEncounterZoneDefinition_IsWellDefined>d__2.MoveNext
-      () [0x00159] in D:\Documentos\Documentos\Unity\Kalendra-Commons\Assets\Kalendra.Pokemon\Tests\Runtime\Infraestructure\WildEncounterZoneAcceptanceTests.cs:36
-
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in
-      D:\Documentos\Documentos\Unity\Kalendra-Commons\Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-
-'
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ba8a27802076b7807c90df82a9cd0a838c3b7d85c1e8d2879daf2e88f1fe3b892a6fd689d69f388c2dff7d8c063e488fcfebdc8f30e5d1901cc3719205cb62951744ab959ea5c79741b6fd9726d2ca996c14dc9b604fed9dc4f1f69eb088739f7a9792a0c5dc25a1b40f83a68ac4e9a6693b4da7d1e5d4a82cecfda865d8b8a982c8efa9d3e1a6ab2b3ed9ab23b810ac82a723ad8b1b2eadf5952eadcb4051afac1b46b04cac65b0d393ceb00158ebb07632feb09d1511b1488162b4c6601cb7a47a31be9e2108c2f7a53ac6c08242c65d514cc681f0d7c6e881e0c7eaedb4c92ed928ca954229cac1c4ffcb7a4f13ccd636a6cf43f680d0db91a5d04eee81d17b48d2d209fa37d4a0505fd40361c3d6b342aad8113b2dd91e3b3cd9ddad9bd9db76b8d95aea65dcc2abe9dc7d0786ddfc37ddddd5b63bdeb10361de20fa82def05812df344d4bdf599eacdf4f30ffe068f07de1643d13e5c270b3e85fb13feb9ba435ec50e340ed149096ed6ce072ee37ccc9f0545268f3bcf4f1f471f0baf5546221f6c55dc1f627ea3ef75cc5c8fb377d7dfd90bd88fd287c46fe581af0ffc9c8b60000025d02283b530362947004b861a304b4fbc304e9fe440997db500aa9b1200bca982f0c4f00300c4e9b0d0f59a9860f7eed1c1098ab6311fb761614905f0e18a3785218fa0c7f188eff8719d406c61b41cf001c0031b01c59a6e61e8adeda20b569eb20a1c1ba237cf7e7231c5e6226870a6128be0da0295dedc92adc1d212bb414c82bb804472cdf79a82c65bf832d6d272d3043b45a306c899c312e0949338e237234892b8534a65aa437ce55e9378d34ce384c12d939ab1ff23a9cccd23bcc582b3d8abb453df0ea4e3d7aca593d9b09ca3e6745c23f97bca5410289c141818fec41da102d443a01354a5ce56e4a89bb514b51a1ed4b3526ff4b1af2164cfc2c484d80e9ef4de9ab914f5efce74f565692501bbcea500651ec50f9bc6151a44fd451aa565c52d51301534c134253b534de534b1ac0543664605559e2e2553fc56957b603025895d94a597d187c598d55835a3aefb05b9695665cbc033a5d5403775d83a62a5efb295e5f2ae9dd5f9b35a860b3d75d639376986378988866a286af66b17df267bc997768afba8f6bb11e866cb1c1aa6eccb4606f5ebe3670a62e4072e586f075bcad7476b44bba782be2c0786a8bb47c93d9ee7e3e1bf97eb501497fc367767f850fd57fffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: -1
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 17}
-    m_NewResultList:
-    - id: 1002
-      uniqueId: '[TDDpraxis][suite]'
-      name: TDDpraxis
-      fullName: TDDpraxis
-      resultStatus: 1
-      duration: 0.5475194
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1003
-      uniqueId: '[GameOfLife.Tests.dll][suite]'
-      name: GameOfLife.Tests.dll
-      fullName: D:/Documentos/Documentos/Unity/TDDpraxis/Library/ScriptAssemblies/GameOfLife.Tests.dll
-      resultStatus: 1
-      duration: 0.5378878
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[TDDpraxis][suite]'
-    - id: 1004
-      uniqueId: GameOfLife.Tests.dll/[GameOfLife][suite]
-      name: GameOfLife
-      fullName: GameOfLife
-      resultStatus: 1
-      duration: 0.4426416
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: '[GameOfLife.Tests.dll][suite]'
-    - id: 1005
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/[GameOfLife.Tests][GameOfLife.Tests][suite]
-      name: Tests
-      fullName: GameOfLife.Tests
-      resultStatus: 1
-      duration: 0.3433337
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: GameOfLife.Tests.dll/[GameOfLife][suite]
-    - id: 1001
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.EqualityTests][suite]
-      name: EqualityTests
-      fullName: GameOfLife.Tests.EqualityTests
-      resultStatus: 1
-      duration: 0.1175794
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1014
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/[GameOfLife.Tests][GameOfLife.Tests][suite]
-    - id: 1002
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/EqualityTests/[GameOfLife.Tests][GameOfLife.Tests.EqualityTests.ByAliveCells]
-      name: ByAliveCells
-      fullName: GameOfLife.Tests.EqualityTests.ByAliveCells
-      resultStatus: 1
-      duration: 0.0172197
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.EqualityTests][suite]
-    - id: 1001
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-      name: ForwardTests
-      fullName: GameOfLife.Tests.ForwardTests
-      resultStatus: 1
-      duration: 0.0073435
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/[GameOfLife.Tests][GameOfLife.Tests][suite]
-    - id: 1009
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.DiesBy_Overpopulation_Over3Neighbours]
-      name: DiesBy_Overpopulation_Over3Neighbours
-      fullName: GameOfLife.Tests.ForwardTests.DiesBy_Overpopulation_Over3Neighbours
-      resultStatus: 1
-      duration: 0.0013783
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1006
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.DiesBy_Underpopulation_With1Neighbour]
-      name: DiesBy_Underpopulation_With1Neighbour
-      fullName: GameOfLife.Tests.ForwardTests.DiesBy_Underpopulation_With1Neighbour
-      resultStatus: 1
-      duration: 0.0005031
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1005
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.DiesBy_Underpopulation_WithoutNeighbours]
-      name: DiesBy_Underpopulation_WithoutNeighbours
-      fullName: GameOfLife.Tests.ForwardTests.DiesBy_Underpopulation_WithoutNeighbours
-      resultStatus: 1
-      duration: 0.0002744
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1002
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.EmptyGameOfLife_SameThanItsFoward]
-      name: EmptyGameOfLife_SameThanItsFoward
-      fullName: GameOfLife.Tests.ForwardTests.EmptyGameOfLife_SameThanItsFoward
-      resultStatus: 1
-      duration: 0.0002746
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1010
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.Revives_ByReproduction_With3Neighbours]
-      name: Revives_ByReproduction_With3Neighbours
-      fullName: GameOfLife.Tests.ForwardTests.Revives_ByReproduction_With3Neighbours
-      resultStatus: 1
-      duration: 0.0004641
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1007
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.Survives_With2Neighbours]
-      name: Survives_With2Neighbours
-      fullName: GameOfLife.Tests.ForwardTests.Survives_With2Neighbours
-      resultStatus: 1
-      duration: 0.0003658
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1008
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/ForwardTests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests.Survives_With3Neighbours]
-      name: Survives_With3Neighbours
-      fullName: GameOfLife.Tests.ForwardTests.Survives_With3Neighbours
-      resultStatus: 1
-      duration: 0.0003674
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.ForwardTests][suite]
-    - id: 1001
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests][suite]
-      name: StartingAliveCellsTests
-      fullName: GameOfLife.Tests.StartingAliveCellsTests
-      resultStatus: 1
-      duration: 0.1085158
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1006
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/[GameOfLife.Tests][GameOfLife.Tests][suite]
-    - id: 1004
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/StartingAliveCellsTests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests.EmptyGameOfLife_HasNotAliveCells]
-      name: EmptyGameOfLife_HasNotAliveCells
-      fullName: GameOfLife.Tests.StartingAliveCellsTests.EmptyGameOfLife_HasNotAliveCells
-      resultStatus: 1
-      duration: 0.0234872
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests][suite]
-    - id: 1003
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/StartingAliveCellsTests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests.GameOfLife_RightAfterStarts_HasStartingAliveCells]
-      name: GameOfLife_RightAfterStarts_HasStartingAliveCells
-      fullName: GameOfLife.Tests.StartingAliveCellsTests.GameOfLife_RightAfterStarts_HasStartingAliveCells
-      resultStatus: 1
-      duration: 0.0822722
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests][suite]
-    - id: 1005
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/StartingAliveCellsTests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests.GameOfLife_StartsAsEmpty]
-      name: GameOfLife_StartsAsEmpty
-      fullName: GameOfLife.Tests.StartingAliveCellsTests.GameOfLife_StartsAsEmpty
-      resultStatus: 1
-      duration: 0.0002647
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StartingAliveCellsTests][suite]
-    - id: 1011
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StillLifesTest][suite]
-      name: StillLifesTest
-      fullName: GameOfLife.Tests.StillLifesTest
-      resultStatus: 1
-      duration: 0.0040578
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1016
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/[GameOfLife.Tests][GameOfLife.Tests][suite]
-    - id: 1013
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/StillLifesTest/[GameOfLife.Tests][GameOfLife.Tests.StillLifesTest.GameOfLife_Beehive_IsStillLife]
-      name: GameOfLife_Beehive_IsStillLife
-      fullName: GameOfLife.Tests.StillLifesTest.GameOfLife_Beehive_IsStillLife
-      resultStatus: 1
-      duration: 0.0006487
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StillLifesTest][suite]
-    - id: 1012
-      uniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/StillLifesTest/[GameOfLife.Tests][GameOfLife.Tests.StillLifesTest.GameOfLife_Block_IsStillLife]
-      name: GameOfLife_Block_IsStillLife
-      fullName: GameOfLife.Tests.StillLifesTest.GameOfLife_Block_IsStillLife
-      resultStatus: 1
-      duration: 0.0007164
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: GameOfLife.Tests.dll/GameOfLife/Tests/[GameOfLife.Tests][GameOfLife.Tests.StillLifesTest][suite]
-    - id: 1046
-      uniqueId: '[TDDpraxis.FizzBuzz.Tests.dll][suite]'
-      name: TDDpraxis.FizzBuzz.Tests.dll
-      fullName: D:/Documentos/Documentos/Unity/TDDpraxis/Library/ScriptAssemblies/TDDpraxis.FizzBuzz.Tests.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: '[TDDpraxis][suite]'
-    - id: 1047
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/[FizzBuzz][suite]
-      name: FizzBuzz
-      fullName: FizzBuzz
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1046
-      parentUniqueId: '[TDDpraxis.FizzBuzz.Tests.dll][suite]'
-    - id: 1048
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests][suite]
-      name: Tests
-      fullName: FizzBuzz.Tests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1047
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/[FizzBuzz][suite]
-    - id: 1003
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests][suite]
-      name: FizzBuzzExclamationDecoratorTests
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1048
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests][suite]
-    - id: 1008
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark][suite]
-      name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests][suite]
-    - id: 1004
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(1)]
-      name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(1)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(1)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark][suite]
-    - id: 1005
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(2)]
-      name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(2)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(2)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark][suite]
-    - id: 1006
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(4)]
-      name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(4)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(4)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark][suite]
-    - id: 1007
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(7)]
-      name: FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(7)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark(7)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_CommonNumber_DoesNotEndWithExclamationMark][suite]
-    - id: 1015
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests][suite]
-    - id: 1009
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_SpecialNumber_EndsWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(3)]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(3)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(3)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-    - id: 1010
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_SpecialNumber_EndsWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(5)]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(5)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(5)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-    - id: 1011
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_SpecialNumber_EndsWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(6)]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(6)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(6)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-    - id: 1012
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_SpecialNumber_EndsWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(10)]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(10)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(10)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-    - id: 1013
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_SpecialNumber_EndsWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(15)]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(15)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(15)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-    - id: 1014
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/FizzBuzzOf_SpecialNumber_EndsWithExclamationMark/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(30)]
-      name: FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(30)
-      fullName: FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark(30)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzExclamationDecoratorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzExclamationDecoratorTests.FizzBuzzOf_SpecialNumber_EndsWithExclamationMark][suite]
-    - id: 1016
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests][suite]
-      name: FizzBuzzMultipleTransmutatorTests
-      fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1048
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests][suite]
-    - id: 1020
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord][suite]
-      name: WhenNumberIsMultiple_ReturnsWord
-      fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1016
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests][suite]
-    - id: 1017
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/WhenNumberIsMultiple_ReturnsWord/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(3,"Fizz")]
-      name: WhenNumberIsMultiple_ReturnsWord(3,"Fizz")
-      fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(3,"Fizz")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord][suite]
-    - id: 1018
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/WhenNumberIsMultiple_ReturnsWord/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(5,"Buzz")]
-      name: WhenNumberIsMultiple_ReturnsWord(5,"Buzz")
-      fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(5,"Buzz")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord][suite]
-    - id: 1019
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/WhenNumberIsMultiple_ReturnsWord/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(15,"Fizz
-        Buzz")]
-      name: WhenNumberIsMultiple_ReturnsWord(15,"Fizz Buzz")
-      fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord(15,"Fizz
-        Buzz")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsMultiple_ReturnsWord][suite]
-    - id: 1021
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzMultipleTransmutatorTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsNotMultiple_ReturnsEmpty]
-      name: WhenNumberIsNotMultiple_ReturnsEmpty
-      fullName: FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests.WhenNumberIsNotMultiple_ReturnsEmpty
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1016
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzMultipleTransmutatorTests][suite]
-    - id: 1022
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-      name: FizzBuzzTests
-      fullName: FizzBuzz.Tests.FizzBuzzTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1048
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests][suite]
-    - id: 1045
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz][suite]
-      name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1022
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-    - id: 1042
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(15)]
-      name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(15)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(15)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1045
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz][suite]
-    - id: 1043
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(30)]
-      name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(30)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(30)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1045
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz][suite]
-    - id: 1044
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(2147483640)]
-      name: FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(2147483640)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz(2147483640)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1045
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_And5Multiple_IsFizzBuzz][suite]
-    - id: 1037
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz][suite]
-      name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1022
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-    - id: 1034
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_3Multiple_Non5Multiple_IsFizz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(3)]
-      name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(3)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(3)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1037
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz][suite]
-    - id: 1035
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_3Multiple_Non5Multiple_IsFizz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(6)]
-      name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(6)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(6)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1037
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz][suite]
-    - id: 1036
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_3Multiple_Non5Multiple_IsFizz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(2147483646)]
-      name: FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(2147483646)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz(2147483646)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1037
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_3Multiple_Non5Multiple_IsFizz][suite]
-    - id: 1041
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz][suite]
-      name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1022
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-    - id: 1038
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(5)]
-      name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(5)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(5)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1041
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz][suite]
-    - id: 1039
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(10)]
-      name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(10)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(10)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1041
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz][suite]
-    - id: 1040
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(2147483645)]
-      name: FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(2147483645)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz(2147483645)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1041
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_5Multiple_Non3Multiple_IsBuzz][suite]
-    - id: 1033
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber][suite]
-      name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1022
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-    - id: 1029
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(1)]
-      name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(1)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(1)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber][suite]
-    - id: 1030
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(2)]
-      name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(2)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(2)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber][suite]
-    - id: 1031
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(4)]
-      name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(4)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(4)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber][suite]
-    - id: 1032
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(7)]
-      name: FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(7)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber(7)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1033
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_Neither3Nor5Multiple_ReturnsTheNumber][suite]
-    - id: 1025
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException][suite]
-      name: FizzBuzzOf_NonPositiveNumber_ThrowsException
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1022
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-    - id: 1023
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_NonPositiveNumber_ThrowsException/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException(int.MinValue)]
-      name: FizzBuzzOf_NonPositiveNumber_ThrowsException(int.MinValue)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException(int.MinValue)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1025
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException][suite]
-    - id: 1024
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_NonPositiveNumber_ThrowsException/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException(0)]
-      name: FizzBuzzOf_NonPositiveNumber_ThrowsException(0)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException(0)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1025
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_NonPositiveNumber_ThrowsException][suite]
-    - id: 1028
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException][suite]
-      name: FizzBuzzOf_PositiveNumber_DoesNotThrowException
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1022
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests][suite]
-    - id: 1026
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_PositiveNumber_DoesNotThrowException/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException(1)]
-      name: FizzBuzzOf_PositiveNumber_DoesNotThrowException(1)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException(1)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException][suite]
-    - id: 1027
-      uniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/FizzBuzzOf_PositiveNumber_DoesNotThrowException/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException(int.MaxValue)]
-      name: FizzBuzzOf_PositiveNumber_DoesNotThrowException(int.MaxValue)
-      fullName: FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException(int.MaxValue)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: TDDpraxis.FizzBuzz.Tests.dll/FizzBuzz/Tests/FizzBuzzTests/[TDDpraxis.FizzBuzz.Tests][FizzBuzz.Tests.FizzBuzzTests.FizzBuzzOf_PositiveNumber_DoesNotThrowException][suite]
-    - id: 1065
-      uniqueId: '[TDDpraxis.Ranges.Tests.dll][suite]'
-      name: TDDpraxis.Ranges.Tests.dll
-      fullName: D:/Documentos/Documentos/Unity/TDDpraxis/Library/ScriptAssemblies/TDDpraxis.Ranges.Tests.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: '[TDDpraxis][suite]'
-    - id: 1066
-      uniqueId: TDDpraxis.Ranges.Tests.dll/[Ranges][suite]
-      name: Ranges
-      fullName: Ranges
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1065
-      parentUniqueId: '[TDDpraxis.Ranges.Tests.dll][suite]'
-    - id: 1067
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/[TDDpraxis.Ranges.Tests][Ranges.Tests][suite]
-      name: Tests
-      fullName: Ranges.Tests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1066
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/[Ranges][suite]
-    - id: 1049
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-      name: RangesTests
-      fullName: Ranges.Tests.RangesTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1067
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/[TDDpraxis.Ranges.Tests][Ranges.Tests][suite]
-    - id: 1051
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_Between_LowerAndUpperBounds]
-      name: Range_Between_LowerAndUpperBounds
-      fullName: Ranges.Tests.RangesTests.Range_Between_LowerAndUpperBounds
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1059
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IncludesItself]
-      name: Range_IncludesItself
-      fullName: Ranges.Tests.RangesTests.Range_IncludesItself
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1057
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IncludesNumber_IfWithinBounds]
-      name: Range_IncludesNumber_IfWithinBounds
-      fullName: Ranges.Tests.RangesTests.Range_IncludesNumber_IfWithinBounds
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1058
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IncludesRange_IfBothEdgesWithinBounds]
-      name: Range_IncludesRange_IfBothEdgesWithinBounds
-      fullName: Ranges.Tests.RangesTests.Range_IncludesRange_IfBothEdgesWithinBounds
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1050
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IsCreated_ThroughFactoryMethod]
-      name: Range_IsCreated_ThroughFactoryMethod
-      fullName: Ranges.Tests.RangesTests.Range_IsCreated_ThroughFactoryMethod
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1055
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IsEmpty_IfLengthIsZero]
-      name: Range_IsEmpty_IfLengthIsZero
-      fullName: Ranges.Tests.RangesTests.Range_IsEmpty_IfLengthIsZero
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1063
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IsGreaterThanOther_IfMinIsGreaterOrSameThanOtherMax]
-      name: Range_IsGreaterThanOther_IfMinIsGreaterOrSameThanOtherMax
-      fullName: Ranges.Tests.RangesTests.Range_IsGreaterThanOther_IfMinIsGreaterOrSameThanOtherMax
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1062
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_IsLesserThanOther_IfMaxIsLesserOrSameThanOtherMin]
-      name: Range_IsLesserThanOther_IfMaxIsLesserOrSameThanOtherMin
-      fullName: Ranges.Tests.RangesTests.Range_IsLesserThanOther_IfMaxIsLesserOrSameThanOtherMin
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1054
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds][suite]
-      name: Range_Length_ModuleBetweenBounds
-      fullName: Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1052
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/Range_Length_ModuleBetweenBounds/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds(2,7,5)]
-      name: Range_Length_ModuleBetweenBounds(2,7,5)
-      fullName: Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds(2,7,5)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1054
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds][suite]
-    - id: 1053
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/Range_Length_ModuleBetweenBounds/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds(0,0,0)]
-      name: Range_Length_ModuleBetweenBounds(0,0,0)
-      fullName: Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds(0,0,0)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1054
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_Length_ModuleBetweenBounds][suite]
-    - id: 1064
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.Range_WithInvertedBounds_ThrowsException]
-      name: Range_WithInvertedBounds_ThrowsException
-      fullName: Ranges.Tests.RangesTests.Range_WithInvertedBounds_ThrowsException
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1060
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.RangesEquality_IsTrue_IfSameBounds]
-      name: RangesEquality_IsTrue_IfSameBounds
-      fullName: Ranges.Tests.RangesTests.RangesEquality_IsTrue_IfSameBounds
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1061
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.RangesInequality_IsTrue_IfNotSameBounds]
-      name: RangesInequality_IsTrue_IfNotSameBounds
-      fullName: Ranges.Tests.RangesTests.RangesInequality_IsTrue_IfNotSameBounds
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1056
-      uniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/RangesTests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests.ZeroRange_IsEmpty]
-      name: ZeroRange_IsEmpty
-      fullName: Ranges.Tests.RangesTests.ZeroRange_IsEmpty
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1049
-      parentUniqueId: TDDpraxis.Ranges.Tests.dll/Ranges/Tests/[TDDpraxis.Ranges.Tests][Ranges.Tests.RangesTests][suite]
-    - id: 1114
-      uniqueId: '[TDDpraxis.RomanNumerals.Tests.dll][suite]'
-      name: TDDpraxis.RomanNumerals.Tests.dll
-      fullName: D:/Documentos/Documentos/Unity/TDDpraxis/Library/ScriptAssemblies/TDDpraxis.RomanNumerals.Tests.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: '[TDDpraxis][suite]'
-    - id: 1115
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/[RomanNumerals][suite]
-      name: RomanNumerals
-      fullName: RomanNumerals
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1114
-      parentUniqueId: '[TDDpraxis.RomanNumerals.Tests.dll][suite]'
-    - id: 1116
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests][suite]
-      name: Tests
-      fullName: RomanNumerals.Tests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1115
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/[RomanNumerals][suite]
-    - id: 1068
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests][suite]
-      name: RomanNumeralInternalTests
-      fullName: RomanNumerals.Tests.RomanNumeralInternalTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1116
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests][suite]
-    - id: 1070
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralInternalTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_JustSubstractiveRomanNumber_ReturnsTheSameAsCluster]
-      name: Clustering_JustSubstractiveRomanNumber_ReturnsTheSameAsCluster
-      fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_JustSubstractiveRomanNumber_ReturnsTheSameAsCluster
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1068
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests][suite]
-    - id: 1069
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralInternalTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SameSymbolRomanNumber_SplitsAllChars]
-      name: Clustering_SameSymbolRomanNumber_SplitsAllChars
-      fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SameSymbolRomanNumber_SplitsAllChars
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1068
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests][suite]
-    - id: 1072
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralInternalTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SomeSubstractiveRomanNumber_SplitAllSubstractiveClusters]
-      name: Clustering_SomeSubstractiveRomanNumber_SplitAllSubstractiveClusters
-      fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SomeSubstractiveRomanNumber_SplitAllSubstractiveClusters
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1068
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests][suite]
-    - id: 1071
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralInternalTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SubstractiveComplexRomanNumber_SplitSubstractiveAndNonSubstractiveClusters]
-      name: Clustering_SubstractiveComplexRomanNumber_SplitSubstractiveAndNonSubstractiveClusters
-      fullName: RomanNumerals.Tests.RomanNumeralInternalTests.Clustering_SubstractiveComplexRomanNumber_SplitSubstractiveAndNonSubstractiveClusters
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1068
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralInternalTests][suite]
-    - id: 1073
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-      name: RomanNumeralTests
-      fullName: RomanNumerals.Tests.RomanNumeralTests
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1116
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests][suite]
-    - id: 1080
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported][suite]
-      name: AdditiveNotation_IsNotSupported
-      fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1077
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/AdditiveNotation_IsNotSupported/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("IIII")]
-      name: AdditiveNotation_IsNotSupported("IIII")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("IIII")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1080
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported][suite]
-    - id: 1078
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/AdditiveNotation_IsNotSupported/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("XXXX")]
-      name: AdditiveNotation_IsNotSupported("XXXX")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("XXXX")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1080
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported][suite]
-    - id: 1079
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/AdditiveNotation_IsNotSupported/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("CCCC")]
-      name: AdditiveNotation_IsNotSupported("CCCC")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported("CCCC")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1080
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.AdditiveNotation_IsNotSupported][suite]
-    - id: 1076
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.Constructor_EffectivelyTakes_RomanSymbols]
-      name: Constructor_EffectivelyTakes_RomanSymbols
-      fullName: RomanNumerals.Tests.RomanNumeralTests.Constructor_EffectivelyTakes_RomanSymbols
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1075
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.Constructor_Fails_IfNotJustRomanSymbols]
-      name: Constructor_Fails_IfNotJustRomanSymbols
-      fullName: RomanNumerals.Tests.RomanNumeralTests.Constructor_Fails_IfNotJustRomanSymbols
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1101
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction][suite]
-      name: JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction
-      fullName: RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1099
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IV",4)]
-      name: JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IV",4)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IV",4)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1101
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction][suite]
-    - id: 1100
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IX",9)]
-      name: JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IX",9)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction("IX",9)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1101
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.JustSubstractive_IsEquivalentTo_ItsReversedSymbolsSubstraction][suite]
-    - id: 1098
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum][suite]
-      name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum
-      fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1094
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/NonSubstractive_IsEquivalentTo_ItsSymbolsSum/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("II",2)]
-      name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("II",2)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("II",2)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1098
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum][suite]
-    - id: 1095
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/NonSubstractive_IsEquivalentTo_ItsSymbolsSum/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("III",3)]
-      name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("III",3)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("III",3)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1098
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum][suite]
-    - id: 1096
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/NonSubstractive_IsEquivalentTo_ItsSymbolsSum/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("VI",6)]
-      name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("VI",6)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("VI",6)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1098
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum][suite]
-    - id: 1097
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/NonSubstractive_IsEquivalentTo_ItsSymbolsSum/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("CLV",155)]
-      name: NonSubstractive_IsEquivalentTo_ItsSymbolsSum("CLV",155)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum("CLV",155)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1098
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.NonSubstractive_IsEquivalentTo_ItsSymbolsSum][suite]
-    - id: 1083
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive][suite]
-      name: RomanNumeral_CreatedByNumber_MustBePositive
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1081
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedByNumber_MustBePositive/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive(0)]
-      name: RomanNumeral_CreatedByNumber_MustBePositive(0)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive(0)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1083
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive][suite]
-    - id: 1082
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedByNumber_MustBePositive/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive(-1)]
-      name: RomanNumeral_CreatedByNumber_MustBePositive(-1)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive(-1)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1083
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedByNumber_MustBePositive][suite]
-    - id: 1110
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
-      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1106
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(3,"III")]
-      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(3,"III")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(3,"III")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1110
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
-    - id: 1107
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(5,"V")]
-      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(5,"V")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(5,"V")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1110
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
-    - id: 1108
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(11,"XI")]
-      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(11,"XI")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(11,"XI")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1110
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
-    - id: 1109
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(1565,"MDLXV")]
-      name: RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(1565,"MDLXV")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols(1565,"MDLXV")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1110
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustAdditiveSymbols][suite]
-    - id: 1113
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols][suite]
-      name: RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1111
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(4,"IV")]
-      name: RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(4,"IV")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(4,"IV")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1113
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols][suite]
-    - id: 1112
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(9,"IX")]
-      name: RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(9,"IX")
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols(9,"IX")
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1113
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_CreatedFromNumber_WithJustSubstractiveSymbols][suite]
-    - id: 1085
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_Implicit_FromString]
-      name: RomanNumeral_Implicit_FromString
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_Implicit_FromString
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1074
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_IsI_ByDefault]
-      name: RomanNumeral_IsI_ByDefault
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_IsI_ByDefault
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1084
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_ToString_ByRomanSymbols]
-      name: RomanNumeral_ToString_ByRomanSymbols
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanNumeral_ToString_ByRomanSymbols
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1093
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1086
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("I",1)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("I",1)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("I",1)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1087
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("V",5)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("V",5)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("V",5)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1088
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("X",10)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("X",10)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("X",10)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1089
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("L",50)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("L",50)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("L",50)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1090
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("C",100)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("C",100)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("C",100)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1091
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("D",500)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("D",500)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("D",500)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1092
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/RomanSymbols_RespectivelyEquivalent_ToNumbers/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("M",1000)]
-      name: RomanSymbols_RespectivelyEquivalent_ToNumbers("M",1000)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers("M",1000)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1093
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.RomanSymbols_RespectivelyEquivalent_ToNumbers][suite]
-    - id: 1105
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded][suite]
-      name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded
-      fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1073
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests][suite]
-    - id: 1102
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("CMIV",904)]
-      name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("CMIV",904)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("CMIV",904)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1105
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded][suite]
-    - id: 1103
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MDCCLXXIV",1774)]
-      name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MDCCLXXIV",1774)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MDCCLXXIV",1774)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1105
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded][suite]
-    - id: 1104
-      uniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MCMXCIX",1999)]
-      name: SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MCMXCIX",1999)
-      fullName: RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded("MCMXCIX",1999)
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1105
-      parentUniqueId: TDDpraxis.RomanNumerals.Tests.dll/RomanNumerals/Tests/RomanNumeralTests/[TDDpraxis.RomanNumerals.Tests][RomanNumerals.Tests.RomanNumeralTests.SomeSubstractive_IsEquivalentTo_ItsIndependentSubstractionAdded][suite]
-    m_ResultText: METHOD (0.008s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6399d2b6
-      m_LastClickedID: -1227712157
-      m_ExpandedIDs: 7c90df822dff7d8c4452be99604fed9dd1e5d4a882a723adf5952eade691f7c09e2108c2f7a53ac6dcc3e9c7db91a5d04eee81d12e5285d539f6bbd5c2abe9dc344d4bdf4f30ffe068f07de1c0eee8e4c55dc1f65cc5c8fbb4fbc304f7892316fa0c7f18b414c82b8d34ce38cc582b3d866e033f3a01354a80e9ef4de9ab914f565692501bbcea504c13425395d94a598d55835a83a62a5efb295e5f74bf2b636f9ed66300c0f367afba8f6bb1c1aa6e501dd972c367767fffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2887,9 +508,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2422
+    x: 2326
     y: 727
-    width: 647
+    width: 743
     height: 615
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2908,22 +529,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages
+    - Assets/ConwaysGameOfLife/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Packages
+  - Assets/ConwaysGameOfLife/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Documentos\Documentos\Unity\TDDpraxis
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ffffff7f
-    m_LastClickedID: 2147483647
-    m_ExpandedIDs: 0000000010520000125200001452000000ca9a3bffffff7f
+    m_SelectedIDs: 84630000
+    m_LastClickedID: 25476
+    m_ExpandedIDs: 00000000ae520000b0520000b2520000c0520000ec52000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2951,7 +572,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000105200001252000014520000
+    m_ExpandedIDs: 00000000ae520000b0520000b2520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2978,22 +599,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Cell
+      m_OriginalName: Cell
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25484
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -3068,10 +689,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2282
-    y: 73
-    width: 1305
-    height: 629
+    x: 2326
+    y: 97
+    width: 743
+    height: 609
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3081,7 +702,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 20fbffff
+      m_ExpandedIDs: f2b7ffff9cb9ffff54bbffff9cbbffff00bfffff0abfffff5cbfffffacbffffffebfffff38c2ffff8ac2ffffc4c4ffff16c5ffff38c7ffff8ac7ffff5ecaffffb0caffff16ceffff68ceffff8ad0ffffdcd0ffff0ad3ffff5cd3ffff96d5ffffe8d5ffff0ad8ffff5cd8ffff8adaffffdcdaffff0addffff5cddffff7edfffffd0dffffff2e1ffff44e2ffff66e4ffffb8e4ffff6ee8ffffc0e8ffffe2eaffff34ebffff56edffffa8edffffcaefffff1cf0fffff8f1ffff4af2ffff6cf4ffffc0f4ffff08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3125,10 +746,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1281
-    y: 81
-    width: 1014
-    height: 869
+    x: 1289
+    y: 97
+    width: 1036
+    height: 982
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3139,7 +760,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: -166, y: -26}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -3164,7 +785,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -3190,7 +811,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -3455,9 +1076,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.0046968646, y: 0.083728194, z: 0.04338073}
+    m_Target: {x: 10.187583, y: 10.211784, z: -0.2386734}
     speed: 2
-    m_Value: {x: 0.0046968646, y: 0.083728194, z: 0.04338073}
+    m_Value: {x: 10.187583, y: 10.211784, z: -0.2386734}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3507,9 +1128,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.484834
+    m_Target: 26.711447
     speed: 2
-    m_Value: 5.484834
+    m_Value: 26.711447
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -3554,10 +1175,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1281
-    y: 81
-    width: 1014
-    height: 869
+    x: 1289
+    y: 97
+    width: 1036
+    height: 982
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3568,7 +1189,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1014, y: 570}
+  m_TargetSize: {x: 1036, y: 961}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -3582,16 +1203,16 @@ MonoBehaviour:
   m_PlayFocused: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -507
-    m_HBaseRangeMax: 507
-    m_VBaseRangeMin: -285
-    m_VBaseRangeMax: 285
+    m_HBaseRangeMin: -518
+    m_HBaseRangeMax: 518
+    m_VBaseRangeMin: -480.5
+    m_VBaseRangeMax: 480.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -3609,23 +1230,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1014
-      height: 848
+      width: 1036
+      height: 961
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 507, y: 424}
+    m_Translation: {x: 518, y: 480.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -507
-      y: -424
-      width: 1014
-      height: 848
+      x: -518
+      y: -480.5
+      width: 1036
+      height: 961
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1014, y: 869}
+  m_LastWindowPixelSize: {x: 1036, y: 982}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -3655,7 +1276,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1289
     y: 1100
-    width: 1132
+    width: 1036
     height: 242
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
