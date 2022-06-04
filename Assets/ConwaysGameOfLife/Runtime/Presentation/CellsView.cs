@@ -46,16 +46,37 @@ namespace ConwaysGameOfLife.Runtime.Presentation
         #region IGameOfLifeView implementation
         public void Present(GameOfLife model)
         {
-            foreach(var cellView in cellViews)
-            {
-                var cell = ((int)cellView.Key.x, (int)cellView.Key.y);
-                cellView.Value.color = model.IsAlive(cell) ? Color.black : Color.white;
-            } 
+            CleanAllCellViews();
+            PaintAliveCells(model);
         }
 
         public void DisableForwarding()
         {
             forwarding = false;
+        }
+        #endregion
+
+        #region Support methods
+        
+        void PaintAliveCells(GameOfLife model)
+        {
+            foreach(var cell in model.AliveCells)
+                RenderCellView(cell);
+        }
+
+        void CleanAllCellViews()
+        {
+            foreach(var cellView in cellViews)
+                cellView.Value.color = Color.white;
+        }
+
+        void RenderCellView((int x, int y) cell)
+        {
+            var coord = new Vector2(cell.x, cell.y);
+
+            if(!cellViews.ContainsKey(coord))
+                SpawnCellAt(cell.x, cell.y);
+            cellViews[coord].color = Color.black;
         }
         #endregion
     }
