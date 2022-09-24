@@ -1,4 +1,5 @@
 using Connect4.Runtime.Domain;
+using static RGV.DesignByContract.Runtime.Contract;
 
 namespace Connect4.Runtime.Application
 {
@@ -16,11 +17,12 @@ namespace Connect4.Runtime.Application
 
         public void InColumn(int column)
         {
+            Require(model.IsGameOver).False();
+            
             if(model.IsLegalMove(column))
                 model.DropInColumn(column);
             else
                 view.ShowColumnAsFull(column);
-                
         }
     }
 }

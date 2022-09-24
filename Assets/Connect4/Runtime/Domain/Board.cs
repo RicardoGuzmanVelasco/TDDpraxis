@@ -26,7 +26,7 @@ namespace Connect4.Runtime.Domain
         }
         #endregion
 
-        bool IsGameOver => IsFull || HasWon;
+        public bool IsGameOver => IsFull || HasWon;
         bool IsFull => TokensDroppedCount() == Size.rows * Size.columns;
         bool HasWon => HasWonByColumn() || HasWonByRow() || HasWonByDiagonal();
         (int rows, int columns) Size => (tokens.GetLength(0), tokens.GetLength(1));
