@@ -22,7 +22,7 @@ namespace Connect4.Tests
         [Test]
         public void CannotDrop_aToken_inFullColumn()
         {
-            var sut = new Board(rows: 2, columns: 1);
+            var sut = new Board(rows: 1, columns: 2);
             sut.DropInColumn(1);
             var spy = sut.Monitor();
             

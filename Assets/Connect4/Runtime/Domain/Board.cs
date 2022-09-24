@@ -6,8 +6,8 @@ namespace Connect4.Runtime.Domain
 {
     public class Board
     {
-        (int rows, int columns) size;
-        Dictionary<int, int> tokensPerColumn = new();
+        readonly (int rows, int columns) size;
+        readonly Dictionary<int, int> tokensPerColumn = new();
 
         public event Action<int> TokenDroppedInColumn;
         
@@ -16,17 +16,32 @@ namespace Connect4.Runtime.Domain
             size = (rows, columns);
         }
 
-        public void DropInColumn(int onebasedRow)
+        public void DropInColumn(int columnBase1)
         {
-            Require(onebasedRow).Between(1, size.rows);
+            Require(columnBase1).Between(1, size.rows);
 
-            if(tokensPerColumn.ContainsKey(onebasedRow))
-                tokensPerColumn[onebasedRow]++;
-            else
-                tokensPerColumn[onebasedRow] = 1;
+            InitializeColumn(columnBase1);
+            if(IsFullColumn(columnBase1))
+                return;
             
-            if(tokensPerColumn[onebasedRow] < size.rows)
-                TokenDroppedInColumn?.Invoke(onebasedRow);
+            DropTokenIn(columnBase1);
+        }
+        
+        void InitializeColumn(int i)
+        {
+            if(!tokensPerColumn.ContainsKey(i))
+                tokensPerColumn[i] = 0;
+        }
+
+        bool IsFullColumn(int i)
+        {
+            return tokensPerColumn[i] >= size.rows;
+        }
+        
+        void DropTokenIn(int i)
+        {
+            tokensPerColumn[i]++;
+            TokenDroppedInColumn?.Invoke(i);
         }
     }
 }
