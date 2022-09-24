@@ -34,7 +34,7 @@ namespace RomanNumerals.Runtime
         static void AssertSymbolsAreValid(string symbols)
         {
             if(!symbols.All(RomanSymbol.IsValid))
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException(nameof(symbols));
         }
 
         static void AssertNoAdditiveNotation(string symbols)
@@ -146,20 +146,9 @@ namespace RomanNumerals.Runtime
                     result += RomanSymbol.FloorSymbolOf(number);
                     number -= RomanSymbol.FloorSymbolOf(number);
                 }
-
-                void TakeNextSubstractiveFactor()
-                {
-                    number--;
-                }
             }
 
             return result;
-        }
-
-        static bool NextIsSubstraction(int number)
-        {
-            var lastPayloadDigit = number.ToString().TrimEnd('0').Last();
-            return lastPayloadDigit is '4' or '9';
         }
         #endregion
     }

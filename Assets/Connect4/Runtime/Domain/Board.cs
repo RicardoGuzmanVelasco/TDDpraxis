@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using static RGV.DesignByContract.Runtime.Contract;
 
@@ -8,39 +7,35 @@ namespace Connect4.Runtime.Domain
     public class Board
     {
         enum Token { None, Red, Yellow }
-        
-        readonly (int rows, int columns) size;
-        readonly Dictionary<int, int> tokensPerColumn = new();
         readonly Token[,] tokens;
 
         public event Action<int> TokenDroppedInColumn;
         
         #region Ctors
+        Board(Board otherToCopy)
+        {
+            tokens = (Token[,])otherToCopy.tokens.Clone();
+        }
+        
         public Board(int rows, int columns)
         {
             Require(rows).GreaterThan(0);
             Require(columns).GreaterThan(0);
             
-            size = (rows, columns);
             tokens = new Token[rows, columns];
         }
-
-        Board(Board otherToCopy) : this(otherToCopy.size.rows, otherToCopy.size.columns)
-        {
-            tokensPerColumn = new Dictionary<int, int>(otherToCopy.tokensPerColumn);
-        }
         #endregion
-        
-        public bool IsFull => tokensPerColumn.Values.Sum() == size.rows * size.columns;
+
+        (int rows, int columns) Size => (tokens.GetLength(0), tokens.GetLength(1));
+        bool IsFull => TokensDroppedCount() == Size.rows * Size.columns;
         bool HasWon => false;
         
         public void DropInColumn(int column)
         {
-            Require(column).Between(1, size.columns);
+            Require(column).Between(1, Size.columns);
             Require(IsFullColumn(column)).False();
             Require(IsFull).False();
 
-            InitializeColumn(column);
             if(IsFullColumn(column))
                 return;
             
@@ -49,7 +44,7 @@ namespace Connect4.Runtime.Domain
 
         public bool WinsIfDropsIn(int column)
         {
-            Require(column).Between(1, size.rows);
+            Require(column).Between(1, Size.rows);
 
             var simulatedDrop = new Board(this);
             simulatedDrop.DropInColumn(column);
@@ -58,52 +53,43 @@ namespace Connect4.Runtime.Domain
         }
 
         #region Support methods
-        void InitializeColumn(int i)
-        {
-            if(!tokensPerColumn.ContainsKey(i))
-                tokensPerColumn[i] = 0;
-        }
-
         bool IsFullColumn(int i)
         {
-            InitializeColumn(i);
-            return tokensPerColumn[i] >= size.rows;
+            var column = i - 1;
+            var x = Enumerable.Range(0, Size.rows).Count(row => tokens[row, column] != Token.None);
+            return x == Size.rows;
         }
         
         void DropTokenIn(int i)
         {
-            tokensPerColumn[i]++;
+            var column = i - 1;
+            var firstEmptyRow = Enumerable.Range(0, Size.rows).First(row => tokens[row, column] == Token.None);
+            tokens[firstEmptyRow, column] = TokenOfThisTurn();
+
             TokenDroppedInColumn?.Invoke(i);
-
-            Drop_NEWWWWWWWWWWWW(i - 1);
         }
 
-        void Drop_NEWWWWWWWWWWWW(int column)
+        Token TokenOfThisTurn() => TokensDroppedCount() % 2 == 0 ? Token.Red : Token.Yellow;
+
+        int TokensDroppedCount()
         {
-            var firstEmptyRow = Enumerable.Range(0, size.rows).First(row => tokens[row, column] == Token.None);
-            var token = TokenOfThisTurn();
+            var result = 0;
             
-            tokens[firstEmptyRow, column] = token;
-        }
-
-        Token TokenOfThisTurn()
-        {
-            var tokensDroppedCount = 0;
-            for(var i = 0; i < tokens.GetLength(0); i++)
-            for(var j = 0; j < tokens.GetLength(1); j++)
+            for(var i = 0; i < Size.rows; i++)
+            for(var j = 0; j < Size.columns; j++)
                 if(tokens[i,j] != Token.None)
-                    tokensDroppedCount++;
+                    result++;
             
-            return tokensDroppedCount % 2 == 0 ? Token.Red : Token.Yellow;
+            return result;
         }
         #endregion
         
         public override string ToString()
         {
             var result = "";
-            for(var i = size.rows - 1; i >= 0; i--)
+            for(var i = Size.rows - 1; i >= 0; i--)
             {
-                for(var j = 0; j < size.columns; j++)
+                for(var j = 0; j < Size.columns; j++)
                     result += tokens[i, j] switch
                     {
                         Token.None => "-",
