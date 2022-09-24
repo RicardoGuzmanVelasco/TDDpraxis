@@ -39,5 +39,17 @@ namespace Connect4.Tests
             sut.WinsIfDropsIn(1)
                 .Should().BeFalse();
         }
+
+        [Test, Ignore("refactoring")]
+        public void Winning_with4_inSameColumn()
+        {
+            var sut = new Board(4, 4);
+            sut.DropInColumn(1); sut.DropInColumn(2);
+            sut.DropInColumn(1); sut.DropInColumn(2);
+            sut.DropInColumn(1); sut.DropInColumn(2);
+
+            sut.WinsIfDropsIn(1)
+                .Should().BeTrue();
+        }
     }
 }

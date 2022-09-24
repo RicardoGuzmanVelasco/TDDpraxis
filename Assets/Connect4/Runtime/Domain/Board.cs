@@ -7,8 +7,11 @@ namespace Connect4.Runtime.Domain
 {
     public class Board
     {
+        enum Token { None, Red, Yellow }
+        
         readonly (int rows, int columns) size;
         readonly Dictionary<int, int> tokensPerColumn = new();
+        readonly Token[,] tokens;
 
         public event Action<int> TokenDroppedInColumn;
         
@@ -19,11 +22,11 @@ namespace Connect4.Runtime.Domain
             Require(columns).GreaterThan(0);
             
             size = (rows, columns);
+            tokens = new Token[rows, columns];
         }
 
-        Board(Board otherToCopy)
+        Board(Board otherToCopy) : this(otherToCopy.size.rows, otherToCopy.size.columns)
         {
-            size = otherToCopy.size;
             tokensPerColumn = new Dictionary<int, int>(otherToCopy.tokensPerColumn);
         }
         #endregion
@@ -71,6 +74,27 @@ namespace Connect4.Runtime.Domain
         {
             tokensPerColumn[i]++;
             TokenDroppedInColumn?.Invoke(i);
+
+            Drop_NEWWWWWWWWWWWW(i - 1);
+        }
+
+        void Drop_NEWWWWWWWWWWWW(int column)
+        {
+            var firstEmptyRow = Enumerable.Range(0, size.rows).First(row => tokens[row, column] == Token.None);
+            var token = TokenOfThisTurn();
+            
+            tokens[firstEmptyRow, column] = token;
+        }
+
+        Token TokenOfThisTurn()
+        {
+            var tokensDroppedCount = 0;
+            for(var i = 0; i < tokens.GetLength(0); i++)
+            for(var j = 0; j < tokens.GetLength(1); j++)
+                if(tokens[i,j] != Token.None)
+                    tokensDroppedCount++;
+            
+            return tokensDroppedCount % 2 == 0 ? Token.Red : Token.Yellow;
         }
         #endregion
     }
