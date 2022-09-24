@@ -6,14 +6,14 @@ left to right direction
 actor Player
 boundary CursorInput #technology
 boundary BoardView #technology
-control DropToken #implementation
+control TokenDrop #implementation
 entity Board
 
 Player --> CursorInput : commits\ndrop token in\ncurrent column
-CursorInput --> DropToken : current column
-DropToken --> Board : drop token in\ncurrent column
-Board ..> DropToken : <<event>>\nTokenDroppedInColumn(X)
-DropToken -> BoardView : AddTokenIn(X)
+CursorInput --> TokenDrop : current column
+TokenDrop --> Board : drop token in\ncurrent column
+Board ..> TokenDrop : <<event>>\nTokenDroppedInColumn(X)
+TokenDrop -> BoardView : AddTokenIn(X)
 
 CursorInput .l. BoardView #transparent
 
@@ -23,5 +23,6 @@ note as N1
 - How is validated game is not over?
 - What if drop leads to victory?
 - Where is stored what player has the current turn?
+- To async logic!!!
 end note
 @enduml

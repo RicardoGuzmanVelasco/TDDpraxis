@@ -2,7 +2,8 @@
     "name": "Connect4.Application",
     "rootNamespace": "",
     "references": [
-        "GUID:4f3166ce75f1424a9d8c84f49b07f6c9"
+        "GUID:4f3166ce75f1424a9d8c84f49b07f6c9",
+        "GUID:a9e6600510d749a8aaee4bb384c63774"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
