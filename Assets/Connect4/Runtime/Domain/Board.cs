@@ -26,16 +26,23 @@ namespace Connect4.Runtime.Domain
         }
         #endregion
 
-        bool IsOver => IsFull || HasWon;
+        bool IsGameOver => IsFull || HasWon;
         bool IsFull => TokensDroppedCount() == Size.rows * Size.columns;
         bool HasWon => HasWonByColumn() || HasWonByRow() || HasWonByDiagonal();
         (int rows, int columns) Size => (tokens.GetLength(0), tokens.GetLength(1));
+        
+        public bool IsLegalMove(int column)
+        {
+            Require(column).Between(1, Size.columns);
+            
+            return !IsGameOver && !IsFullColumn(column);
+        }
         
         public void DropInColumn(int column)
         {
             Require(column).Between(1, Size.columns);
             Require(IsFullColumn(column)).False();
-            Require(IsOver).False();
+            Require(IsGameOver).False();
 
             if(IsFullColumn(column))
                 return;
@@ -47,7 +54,7 @@ namespace Connect4.Runtime.Domain
         {
             Require(column).Between(1, Size.rows);
             Require(IsFullColumn(column)).False();
-            Require(IsOver).False();
+            Require(IsGameOver).False();
 
             var simulatedDrop = new Board(this);
             simulatedDrop.DropInColumn(column);
