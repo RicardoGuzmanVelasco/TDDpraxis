@@ -19,7 +19,7 @@ namespace Connect4.Tests
                 .WithArgs<int>(r => r == 4);
         }
 
-        [Test]
+        [Test, Description("Each drop is from a different player, alternating turns, so 4 is 2&2")]
         public void Drop_4Times_inSameColumn_IsNotWinStill()
         {
             var sut = new Board(rows: 4, columns: 1);
@@ -39,7 +39,5 @@ namespace Connect4.Tests
             sut.WinsIfDropsIn(1)
                 .Should().BeFalse();
         }
-        
-        
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using static RGV.DesignByContract.Runtime.Contract;
 
 namespace Connect4.Runtime.Domain
@@ -27,7 +28,7 @@ namespace Connect4.Runtime.Domain
         }
         #endregion
         
-        bool IsFull => tokensPerColumn.Count == size.rows * size.columns;
+        public bool IsFull => tokensPerColumn.Values.Sum() == size.rows * size.columns;
         bool HasWon => false;
         
         public void DropInColumn(int column)
