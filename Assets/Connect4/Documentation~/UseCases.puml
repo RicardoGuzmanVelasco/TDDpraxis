@@ -1,0 +1,22 @@
+@startuml
+skin rose
+skinparam actorstyle awesome
+left to right direction
+
+:Player:
+:Match Creator: as Creator
+
+(Drop token\nin a column) as (Drop)
+(Select board size) as (Size)
+(Start a new game) as (Start)
+(Undo movement) as (Undo)
+
+Player --> (Drop)
+Player --> (Undo)
+
+Creator --> (Size)
+Creator --> (Start)
+
+Creator . Player : might be\nthe same\nperson
+
+@enduml
