@@ -1,0 +1,19 @@
+@startuml
+skin rose
+skinparam actorstyle awesome
+left to right direction
+
+actor Player
+boundary CursorInput #technology
+boundary BoardView #technology
+control TokenDrop #implementation
+entity Board
+
+Player --> CursorInput : commits\ndrop token in\ncurrent column
+CursorInput --> TokenDrop : current column
+TokenDrop --> Board : drop token in\ncurrent column
+Board ..> TokenDrop : <<event>>\nTokenDroppedInColumn(X)
+TokenDrop -> BoardView : AddTokenIn(X)
+
+CursorInput .l. BoardView #transparent
+@enduml

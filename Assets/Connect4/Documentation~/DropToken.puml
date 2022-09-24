@@ -1,19 +1,31 @@
 @startuml
 skin rose
 skinparam actorstyle awesome
-left to right direction
+autonumber
+autoactivate on
 
 actor Player
-boundary CursorInput #technology
 boundary BoardView #technology
+boundary CursorInput #technology
 control TokenDrop #implementation
 entity Board
 
-Player --> CursorInput : commits\ndrop token in\ncurrent column
-CursorInput --> TokenDrop : current column
-TokenDrop --> Board : drop token in\ncurrent column
-Board ..> TokenDrop : <<event>>\nTokenDroppedInColumn(X)
-TokenDrop -> BoardView : AddTokenIn(X)
-
-CursorInput .l. BoardView #transparent
+Player -> CursorInput : commits\ndrop token in\ncurrent column
+CursorInput -> TokenDrop : current column
+deactivate CursorInput
+TokenDrop -> Board : current column is valid
+ref over Board
+    check if column is valid
+end ref
+alt column is NOT valid
+    return false 
+    TokenDrop -> BoardView : highlight invalid column
+    deactivate TokenDrop
+    deactivate BoardView
+else column is OK
+    Board --> TokenDrop : true
+    ref over BoardView, Board
+        DropToken
+    end ref
+end
 @enduml

@@ -17,5 +17,18 @@ namespace Connect4.Tests
             
             viewMock.Received().AddTokenIn(3);
         }
+
+        [Test]
+        public void TryingDrop_inFullColumn_NotifiesErrorToView()
+        {
+            var viewMock = Substitute.For<BoardView>();
+            var model = new Board(1, 5);
+            var sut = new TokenDrop(model, viewMock);
+
+            model.DropInColumn(4);
+            sut.InColumn(4);
+            
+            viewMock.Received().ShowColumnAsFull(4);
+        }
     }
 }

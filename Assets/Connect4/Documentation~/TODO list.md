@@ -11,3 +11,7 @@
 - What if drop leads to victory?
 - Where is stored what player has the current turn?
 - To async logic!!!
+
+### Drop a token - error cases
+- Risk: legal move assumed same as not-full column.
+  - If control takes a try after game over, it will exxxxplode!
