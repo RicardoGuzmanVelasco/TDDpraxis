@@ -1,0 +1,19 @@
+{
+    "name": "Connect4.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a9e6600510d749a8aaee4bb384c63774",
+        "GUID:e372c541aba5148868e12aa078ca7c20"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

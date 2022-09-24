@@ -7,6 +7,13 @@
       "dependencies": {},
       "hash": "58a427c7778422e92bb58604f74562646e3d702c"
     },
+    "com.rgv.designbycontract": {
+      "version": "https://github.com/RicardoGuzmanVelasco/RGV.git?path=/Assets/RGV.DesignByContract",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "eef1236233d9db18d13259533766f32977dbe7a5"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.0-pre.1",
       "depth": 0,
