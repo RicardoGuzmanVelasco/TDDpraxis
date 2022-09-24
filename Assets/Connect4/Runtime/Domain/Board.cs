@@ -36,7 +36,7 @@ namespace Connect4.Runtime.Domain
         
         public void DropInColumn(int column)
         {
-            Require(column).Between(1, size.rows);
+            Require(column).Between(1, size.columns);
             Require(IsFullColumn(column)).False();
             Require(IsFull).False();
 
@@ -97,5 +97,23 @@ namespace Connect4.Runtime.Domain
             return tokensDroppedCount % 2 == 0 ? Token.Red : Token.Yellow;
         }
         #endregion
+        
+        public override string ToString()
+        {
+            var result = "";
+            for(var i = size.rows - 1; i >= 0; i--)
+            {
+                for(var j = 0; j < size.columns; j++)
+                    result += tokens[i, j] switch
+                    {
+                        Token.None => "-",
+                        Token.Red => "X",
+                        Token.Yellow => "O",
+                        _ => throw new NotSupportedException()
+                    };
+                result += "\n";
+            }
+            return result;
+        }
     }
 }
