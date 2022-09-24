@@ -20,18 +20,6 @@ namespace Connect4.Tests
         }
 
         [Test]
-        public void CannotDrop_aToken_inFullColumn()
-        {
-            var sut = new Board(rows: 1, columns: 2);
-            sut.DropInColumn(1);
-            var spy = sut.Monitor();
-            
-            sut.DropInColumn(1);
-
-            spy.Should().NotRaise(nameof(Board.TokenDroppedInColumn));
-        }
-
-        [Test]
         public void Drop_4Times_inSameColumn_IsNotWinStill()
         {
             var sut = new Board(rows: 4, columns: 1);
@@ -51,5 +39,7 @@ namespace Connect4.Tests
             sut.WinsIfDropsIn(1)
                 .Should().BeFalse();
         }
+        
+        
     }
 }

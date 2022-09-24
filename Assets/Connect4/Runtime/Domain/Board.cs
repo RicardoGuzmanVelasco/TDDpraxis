@@ -24,6 +24,7 @@ namespace Connect4.Runtime.Domain
         public void DropInColumn(int column)
         {
             Require(column).Between(1, size.rows);
+            Require(IsFullColumn(column)).False();
             Require(IsFull).False();
 
             InitializeColumn(column);
@@ -48,6 +49,7 @@ namespace Connect4.Runtime.Domain
 
         bool IsFullColumn(int i)
         {
+            InitializeColumn(i);
             return tokensPerColumn[i] >= size.rows;
         }
         
