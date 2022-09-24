@@ -30,5 +30,26 @@ namespace Connect4.Tests
 
             spy.Should().NotRaise(nameof(Board.TokenDroppedInColumn));
         }
+
+        [Test]
+        public void Drop_4Times_inSameColumn_IsNotWinStill()
+        {
+            var sut = new Board(rows: 4, columns: 1);
+            sut.DropInColumn(1);
+            sut.DropInColumn(1);
+            sut.DropInColumn(1);
+
+            sut.WinsIfDropsIn(1)
+                .Should().BeFalse();
+        }
+
+        [Test]
+        public void toFill_aBoard_IsNot_DirectWin()
+        {
+            var sut = new Board(1, 1);
+
+            sut.WinsIfDropsIn(1)
+                .Should().BeFalse();
+        }
     }
 }

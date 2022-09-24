@@ -13,18 +13,31 @@ namespace Connect4.Runtime.Domain
         
         public Board(int rows, int columns)
         {
+            Require(rows).GreaterThan(0);
+            Require(columns).GreaterThan(0);
+            
             size = (rows, columns);
         }
-
-        public void DropInColumn(int columnBase1)
+        
+        bool IsFull => tokensPerColumn.Count == size.rows * size.columns;
+        
+        public void DropInColumn(int column)
         {
-            Require(columnBase1).Between(1, size.rows);
+            Require(column).Between(1, size.rows);
+            Require(IsFull).False();
 
-            InitializeColumn(columnBase1);
-            if(IsFullColumn(columnBase1))
+            InitializeColumn(column);
+            if(IsFullColumn(column))
                 return;
             
-            DropTokenIn(columnBase1);
+            DropTokenIn(column);
+        }
+
+        public bool WinsIfDropsIn(int column)
+        {
+            Require(column).Between(1, size.rows);
+
+            return false;
         }
         
         void InitializeColumn(int i)
