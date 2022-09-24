@@ -40,15 +40,41 @@ namespace Connect4.Tests
                 .Should().BeFalse();
         }
 
-        [Test, Ignore("refactoring")]
-        public void Winning_with4_inSameColumn()
+        [Test]
+        public void Winning_with4Consecutive_inSameColumn()
         {
             var sut = new Board(4, 4);
             sut.DropInColumn(1); sut.DropInColumn(2);
             sut.DropInColumn(1); sut.DropInColumn(2);
             sut.DropInColumn(1); sut.DropInColumn(2);
-
+            
             sut.WinsIfDropsIn(1)
+                .Should().BeTrue();
+        }
+        
+        [Test]
+        public void Winning_with4Consecutive_inSameRow()
+        {
+            var sut = new Board(4, 4);
+            sut.DropInColumn(1); sut.DropInColumn(1);
+            sut.DropInColumn(2); sut.DropInColumn(2);
+            sut.DropInColumn(3); sut.DropInColumn(3);
+            
+            sut.WinsIfDropsIn(4)
+                .Should().BeTrue();
+        }
+        
+        [Test]
+        public void Winning_with4Consecutive_inDiagonal()
+        {
+            var sut = new Board(4, 4);
+            sut.DropInColumn(1); sut.DropInColumn(2);
+            sut.DropInColumn(2); sut.DropInColumn(3);
+            sut.DropInColumn(3); sut.DropInColumn(4);
+            sut.DropInColumn(3); sut.DropInColumn(4);
+            sut.DropInColumn(4); sut.DropInColumn(1);
+
+            sut.WinsIfDropsIn(4)
                 .Should().BeTrue();
         }
     }

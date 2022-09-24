@@ -26,15 +26,16 @@ namespace Connect4.Runtime.Domain
         }
         #endregion
 
-        (int rows, int columns) Size => (tokens.GetLength(0), tokens.GetLength(1));
+        bool IsOver => IsFull || HasWon;
         bool IsFull => TokensDroppedCount() == Size.rows * Size.columns;
-        bool HasWon => false;
+        bool HasWon => HasWonByColumn() || HasWonByRow() || HasWonByDiagonal();
+        (int rows, int columns) Size => (tokens.GetLength(0), tokens.GetLength(1));
         
         public void DropInColumn(int column)
         {
             Require(column).Between(1, Size.columns);
             Require(IsFullColumn(column)).False();
-            Require(IsFull).False();
+            Require(IsOver).False();
 
             if(IsFullColumn(column))
                 return;
@@ -45,6 +46,8 @@ namespace Connect4.Runtime.Domain
         public bool WinsIfDropsIn(int column)
         {
             Require(column).Between(1, Size.rows);
+            Require(IsFullColumn(column)).False();
+            Require(IsOver).False();
 
             var simulatedDrop = new Board(this);
             simulatedDrop.DropInColumn(column);
@@ -76,11 +79,108 @@ namespace Connect4.Runtime.Domain
             var result = 0;
             
             for(var i = 0; i < Size.rows; i++)
-            for(var j = 0; j < Size.columns; j++)
-                if(tokens[i,j] != Token.None)
-                    result++;
+                for(var j = 0; j < Size.columns; j++)
+                    if(tokens[i,j] != Token.None)
+                        result++;
             
             return result;
+        }
+
+        bool HasWonByColumn()
+        {
+            for(var i = 0; i < Size.columns; i++)
+                if(HasWonByColumn(i))
+                    return true;
+            
+            return false;
+            
+            bool HasWonByColumn(int column)
+            {
+                var token = tokens[0, column];
+                var count = 0;
+            
+                for(var i = 0; i < Size.rows; i++)
+                {
+                    if(tokens[i, column] == token)
+                        count++;
+                    else
+                    {
+                        count = 0;
+                        token = tokens[i, column];
+                    }
+                
+                    if(count == 4 && token != Token.None)
+                        return true;
+                }
+
+                return false;
+            }
+        }
+
+        bool HasWonByRow()
+        {
+            for(var i = 0; i < Size.rows; i++)
+                if(HasWonByRow(i))
+                    return true;
+            
+            return false;
+            
+            bool HasWonByRow(int row)
+            {
+                var token = tokens[row, 0];
+                var count = 0;
+            
+                for(var i = 0; i < Size.columns; i++)
+                {
+                    if(tokens[row, i] == token)
+                        count++;
+                    else
+                    {
+                        count = 0;
+                        token = tokens[row, i];
+                    }
+                
+                    if(count == 4 && token != Token.None)
+                        return true;
+                }
+
+                return false;
+            }
+        }
+        
+        bool HasWonByDiagonal()
+        {
+            for(var i = 0; i < Size.rows; i++)
+                for(var j = 0; j < Size.columns; j++)
+                    if(HasWonByDiagonal(i, j))
+                        return true;
+            
+            return false;
+            
+            bool HasWonByDiagonal(int row, int column)
+            {
+                var token = tokens[row, column];
+                var count = 0;
+            
+                for(var i = 0; i < Size.rows; i++)
+                {
+                    if(row + i >= Size.rows || column + i >= Size.columns)
+                        break;
+                
+                    if(tokens[row + i, column + i] == token)
+                        count++;
+                    else
+                    {
+                        count = 0;
+                        token = tokens[row + i, column + i];
+                    }
+                
+                    if(count == 4 && token != Token.None)
+                        return true;
+                }
+
+                return false;
+            }
         }
         #endregion
         
