@@ -11,6 +11,7 @@ namespace Connect4.Runtime.Domain
 
         public event Action<int> TokenDroppedInColumn;
         
+        #region Ctors
         public Board(int rows, int columns)
         {
             Require(rows).GreaterThan(0);
@@ -18,8 +19,16 @@ namespace Connect4.Runtime.Domain
             
             size = (rows, columns);
         }
+
+        Board(Board otherToCopy)
+        {
+            size = otherToCopy.size;
+            tokensPerColumn = new Dictionary<int, int>(otherToCopy.tokensPerColumn);
+        }
+        #endregion
         
         bool IsFull => tokensPerColumn.Count == size.rows * size.columns;
+        bool HasWon => false;
         
         public void DropInColumn(int column)
         {
@@ -38,9 +47,13 @@ namespace Connect4.Runtime.Domain
         {
             Require(column).Between(1, size.rows);
 
-            return false;
+            var simulatedDrop = new Board(this);
+            simulatedDrop.DropInColumn(column);
+            
+            return simulatedDrop.HasWon;
         }
-        
+
+        #region Support methods
         void InitializeColumn(int i)
         {
             if(!tokensPerColumn.ContainsKey(i))
@@ -58,5 +71,6 @@ namespace Connect4.Runtime.Domain
             tokensPerColumn[i]++;
             TokenDroppedInColumn?.Invoke(i);
         }
+        #endregion
     }
 }
