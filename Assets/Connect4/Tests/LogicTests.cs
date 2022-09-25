@@ -130,7 +130,7 @@ namespace Connect4.Tests
         public void Cursor_CannotExceed_Columns()
         {
             var sut = new Cursor(columns: 2);
-            sut.GoTo(Vector2Int.right);
+            sut.GoTowards(Vector2Int.right);
 
             sut.CanGoTo(Vector2Int.right)
                 .Should().BeFalse();
@@ -140,9 +140,9 @@ namespace Connect4.Tests
         public void Cursor_Moves()
         {
             var sut = new Cursor(columns: 5);
-            sut.GoTo(Vector2Int.right);
-            sut.GoTo(Vector2Int.right);
-            sut.GoTo(Vector2Int.right);
+            sut.GoTowards(Vector2Int.right);
+            sut.GoTowards(Vector2Int.right);
+            sut.GoTowards(Vector2Int.right);
 
             sut.InColumn
                 .Should().Be(4);

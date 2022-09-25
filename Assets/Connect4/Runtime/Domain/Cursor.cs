@@ -22,7 +22,7 @@ namespace Connect4.Runtime.Domain
             return desiredColumn >= 1 && desiredColumn <= maxColumn;
         }
 
-        public void GoTo(Vector2Int horizontalDirection)
+        public void GoTowards(Vector2Int horizontalDirection)
         {
             Contract.Require(CanGoTo(horizontalDirection)).True();
             

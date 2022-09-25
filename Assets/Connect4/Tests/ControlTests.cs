@@ -12,7 +12,7 @@ namespace Connect4.Tests
         [Test]
         public async Task Dropping_aToken_NotifiesView()
         {
-            var viewMock = MockView();
+            var viewMock = MockBoardView();
             var sut = new TokenDrop
             (
                 new Board(1, columns: 5),
@@ -28,7 +28,7 @@ namespace Connect4.Tests
         [Test]
         public async Task TryingDrop_inFullColumn_NotifiesErrorToView()
         {
-            var viewMock = MockView();
+            var viewMock = MockBoardView();
             var model = new Board(1, 5);
             var sut = new TokenDrop
             (
@@ -43,8 +43,32 @@ namespace Connect4.Tests
             AsyncAssert(() => viewMock.ShowColumnAsFull(4));
         }
 
+        [Test]
+        public void Move_theCursor_NotifiesView()
+        {
+            var viewMock = MockCursorView();
+            var sut = new CursorMovement
+            (
+                new Cursor(columns: 10, beginIn: 7),
+                viewMock
+            );
+
+            sut.Left();
+            sut.Right();
+
+            AsyncAssert(() => viewMock.MoveTo(6));
+            AsyncAssert(() => viewMock.MoveTo(7));
+        }
+
         #region TestApi
-        static BoardView MockView()
+        static CursorView MockCursorView()
+        {
+            var result = Substitute.For<CursorView>();
+            result.InvalidDirection(default).ReturnsForAnyArgs(Task.CompletedTask);
+            result.MoveTo(default).ReturnsForAnyArgs(Task.CompletedTask);
+            return result;
+        }
+        static BoardView MockBoardView()
         {
             var result = Substitute.For<BoardView>();
             result.ShowColumnAsFull(default).ReturnsForAnyArgs(Task.CompletedTask);
