@@ -50,7 +50,7 @@ namespace Connect4.Runtime.Domain
 
         public bool WinsIfDropsIn(int column)
         {
-            Require(column).Between(1, Size.rows);
+            Require(column).Between(1, Size.columns);
             Require(IsFullColumn(column)).False();
             Require(IsGameOver).False();
 
