@@ -1,0 +1,19 @@
+{
+    "name": "Connect4.EntryPoint",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a9e6600510d749a8aaee4bb384c63774",
+        "GUID:36749ea45e49436aaab3819a2091ca6a",
+        "GUID:dfcf1d6c208c4a6187d623f02d314cca",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
