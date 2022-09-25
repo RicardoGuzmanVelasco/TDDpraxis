@@ -1,6 +1,8 @@
 using Connect4.Runtime.Domain;
 using FluentAssertions;
 using NUnit.Framework;
+using UnityEngine;
+using Cursor = Connect4.Runtime.Domain.Cursor;
 
 namespace Connect4.Tests
 {
@@ -95,6 +97,55 @@ namespace Connect4.Tests
             
             sut.IsLegalMove(2)
                 .Should().BeFalse();
+        }
+
+        [Test]
+        public void Cursor_StartsAt_Column1()
+        {
+            var sut = new Cursor(columns: 2);
+            
+            sut.InColumn
+                .Should().Be(1);
+        }
+
+        [Test]
+        public void Cursor_CannotGoToLeft_AfterStart()
+        {
+            var sut = new Cursor(columns: 2);
+            
+            sut.CanGoTo(Vector2Int.left)
+                .Should().BeFalse();
+        }
+
+        [Test]
+        public void Cursor_CanGoToDirection_WhenNotInTheEdge()
+        {
+            var sut = new Cursor(columns: 2);
+            
+            sut.CanGoTo(Vector2Int.right)
+                .Should().BeTrue();
+        }
+
+        [Test]
+        public void Cursor_CannotExceed_Columns()
+        {
+            var sut = new Cursor(columns: 2);
+            sut.GoTo(Vector2Int.right);
+
+            sut.CanGoTo(Vector2Int.right)
+                .Should().BeFalse();
+        }
+
+        [Test]
+        public void Cursor_Moves()
+        {
+            var sut = new Cursor(columns: 5);
+            sut.GoTo(Vector2Int.right);
+            sut.GoTo(Vector2Int.right);
+            sut.GoTo(Vector2Int.right);
+
+            sut.InColumn
+                .Should().Be(4);
         }
     }
 }
