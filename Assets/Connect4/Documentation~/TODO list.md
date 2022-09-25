@@ -9,6 +9,9 @@
 - Abstraction with Board, Cursor, Players and Current turn
 - Support for non-human players
   - Computer player needs board state/memento
+### Game
+- Poder jugar a diferentes tamaños.
+  - Mucho trabajo de generación de tablero y cuadrar cámaras.
 
 ### Infraestructura, presentación
 - Await properly whenever an input calls a controller!!!
