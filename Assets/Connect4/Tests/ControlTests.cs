@@ -4,6 +4,8 @@ using Connect4.Runtime.Application;
 using Connect4.Runtime.Domain;
 using NSubstitute;
 using NUnit.Framework;
+using UnityEngine;
+using Cursor = Connect4.Runtime.Domain.Cursor;
 
 namespace Connect4.Tests
 {
@@ -44,7 +46,7 @@ namespace Connect4.Tests
         }
 
         [Test]
-        public void Move_theCursor_NotifiesView()
+        public async Task Move_theCursor_NotifiesView()
         {
             var viewMock = MockCursorView();
             var sut = new CursorMovement
@@ -53,11 +55,41 @@ namespace Connect4.Tests
                 viewMock
             );
 
-            sut.Left();
-            sut.Right();
+            await sut.Left();
+            await sut.Right();
 
             AsyncAssert(() => viewMock.MoveTo(6));
             AsyncAssert(() => viewMock.MoveTo(7));
+        }
+
+        [Test]
+        public async Task Moving_theCursor_OutOfLeftEdge_NotifiesErrortoView()
+        {
+            var viewMock = MockCursorView();
+            var sut = new CursorMovement
+            (
+                new Cursor(columns: 1, beginIn: 1),
+                viewMock
+            );
+
+            await sut.Left();
+
+            AsyncAssert(() => viewMock.InvalidDirection(Vector2Int.left));
+        }
+        
+        [Test]
+        public async Task Moving_theCursor_OutOfRightEdge_NotifiesErrortoView()
+        {
+            var viewMock = MockCursorView();
+            var sut = new CursorMovement
+            (
+                new Cursor(columns: 1, beginIn: 1),
+                viewMock
+            );
+
+            await sut.Right();
+
+            AsyncAssert(() => viewMock.InvalidDirection(Vector2Int.right));
         }
 
         #region TestApi

@@ -1,5 +1,5 @@
-using RGV.DesignByContract.Runtime;
 using UnityEngine;
+using static RGV.DesignByContract.Runtime.Contract;
 
 namespace Connect4.Runtime.Domain
 {
@@ -10,13 +10,16 @@ namespace Connect4.Runtime.Domain
 
         public Cursor(int columns, int beginIn = 1)
         {
+            Require(columns).Positive();
+            Require(beginIn).Between(1, columns);
+            
             maxColumn = columns;
             InColumn = beginIn;
         }
 
         public bool CanGoTo(Vector2Int horizontalDirection)
         {
-            Contract.Require(horizontalDirection == Vector2Int.left || horizontalDirection == Vector2Int.right).True();
+            Require(horizontalDirection == Vector2Int.left || horizontalDirection == Vector2Int.right).True();
             
             var desiredColumn = InColumn + horizontalDirection.x;
             return desiredColumn >= 1 && desiredColumn <= maxColumn;
@@ -24,7 +27,7 @@ namespace Connect4.Runtime.Domain
 
         public void GoTowards(Vector2Int horizontalDirection)
         {
-            Contract.Require(CanGoTo(horizontalDirection)).True();
+            Require(CanGoTo(horizontalDirection)).True();
             
             InColumn += horizontalDirection.x;
         }
