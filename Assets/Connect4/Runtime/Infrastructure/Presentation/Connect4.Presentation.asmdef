@@ -1,7 +1,21 @@
 {
-  "name": "Connect4.Presentation",
-  "references": [
-    "GUID:4f3166ce75f1424a9d8c84f49b07f6c9",
-    "GUID:36749ea45e49436aaab3819a2091ca6a"
-  ]
+    "name": "Connect4.Presentation",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4f3166ce75f1424a9d8c84f49b07f6c9",
+        "GUID:36749ea45e49436aaab3819a2091ca6a",
+        "GUID:c0a45969f80569540badf7453476f4f1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "DOTween.dll",
+        "Zenject-usage.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

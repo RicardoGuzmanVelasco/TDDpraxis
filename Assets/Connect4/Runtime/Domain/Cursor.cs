@@ -19,7 +19,8 @@ namespace Connect4.Runtime.Domain
 
         public bool CanGoTo(Vector2Int horizontalDirection)
         {
-            Require(horizontalDirection == Vector2Int.left || horizontalDirection == Vector2Int.right).True();
+            Require(horizontalDirection == Vector2Int.left ||
+                    horizontalDirection == Vector2Int.right).True();
             
             var desiredColumn = InColumn + horizontalDirection.x;
             return desiredColumn >= 1 && desiredColumn <= maxColumn;
