@@ -9,11 +9,24 @@ namespace Connect4.Runtime.Infrastructure.Presentation
 {
     public class SlotAsTokenNaiveBoard : MonoBehaviour, BoardView
     {
+        bool oddsTurn;
+        
         public async Task AddTokenIn(int column)
         {
-            var slots = SlotsInColumn(column);
+            var slots = SlotsInColumn(column).OrderBy(s => s.Row);
+
+            var next = slots.First(s => s.GetComponent<SpriteRenderer>().color == Color.white);
             
-            
+            next.GetComponent<SpriteRenderer>().DOColor(ToggleTurnColor(), 0.3f);
+            next.transform.DOShakeScale(.15f, Vector3.one * .25f, 4).SetLoops(2, LoopType.Yoyo);
+
+            /// No CQRS!
+            Color ToggleTurnColor()
+            {
+                var result = oddsTurn ? Color.red : Color.yellow;
+                oddsTurn = !oddsTurn;
+                return result;
+            }
         }
 
         public async Task ShowColumnAsFull(int column)
@@ -34,7 +47,7 @@ namespace Connect4.Runtime.Infrastructure.Presentation
 
         static IEnumerable<TokenSlot> SlotsInColumn(int column)
         {
-            return FindObjectsOfType<TokenSlot>().Where(s => s.IsInColumn(column));
+            return FindObjectsOfType<TokenSlot>().Where(s => s.Col == column);
         }
     }
 }

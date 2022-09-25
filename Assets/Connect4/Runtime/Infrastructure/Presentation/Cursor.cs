@@ -10,7 +10,7 @@ namespace Connect4.Runtime.Infrastructure.Presentation
     {
         public Task MoveTo(int column)
         {
-            var snapToThis = FindObjectsOfType<TokenSlot>().First(s => s.IsInColumn(column));
+            var snapToThis = FindObjectsOfType<TokenSlot>().First(s => s.Col == column);
             transform.DOMoveX(snapToThis.transform.position.x, .3f).SetEase(Ease.OutBounce);
 
             return Task.CompletedTask;

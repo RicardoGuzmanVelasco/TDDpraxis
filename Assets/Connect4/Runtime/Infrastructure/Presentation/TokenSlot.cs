@@ -7,6 +7,7 @@ namespace Connect4.Runtime.Infrastructure.Presentation
         [SerializeField, Min(1)] int row;
         [SerializeField, Min(1)] int col;
         
-        public bool IsInColumn(int column) => col == column;
+        public int Row => row;
+        public int Col => col;
     }
 }
