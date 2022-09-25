@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class Cursor : MonoBehaviour
+namespace Connect4.Runtime.Infrastructure.Presentation
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Cursor : MonoBehaviour
     {
+        // Start is called before the first frame update
+        void Start()
+        {
         
-    }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        // Update is called once per frame
+        void Update()
+        {
         
+        }
     }
 }

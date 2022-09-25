@@ -1,5 +1,5 @@
 using Connect4.Runtime.Application;
-using Connect4.Runtime.Presentation;
+using Connect4.Runtime.Infrastructure.Presentation;
 using Zenject;
 
 namespace Connect4.Runtime.Infrastructure.EntryPoint

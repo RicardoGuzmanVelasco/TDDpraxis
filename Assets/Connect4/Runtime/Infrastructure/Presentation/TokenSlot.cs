@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Connect4.Runtime.Presentation
+namespace Connect4.Runtime.Infrastructure.Presentation
 {
     public class TokenSlot : MonoBehaviour
     {
