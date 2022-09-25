@@ -10,6 +10,9 @@
 - Support for non-human players
   - Computer player needs board state/memento
 
+### Infraestructura, presentación
+- Await properly whenever an input calls a controller!!!
+
 ### Drop a token - error cases
 - Risk: legal move assumed same as not-full column.
   - If control takes a try after game over, it will exxxxplode!

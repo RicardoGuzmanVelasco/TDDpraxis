@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Connect4.Runtime.Infrastructure.Presentation
 {
-    public class TestPlaceholderView : MonoBehaviour, BoardView, CursorView, MatchView
+    public class TestPlaceholderView : MonoBehaviour, BoardView, MatchView
     {
         public async Task AddTokenIn(int column)
         {
@@ -15,18 +15,6 @@ namespace Connect4.Runtime.Infrastructure.Presentation
         public async Task ShowColumnAsFull(int column)
         {
             Debug.Log("ShowColumnAsFull " + column);
-            await Task.Delay(1000);
-        }
-
-        public async Task MoveTo(int column)
-        {
-            Debug.Log("MoveTo " + column);
-            await Task.Delay(1000);
-        }
-
-        public async Task InvalidDirection(Vector2Int direction)
-        {
-            Debug.Log("InvalidDirection " + direction);
             await Task.Delay(1000);
         }
 
