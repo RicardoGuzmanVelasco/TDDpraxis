@@ -6,27 +6,34 @@ namespace Connect4.Runtime.Application
 {
     public class TokenDrop
     {
-        readonly Board model;
-        readonly BoardView view;
+        readonly Board boardModel;
+        readonly Cursor cursorModel;
+        readonly BoardView boardView;
 
-        public TokenDrop(Board model, BoardView view)
+        public TokenDrop(Board boardModel, Cursor cursorModel, BoardView boardView)
         {
-            this.model = model;
-            this.view = view;
+            this.boardModel = boardModel;
+            this.cursorModel = cursorModel;
+            this.boardView = boardView;
         }
 
-        public async Task InColumn(int column)
+        public async Task InCurrentColumn()
         {
-            Require(model.IsGameOver).False();
+            await InColumn(cursorModel.InColumn);
+        }
 
-            if(!model.IsLegalMove(column))
+        async Task InColumn(int column)
+        {
+            Require(boardModel.IsGameOver).False();
+
+            if(!boardModel.IsLegalMove(column))
             {
-                await view.ShowColumnAsFull(column);
+                await boardView.ShowColumnAsFull(column);
                 return;
             }
             
-            model.DropInColumn(column);
-            await view.AddTokenIn(column);
+            boardModel.DropInColumn(column);
+            await boardView.AddTokenIn(column);
         }
     }
 }

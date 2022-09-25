@@ -13,9 +13,14 @@ namespace Connect4.Tests
         public async Task Dropping_aToken_NotifiesView()
         {
             var viewMock = MockView();
-            var sut = new TokenDrop(new Board(2, 5), viewMock);
+            var sut = new TokenDrop
+            (
+                new Board(1, columns: 5),
+                new Cursor(columns: 5, beginIn: 3),
+                viewMock
+            );
             
-            await sut.InColumn(3);
+            await sut.InCurrentColumn();
 
             AsyncAssert(() => viewMock.AddTokenIn(3));
         }
@@ -25,14 +30,20 @@ namespace Connect4.Tests
         {
             var viewMock = MockView();
             var model = new Board(1, 5);
-            var sut = new TokenDrop(model, viewMock);
+            var sut = new TokenDrop
+            (
+                model,
+                new Cursor(columns: 5, beginIn: 4),
+                viewMock
+            );
 
             model.DropInColumn(4);
-            await sut.InColumn(4);
+            await sut.InCurrentColumn();
 
             AsyncAssert(() => viewMock.ShowColumnAsFull(4));
         }
 
+        #region TestApi
         static BoardView MockView()
         {
             var result = Substitute.For<BoardView>();
@@ -45,5 +56,6 @@ namespace Connect4.Tests
         {
             Received.InOrder(async () => await func());
         }
+        #endregion
     }
 }

@@ -6,11 +6,12 @@ namespace Connect4.Runtime.Domain
     public class Cursor
     {
         readonly int maxColumn;
-        public int InColumn { get; private set; } = 1;
+        public int InColumn { get; private set; }
 
-        public Cursor(int columns)
+        public Cursor(int columns, int beginIn = 1)
         {
             maxColumn = columns;
+            InColumn = beginIn;
         }
 
         public bool CanGoTo(Vector2Int horizontalDirection)
