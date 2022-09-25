@@ -21,7 +21,7 @@ namespace Connect4.Tests
                 new Cursor(columns: 5, beginIn: 3),
                 viewMock
             );
-            
+
             await sut.InCurrentColumn();
 
             AsyncAssert(() => viewMock.AddTokenIn(3));
@@ -76,7 +76,7 @@ namespace Connect4.Tests
 
             AsyncAssert(() => viewMock.InvalidDirection(Vector2Int.left));
         }
-        
+
         [Test]
         public async Task Moving_theCursor_OutOfRightEdge_NotifiesErrortoView()
         {
@@ -92,6 +92,31 @@ namespace Connect4.Tests
             AsyncAssert(() => viewMock.InvalidDirection(Vector2Int.right));
         }
 
+        [Test]
+        public async Task BeforeAndAfter_aWinningMove_ViewIsNotified()
+        {
+            var boardDoc = new Board(4, 6);
+            var viewMock = Substitute.For<MatchView>();
+            var sut = new TokenDrop
+            (
+                boardDoc,
+                new Cursor(6),
+                MockBoardView(),
+                viewMock
+            );
+            boardDoc.DropInColumn(1); boardDoc.DropInColumn(2);
+            boardDoc.DropInColumn(1); boardDoc.DropInColumn(2);
+            boardDoc.DropInColumn(1); boardDoc.DropInColumn(2);
+
+            await sut.InCurrentColumn();
+            
+            Received.InOrder(() =>
+            {
+                viewMock.Received().WarnImminentWinningMove();
+                viewMock.Received().ShowWin();
+            });
+        }
+
         #region TestApi
         static CursorView MockCursorView()
         {
@@ -100,6 +125,7 @@ namespace Connect4.Tests
             result.MoveTo(default).ReturnsForAnyArgs(Task.CompletedTask);
             return result;
         }
+
         static BoardView MockBoardView()
         {
             var result = Substitute.For<BoardView>();

@@ -9,12 +9,14 @@ namespace Connect4.Runtime.Application
         readonly Board boardModel;
         readonly Cursor cursorModel;
         readonly BoardView boardView;
+        readonly MatchView matchView;
 
-        public TokenDrop(Board boardModel, Cursor cursorModel, BoardView boardView)
+        public TokenDrop(Board boardModel, Cursor cursorModel, BoardView boardView, MatchView matchView = null)
         {
             this.boardModel = boardModel;
             this.cursorModel = cursorModel;
             this.boardView = boardView;
+            this.matchView = matchView;
         }
 
         public async Task InCurrentColumn()
@@ -31,9 +33,16 @@ namespace Connect4.Runtime.Application
                 await boardView.ShowColumnAsFull(column);
                 return;
             }
+
+            var winningMove = boardModel.WinsIfDropsIn(column);
+            if(winningMove)
+                matchView?.WarnImminentWinningMove();
             
             boardModel.DropInColumn(column);
             await boardView.AddTokenIn(column);
+
+            if(winningMove)
+                matchView?.ShowWin();
         }
     }
 }
