@@ -2,6 +2,7 @@
   "dependencies": {
     "com.boundfoxstudios.fluentassertions": "https://github.com/BoundfoxStudios/fluentassertions-unity.git#upm",
     "com.rgv.designbycontract": "https://github.com/RicardoGuzmanVelasco/RGV.git?path=/Assets/RGV.DesignByContract",
+    "com.svermeulen.extenject": "9.2.0-stcf3",
     "com.unity.2d.animation": "9.0.0-pre.1",
     "com.unity.2d.pixel-perfect": "5.0.1",
     "com.unity.2d.sprite": "1.0.0",
