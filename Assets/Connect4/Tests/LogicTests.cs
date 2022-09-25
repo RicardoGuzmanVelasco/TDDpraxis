@@ -52,6 +52,18 @@ namespace Connect4.Tests
             sut.WinsIfDropsIn(4)
                 .Should().BeTrue();
         }
+
+        [Test, Description("Regression")]
+        public void Winning_with4Consecutive_inSameRow_NotAtLeftEdge_ofTheBoard()
+        {
+            var sut = new Board(2, 5);
+            sut.DropInColumn(2); sut.DropInColumn(2);
+            sut.DropInColumn(3); sut.DropInColumn(3);
+            sut.DropInColumn(4); sut.DropInColumn(4);
+
+            sut.WinsIfDropsIn(5)
+                .Should().BeTrue();
+        }
         
         [Test]
         public void Winning_with4Consecutive_inDiagonal()
