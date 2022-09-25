@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Connect4.Runtime.Application;
 using UnityEngine;
 
-namespace Connect4.Runtime.Presentation
+namespace Connect4.Runtime.Infrastructure.Presentation
 {
     public class TestPlaceholderView : MonoBehaviour, BoardView, CursorView, MatchView
     {

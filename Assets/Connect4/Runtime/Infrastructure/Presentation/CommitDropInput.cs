@@ -2,7 +2,7 @@ using Connect4.Runtime.Application;
 using UnityEngine;
 using Zenject;
 
-namespace Connect4.Runtime.Presentation
+namespace Connect4.Runtime.Infrastructure.Presentation
 {
     public class CommitDropInput : MonoBehaviour
     {

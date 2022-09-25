@@ -1,7 +1,7 @@
 using UnityEngine;
 using static RGV.DesignByContract.Runtime.Contract;
 
-namespace Connect4.Runtime.Presentation
+namespace Connect4.Runtime.Infrastructure.Presentation
 {
     [RequireComponent(typeof(SpriteRenderer))]
     public class Token : MonoBehaviour
