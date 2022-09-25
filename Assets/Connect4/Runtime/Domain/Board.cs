@@ -9,8 +9,6 @@ namespace Connect4.Runtime.Domain
         enum Token { None, Red, Yellow }
         readonly Token[,] tokens;
 
-        public event Action<int> TokenDroppedInColumn;
-        
         #region Ctors
         Board(Board otherToCopy)
         {
@@ -75,8 +73,6 @@ namespace Connect4.Runtime.Domain
             var column = i - 1;
             var firstEmptyRow = Enumerable.Range(0, Size.rows).First(row => tokens[row, column] == Token.None);
             tokens[firstEmptyRow, column] = TokenOfThisTurn();
-
-            TokenDroppedInColumn?.Invoke(i);
         }
 
         Token TokenOfThisTurn() => TokensDroppedCount() % 2 == 0 ? Token.Red : Token.Yellow;

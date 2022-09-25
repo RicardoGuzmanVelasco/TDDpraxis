@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Connect4.Runtime.Domain;
 using static RGV.DesignByContract.Runtime.Contract;
 
@@ -12,17 +13,20 @@ namespace Connect4.Runtime.Application
         {
             this.model = model;
             this.view = view;
-            model.TokenDroppedInColumn += view.AddTokenIn;
         }
 
-        public void InColumn(int column)
+        public async Task InColumn(int column)
         {
             Require(model.IsGameOver).False();
+
+            if(!model.IsLegalMove(column))
+            {
+                await view.ShowColumnAsFull(column);
+                return;
+            }
             
-            if(model.IsLegalMove(column))
-                model.DropInColumn(column);
-            else
-                view.ShowColumnAsFull(column);
+            model.DropInColumn(column);
+            await view.AddTokenIn(column);
         }
     }
 }

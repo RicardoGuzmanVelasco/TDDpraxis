@@ -6,19 +6,6 @@ namespace Connect4.Tests
 {
     public class LogicTests
     {
-        [Test]
-        public void Drop_aToken_inBoard()
-        {
-            var sut = new Board(rows: 6, columns: 7);
-            var spy = sut.Monitor();
-
-            sut.DropInColumn(4);
-
-            spy.Should()
-                .Raise(nameof(Board.TokenDroppedInColumn))
-                .WithArgs<int>(r => r == 4);
-        }
-
         [Test, Description("Each drop is from a different player, alternating turns, so 4 is 2&2")]
         public void Drop_4Times_inSameColumn_IsNotWinStill()
         {

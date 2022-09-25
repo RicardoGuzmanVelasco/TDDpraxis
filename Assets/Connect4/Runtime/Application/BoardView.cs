@@ -1,8 +1,10 @@
+using System.Threading.Tasks;
+
 namespace Connect4.Runtime.Application
 {
     public interface BoardView
     {
-        void AddTokenIn(int column);
-        void ShowColumnAsFull(int column);
+        Task AddTokenIn(int column);
+        Task ShowColumnAsFull(int column);
     }
 }
