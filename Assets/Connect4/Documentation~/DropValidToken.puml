@@ -4,16 +4,20 @@ skinparam actorstyle awesome
 left to right direction
 
 actor Player
-boundary CursorInput #technology
 boundary BoardView #technology
+boundary CursorInput #technology
 control TokenDrop #implementation
+entity Cursor
 entity Board
 
 Player --> CursorInput : commits\ndrop token in\ncurrent column
-CursorInput --> TokenDrop : current column
+CursorInput --> TokenDrop : drop
+TokenDrop --> Cursor : current column?
+Cursor ..> TokenDrop : current column
+TokenDrop --> Board : legal move?
 TokenDrop --> Board : drop token in\ncurrent column
-Board ..> TokenDrop : <<event>>\nTokenDroppedInColumn(X)
 TokenDrop -> BoardView : AddTokenIn(X)
 
 CursorInput .l. BoardView #transparent
+
 @enduml

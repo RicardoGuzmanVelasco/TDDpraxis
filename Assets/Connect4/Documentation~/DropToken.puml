@@ -8,11 +8,14 @@ actor Player
 boundary BoardView #technology
 boundary CursorInput #technology
 control TokenDrop #implementation
+entity Cursor
 entity Board
 
 Player -> CursorInput : commits\ndrop token in\ncurrent column
-CursorInput -> TokenDrop : current column
+CursorInput -> TokenDrop : drop token
 deactivate CursorInput
+TokenDrop -> Cursor : current column?
+return current column
 TokenDrop -> Board : current column is valid
 ref over Board
     check if column is valid

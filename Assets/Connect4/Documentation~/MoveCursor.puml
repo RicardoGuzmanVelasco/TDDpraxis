@@ -1,0 +1,26 @@
+@startuml
+skin rose
+skinparam actorstyle awesome
+autonumber
+autoactivate on
+
+actor Player
+boundary CursorView #technology
+boundary CursorInput #technology
+control CursorMovement #implementation
+entity Cursor
+
+Player -> CursorInput : press button\nleft or right
+CursorInput -> CursorMovement : MoveTo(dir)
+deactivate CursorInput
+CursorMovement -> Cursor : CanGoTo?(dir)
+alt valid column to go to
+    Cursor --> CursorMovement : true
+    CursorMovement -> Cursor : MoveTo(dir)
+    Cursor --> CursorMovement : current column as 'col'
+    CursorMovement -> CursorView : MoveTo(col)
+    deactivate CursorView
+else NOT valid column to go to
+    CursorMovement -> CursorView : InvalidDirection(dir)
+end
+@enduml

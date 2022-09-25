@@ -6,11 +6,13 @@ left to right direction
 :Player:
 :Match Creator: as Creator
 
-(Drop token\nin a column) as (Drop)
+(Move cursor\nto select\n a column) as (Cursor)
+(Drop token\nin column) as (Drop)
 (Select board size) as (Size)
 (Start a new game) as (Start)
 (Undo movement) as (Undo)
 
+Player --> (Cursor)
 Player --> (Drop)
 Player --> (Undo)
 
