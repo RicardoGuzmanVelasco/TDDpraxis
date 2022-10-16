@@ -26,7 +26,7 @@ namespace ConwaysGameOfLife.Tests.Domain
         {
             Runtime.Domain.GameOfLife
                 .StartWith((0, 0), (1, 1))
-                .AliveCells.Should().BeEquivalentTo((0, 0), (1, 1));
+                .AliveCells.Should().BeEquivalentTo(new []{(0, 0), (1, 1)});
         }
     }
 }
